@@ -143,7 +143,7 @@ const testWriteFile = () => {
     }
 
     fs.writeFileSync(filePath, "Hello world");
-    new GitService(path.resolve(__dirname, "..", ".."))
+    new GitService(path.resolve(__dirname, ".."))
       .commitAndPush(`Save file ${filePath}`)
       .catch(logger.error);
   } catch (error) {

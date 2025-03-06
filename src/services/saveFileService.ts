@@ -81,7 +81,7 @@ export class SaveFileService {
 
       fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
       
-      new GitService(path.resolve(__dirname, "..", ".."))
+      new GitService(path.resolve(__dirname, ".."))
         .commitAndPush(`Save file ${filePath}`)
         .catch(logger.error);
     } catch (error) {
