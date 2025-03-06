@@ -84,6 +84,7 @@ cron.schedule(
   "0 8 * * *",
   () => {
     logger.info("Starting daily movie fetch at 8 AM Kyiv time");
+    console.log("Starting daily movie fetch at 8 AM Kyiv time");
     fetchSessions().catch((error) => {
       logger.error("Failed to execute scheduled task:", error);
     });
