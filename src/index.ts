@@ -7,6 +7,7 @@ import { CINEMAS } from "./constants";
 import { ShedulerService } from "./services/shedulerService";
 import path from "path";
 import fs from "fs";
+import { GitService } from "./services/gitService";
 const qrafqlService = new GraphQLService();
 const movieService = new MovieService(qrafqlService);
 
@@ -124,27 +125,30 @@ cron.schedule(
 
 // test();
 
-// const testWriteFile = () => {
-//   try {
-//     const dirPath = path.resolve(__dirname, "..", "data");
+const testWriteFile = () => {
+  try {
+    const dirPath = path.resolve(__dirname, "..", "data");
 
-//     fs.mkdirSync(dirPath, { recursive: true });
+    fs.mkdirSync(dirPath, { recursive: true });
 
-//     const filePath = path.join(dirPath, `test.json`);
+    const filePath = path.join(dirPath, `test.json`);
 
-//     try {
-//       fs.accessSync(dirPath, fs.constants.W_OK);
-//     } catch (error) {
-//       throw new Error(
-//         `SaveFileService: No write permission for directory: ${dirPath}`
-//       );
-//     }
+    try {
+      fs.accessSync(dirPath, fs.constants.W_OK);
+    } catch (error) {
+      throw new Error(
+        `SaveFileService: No write permission for directory: ${dirPath}`
+      );
+    }
 
-//     fs.writeFileSync(filePath, "Hello world");
-//   } catch (error) {
-//     logger.error(`SaveFileService: Failed to save file:`, error);
-//     throw error;
-//   }
-// };
+    fs.writeFileSync(filePath, "Hello world");
+    new GitService(path.resolve(__dirname, "..", ".."))
+      .commitAndPush(`Save file ${filePath}`)
+      .catch(logger.error);
+  } catch (error) {
+    logger.error(`SaveFileService: Failed to save file:`, error);
+    throw error;
+  }
+};
 
-// testWriteFile();
+testWriteFile();

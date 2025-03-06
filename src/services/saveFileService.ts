@@ -3,6 +3,7 @@ import fs from "fs";
 import os from "os";
 import { CINEMAS_NAMES } from "../constants";
 import logger from "../utils/logger";
+import { GitService } from "./gitService";
 
 export class SaveFileService {
   private cinemaId: string;
@@ -79,6 +80,10 @@ export class SaveFileService {
       }
 
       fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+      
+      new GitService(path.resolve(__dirname, "..", ".."))
+        .commitAndPush(`Save file ${filePath}`)
+        .catch(logger.error);
     } catch (error) {
       logger.error(`SaveFileService: Failed to save file:`, error);
       throw error;
