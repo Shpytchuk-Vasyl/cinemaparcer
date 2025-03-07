@@ -1,6 +1,8 @@
 
 node_modules
-dist
+dist/*
+!dist/data
+!dist/data/**
 *.log
 combined.log
 error.log
