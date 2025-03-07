@@ -78,12 +78,14 @@ export class SaveFileService {
           `SaveFileService: No write permission for directory: ${dirPath}`
         );
       }
-
+      
       fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
       
-      new GitService(path.resolve(__dirname, ".."))
-        .commitAndPush(`Save file ${filePath}`)
-        .catch(logger.error);
+      logger.info(`File saved: ${filePath}`);
+
+      // new GitService(path.resolve(__dirname, ".."))
+      //   .commitAndPush(`Save file ${filePath}`)
+      //   .catch(logger.error);
     } catch (error) {
       logger.error(`SaveFileService: Failed to save file:`, error);
       throw error;

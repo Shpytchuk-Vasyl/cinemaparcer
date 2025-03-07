@@ -80,6 +80,7 @@ async function fetchSessions() {
 }
 
 // Schedule the job to run at 8 AM Kyiv time every day
+console.log("Starting...");
 cron.schedule(
   "0 8 * * *",
   () => {
@@ -95,10 +96,25 @@ cron.schedule(
   }
 );
 
-// fetchSessions().catch((error) => {
-//   logger.error("Failed to execute initial fetch:", error);
-//   process.exit(1);
-// });
+cron.schedule(
+  // Run every hour
+  "0 * * * *",
+  () => {
+    const now = new Date();
+    const dateTime = now.toLocaleString("uk-UA", { timeZone: "Europe/Kiev" });
+    new GitService(path.resolve(__dirname, ".."))
+      .commitAndPush(`Auto commit at ${dateTime}`)
+      .catch(logger.error);
+  },
+  {
+    scheduled: true,
+    timezone: "Europe/Kiev",
+  }
+);
+
+fetchSessions().catch((error) => {
+  logger.error("Failed to execute initial fetch:", error);
+});
 
 // async function test() {
 //   const dateService = new DateService();
@@ -126,30 +142,30 @@ cron.schedule(
 
 // test();
 
-const testWriteFile = () => {
-  try {
-    const dirPath = path.resolve(__dirname, "..", "data");
+// const testWriteFile = () => {
+//   try {
+//     const dirPath = path.resolve(__dirname, "..", "data");
 
-    fs.mkdirSync(dirPath, { recursive: true });
+//     fs.mkdirSync(dirPath, { recursive: true });
 
-    const filePath = path.join(dirPath, `test.json`);
+//     const filePath = path.join(dirPath, `test.json`);
 
-    try {
-      fs.accessSync(dirPath, fs.constants.W_OK);
-    } catch (error) {
-      throw new Error(
-        `SaveFileService: No write permission for directory: ${dirPath}`
-      );
-    }
+//     try {
+//       fs.accessSync(dirPath, fs.constants.W_OK);
+//     } catch (error) {
+//       throw new Error(
+//         `SaveFileService: No write permission for directory: ${dirPath}`
+//       );
+//     }
 
-    fs.writeFileSync(filePath, "Hello world");
-    new GitService(path.resolve(__dirname, ".."))
-      .commitAndPush(`Save file ${filePath}`)
-      .catch(logger.error);
-  } catch (error) {
-    logger.error(`SaveFileService: Failed to save file:`, error);
-    throw error;
-  }
-};
+//     fs.writeFileSync(filePath, "Hello world");
+//     new GitService(path.resolve(__dirname, ".."))
+//       .commitAndPush(`Save file ${filePath}`)
+//       .catch(logger.error);
+//   } catch (error) {
+//     logger.error(`SaveFileService: Failed to save file:`, error);
+//     throw error;
+//   }
+// };
 
-testWriteFile();
+// testWriteFile();
