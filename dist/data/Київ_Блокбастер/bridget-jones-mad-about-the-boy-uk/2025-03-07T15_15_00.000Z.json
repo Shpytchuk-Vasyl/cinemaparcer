@@ -1,0 +1,900 @@
+{
+  "cinemaId": "Z2lkOi8vY2luZW1hLzI=",
+  "slug": "bridget-jones-mad-about-the-boy-uk",
+  "response": {
+    "movieBySlug": {
+      "offlineRental": {
+        "end": "2025-03-12T00:00:00.000Z",
+        "start": "2025-02-20T00:00:00.000Z",
+        "status": "ACTIVE",
+        "labels": [
+          {
+            "id": "Z2lkOi8vb2ZmbGluZWxhYmVsLzEwMw==",
+            "name": "Доступне кіно",
+            "group": null,
+            "sortPriority": 70
+          },
+          {
+            "id": "Z2lkOi8vb2ZmbGluZWxhYmVsLzEyMQ==",
+            "name": "Діють знижки",
+            "group": "DISCOUNT",
+            "sortPriority": 59
+          }
+        ],
+        "calendar": [
+          "2025-03-07T00:00:00.000Z",
+          "2025-03-08T00:00:00.000Z",
+          "2025-03-09T00:00:00.000Z",
+          "2025-03-10T00:00:00.000Z",
+          "2025-03-11T00:00:00.000Z",
+          "2025-03-12T00:00:00.000Z"
+        ],
+        "rentalTechnologies": [
+          {
+            "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS8x",
+            "name": "RE'LUX",
+            "slug": "relux"
+          },
+          {
+            "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS81",
+            "name": "Cinetech+",
+            "slug": "сinetech"
+          }
+        ],
+        "sessionsNumber": 11,
+        "sessions": [
+          {
+            "canPayWithBonuses": false,
+            "dimensionType": "2D",
+            "durationInSec": 7500,
+            "startSessionAt": "2025-03-07T15:15:00.000Z",
+            "endSessionAt": "2025-03-07T17:20:00.000Z",
+            "countFreeSeats": 26,
+            "labels": [],
+            "cinemaHall": {
+              "id": "Z2lkOi8vY2luZW1haGFsbC81MQ==",
+              "activeStatus": "ACTIVE",
+              "doorNumberEntranceToHall": 3,
+              "isAlphabeticalRowsEnumeration": true,
+              "config": {
+                "direction": "LEFT_TO_RIGHT",
+                "rowMargin": 25,
+                "side": "LEFT",
+                "seatWidth": 25,
+                "seatHeight": 50,
+                "seatMargin": 5
+              },
+              "rows": [
+                {
+                  "rowNumber": "A",
+                  "styles": {
+                    "justifyContent": "normal",
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": "30"
+                  },
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDMx",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 1,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 30,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDMy",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 2,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 30,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDMz",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 3,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 45,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDM0",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 4,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 45,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDM1",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 5,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 60,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDM2",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 6,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 60,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "rowNumber": "B",
+                  "styles": {
+                    "justifyContent": "normal",
+                    "marginLeft": 0,
+                    "marginRight": 0
+                  },
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDM3",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 1,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 30,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDM4",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 2,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 30,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDM5",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 3,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 45,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQw",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 4,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 45,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQx",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 5,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 60,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQy",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 6,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 60,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "rowNumber": "C",
+                  "styles": {
+                    "justifyContent": "normal",
+                    "marginLeft": 0,
+                    "marginRight": 0
+                  },
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQz",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 1,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 30,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQ0",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 2,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 30,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQ1",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 3,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 45,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQ2",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 4,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 45,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQ3",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 5,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 60,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQ4",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 6,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 60,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "rowNumber": "D",
+                  "styles": {
+                    "justifyContent": "normal",
+                    "marginLeft": "5",
+                    "marginRight": "18"
+                  },
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDQ5",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 1,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 0,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDUw",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 2,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 0,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDUx",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 3,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 5,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDUy",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 4,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 5,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDUz",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 5,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 10,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDU0",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 6,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 10,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDU1",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 7,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 15,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC80NDU2",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 8,
+                      "state": "ACTIVE",
+                      "styles": {
+                        "transformX": 15,
+                        "transformY": 0,
+                        "rotate": 0,
+                        "marginLeft": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "priceBundle": {
+              "minPrices": {
+                "price": 600,
+                "priceInBonuses": 15000
+              },
+              "items": [
+                {
+                  "price": 600,
+                  "priceInBonuses": 15000,
+                  "seatType": "STANDARD",
+                  "canBePaidByBonuses": true
+                }
+              ]
+            },
+            "id": "Z2lkOi8vc2Vzc2lvbi8yNzQwMDY2",
+            "rentalTechnology": {
+              "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS8x",
+              "name": "RE'LUX"
+            },
+            "cinemaHallId": "Z2lkOi8vY2luZW1haGFsbC81MQ=="
+          }
+        ]
+      }
+    }
+  },
+  "sessions": [
+    {
+      "canPayWithBonuses": false,
+      "dimensionType": "2D",
+      "durationInSec": 7500,
+      "startSessionAt": "2025-03-07T15:15:00.000Z",
+      "endSessionAt": "2025-03-07T17:20:00.000Z",
+      "countFreeSeats": 26,
+      "labels": [],
+      "cinemaHall": {
+        "id": "Z2lkOi8vY2luZW1haGFsbC81MQ==",
+        "activeStatus": "ACTIVE",
+        "doorNumberEntranceToHall": 3,
+        "isAlphabeticalRowsEnumeration": true,
+        "config": {
+          "direction": "LEFT_TO_RIGHT",
+          "rowMargin": 25,
+          "side": "LEFT",
+          "seatWidth": 25,
+          "seatHeight": 50,
+          "seatMargin": 5
+        },
+        "rows": [
+          {
+            "rowNumber": "A",
+            "styles": {
+              "justifyContent": "normal",
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": "30"
+            },
+            "seats": [
+              {
+                "id": "Z2lkOi8vc2VhdC80NDMx",
+                "type": "STANDARD",
+                "rowNumber": "A",
+                "seatNumber": 1,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 30,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDMy",
+                "type": "STANDARD",
+                "rowNumber": "A",
+                "seatNumber": 2,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 30,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDMz",
+                "type": "STANDARD",
+                "rowNumber": "A",
+                "seatNumber": 3,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 45,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDM0",
+                "type": "STANDARD",
+                "rowNumber": "A",
+                "seatNumber": 4,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 45,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDM1",
+                "type": "STANDARD",
+                "rowNumber": "A",
+                "seatNumber": 5,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 60,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDM2",
+                "type": "STANDARD",
+                "rowNumber": "A",
+                "seatNumber": 6,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 60,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              }
+            ]
+          },
+          {
+            "rowNumber": "B",
+            "styles": {
+              "justifyContent": "normal",
+              "marginLeft": 0,
+              "marginRight": 0
+            },
+            "seats": [
+              {
+                "id": "Z2lkOi8vc2VhdC80NDM3",
+                "type": "STANDARD",
+                "rowNumber": "B",
+                "seatNumber": 1,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 30,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDM4",
+                "type": "STANDARD",
+                "rowNumber": "B",
+                "seatNumber": 2,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 30,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDM5",
+                "type": "STANDARD",
+                "rowNumber": "B",
+                "seatNumber": 3,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 45,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQw",
+                "type": "STANDARD",
+                "rowNumber": "B",
+                "seatNumber": 4,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 45,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQx",
+                "type": "STANDARD",
+                "rowNumber": "B",
+                "seatNumber": 5,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 60,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQy",
+                "type": "STANDARD",
+                "rowNumber": "B",
+                "seatNumber": 6,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 60,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              }
+            ]
+          },
+          {
+            "rowNumber": "C",
+            "styles": {
+              "justifyContent": "normal",
+              "marginLeft": 0,
+              "marginRight": 0
+            },
+            "seats": [
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQz",
+                "type": "STANDARD",
+                "rowNumber": "C",
+                "seatNumber": 1,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 30,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQ0",
+                "type": "STANDARD",
+                "rowNumber": "C",
+                "seatNumber": 2,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 30,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQ1",
+                "type": "STANDARD",
+                "rowNumber": "C",
+                "seatNumber": 3,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 45,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQ2",
+                "type": "STANDARD",
+                "rowNumber": "C",
+                "seatNumber": 4,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 45,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQ3",
+                "type": "STANDARD",
+                "rowNumber": "C",
+                "seatNumber": 5,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 60,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQ4",
+                "type": "STANDARD",
+                "rowNumber": "C",
+                "seatNumber": 6,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 60,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              }
+            ]
+          },
+          {
+            "rowNumber": "D",
+            "styles": {
+              "justifyContent": "normal",
+              "marginLeft": "5",
+              "marginRight": "18"
+            },
+            "seats": [
+              {
+                "id": "Z2lkOi8vc2VhdC80NDQ5",
+                "type": "STANDARD",
+                "rowNumber": "D",
+                "seatNumber": 1,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 0,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDUw",
+                "type": "STANDARD",
+                "rowNumber": "D",
+                "seatNumber": 2,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 0,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDUx",
+                "type": "STANDARD",
+                "rowNumber": "D",
+                "seatNumber": 3,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 5,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDUy",
+                "type": "STANDARD",
+                "rowNumber": "D",
+                "seatNumber": 4,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 5,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDUz",
+                "type": "STANDARD",
+                "rowNumber": "D",
+                "seatNumber": 5,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 10,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDU0",
+                "type": "STANDARD",
+                "rowNumber": "D",
+                "seatNumber": 6,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 10,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDU1",
+                "type": "STANDARD",
+                "rowNumber": "D",
+                "seatNumber": 7,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 15,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              },
+              {
+                "id": "Z2lkOi8vc2VhdC80NDU2",
+                "type": "STANDARD",
+                "rowNumber": "D",
+                "seatNumber": 8,
+                "state": "ACTIVE",
+                "styles": {
+                  "transformX": 15,
+                  "transformY": 0,
+                  "rotate": 0,
+                  "marginLeft": 0
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "priceBundle": {
+        "minPrices": {
+          "price": 600,
+          "priceInBonuses": 15000
+        },
+        "items": [
+          {
+            "price": 600,
+            "priceInBonuses": 15000,
+            "seatType": "STANDARD",
+            "canBePaidByBonuses": true
+          }
+        ]
+      },
+      "id": "Z2lkOi8vc2Vzc2lvbi8yNzQwMDY2",
+      "rentalTechnology": {
+        "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS8x",
+        "name": "RE'LUX"
+      },
+      "cinemaHallId": "Z2lkOi8vY2luZW1haGFsbC81MQ=="
+    }
+  ]
+}
