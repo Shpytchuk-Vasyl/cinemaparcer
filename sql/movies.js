@@ -3,6 +3,163 @@ const fs = require("fs");
 // Дані JSON
 const movies = [
   {
+    id: "Z2lkOi8vbW92aWUvMTQ2MDY=",
+    name: "SEVENTEEN [RIGHT HERE] WORLD TOUR IN CINEMAS",
+    originalName: "Seventeen [Right Here] World Tour in Cinemas",
+    slug: "seventeen-right-here-world-tour-in-cinemas-uk",
+    ageRestrictions: "A12",
+    shortDescription:
+      "Фільм демонструється корейською та англійською з українськими субтитрами",
+    year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjM1",
+          slug: "xbsty",
+          name: "Музичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
+    durationInSec: "7800",
+    rating: {
+      imdb: {
+        rating: null,
+        voteCount: null,
+      },
+    },
+  },
+  {
+    id: "Z2lkOi8vbW92aWUvMTQ1NzM=",
+    name: "КРИВАВА ТАЄМНИЦЯ",
+    originalName: "Cuckoo",
+    slug: "cuckoo-uk",
+    ageRestrictions: "A18",
+    shortDescription: null,
+    year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM1",
+          slug: "yqd7x",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
+    durationInSec: "6120",
+    rating: {
+      imdb: {
+        rating: null,
+        voteCount: null,
+      },
+    },
+  },
+  {
+    id: "Z2lkOi8vbW92aWUvMTQ1NDA=",
+    name: "ШАЛЕНІ КОПИ",
+    originalName: "Greedy People",
+    slug: "greedy-people-uk",
+    ageRestrictions: "A16",
+    shortDescription: null,
+    year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
+    durationInSec: "6720",
+    rating: {
+      imdb: {
+        rating: 6.2,
+        voteCount: null,
+      },
+    },
+  },
+  {
+    id: "Z2lkOi8vbW92aWUvMTQ1MDc=",
+    name: "ЧАРІВНИЙ ГОДИННИК",
+    originalName: "The Present",
+    slug: "the-present-2024-uk",
+    ageRestrictions: "A12",
+    shortDescription: null,
+    year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
+    durationInSec: "5160",
+    rating: {
+      imdb: {
+        rating: 5.5,
+        voteCount: null,
+      },
+    },
+  },
+  {
     id: "Z2lkOi8vbW92aWUvMTQ0NzQ=",
     name: " КВІР",
     originalName: "Queer",
@@ -11,6 +168,29 @@ const movies = [
     shortDescription:
       "Заснована на однойменному романі скандального бітника Вільяма С. Берроуза",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "8220",
     rating: {
       imdb: {
@@ -28,6 +208,34 @@ const movies = [
     shortDescription:
       "Якби Куросава зустрів Wu-Tang Clan.\nСуміш хіп-хопу, мафії та самурайських принципів",
     year: 1999,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -45,6 +253,29 @@ const movies = [
     shortDescription:
       "Фільм демонструється мовою оригіналу (українська, російська) з українськими субтитрами",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -61,6 +292,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -78,6 +327,39 @@ const movies = [
     shortDescription:
       "Герої фільму потрапляють у світ Minecraft – найбільш продаваної гри усіх часів. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -94,6 +376,39 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -111,6 +426,34 @@ const movies = [
     shortDescription:
       "Фільм розповідає про групу покинутих самотніх кросівок, які відчайдушно шукають свою пару.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -127,6 +470,29 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2011,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5940",
     rating: {
       imdb: {
@@ -144,6 +510,29 @@ const movies = [
     shortDescription:
       "Запрошуємо на ДОПРЕМ’ЄРНИЙ показ фільму “Відпустка наосліп”! ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -160,6 +549,39 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -176,6 +598,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -192,6 +632,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -208,6 +676,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -224,6 +710,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -240,6 +754,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -256,6 +793,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -273,6 +838,29 @@ const movies = [
     shortDescription:
       "Агент розвідки Джордж має викрити витік таємної інформації, а головна підозрювана у цьому – його дружина.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -290,6 +878,29 @@ const movies = [
     shortDescription:
       "Цьогорічний претендент від України на здобуття премії «Оскар». Подружжя митців із Харкова моделюють тендітні керамічні фігурки.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "7020",
     rating: {
       imdb: {
@@ -305,8 +916,36 @@ const movies = [
     slug: "klammer-uk",
     ageRestrictions: "A12",
     shortDescription:
-      "Захоплююча історія австрійського лижника та його важких перегонів на зимових Олімпійських іграх 1976 року. ",
+      "Напружена боротьба за олімпійське золото у швидкісному спуску точиться не лише на гірськолижній трасі.",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTA=",
+          slug: "sportivne",
+          name: "Спортивне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -321,8 +960,36 @@ const movies = [
     originalName: "Mickey 17",
     slug: "ov-miki-17",
     ageRestrictions: "A16",
-    shortDescription: null,
+    shortDescription: "Фільм демонструється мовою оригіналу (англійська)",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "8400",
     rating: {
       imdb: {
@@ -337,8 +1004,32 @@ const movies = [
     originalName: "Clown in a Cornfield",
     slug: "clown-in-a-cornfield-uk",
     ageRestrictions: "A18",
-    shortDescription: null,
+    shortDescription:
+      "Інсценуючи вбивства для свого YouTube-каналу, група підлітків не очікувала, що побачить справжню кров на власні очі. \n",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -356,6 +1047,34 @@ const movies = [
     shortDescription:
       "Запрошуємо на допрем'єрний показ фільму «Королівські пригоди, який відбудеться 1 березня в кінотеатрі Планета Кіно, Харків.\n",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -372,6 +1091,29 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -389,6 +1131,34 @@ const movies = [
     shortDescription:
       "10 березня, о 19:30 – спецпоказ нової фантастичної сатири Пона Чжун Хо «Мікі 17» з вступною лекцією кіномена Станіслава Тарасенка.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "10200",
     rating: {
       imdb: {
@@ -405,6 +1175,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "8400",
     rating: {
       imdb: {
@@ -421,6 +1219,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "Перший український горор про еміграцію",
     year: 1968,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -436,8 +1252,31 @@ const movies = [
     slug: "the-bayou-2024-uk",
     ageRestrictions: "A16",
     shortDescription:
-      'Від продюсерів фільму "Над безоднею" та франшизи "Синя безодня".',
+      "Подорож до національного парку у Луїзіані перетворюється для студентів на боротьбу за виживання.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5220",
     rating: {
       imdb: {
@@ -455,6 +1294,29 @@ const movies = [
     shortDescription:
       "Як люди, які ледве знали один одного, змогли спланувати найбільше пограбування в історії Данії.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -471,6 +1333,39 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2026,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -488,6 +1383,24 @@ const movies = [
     shortDescription:
       "Друзі вирішили заночувати у місцевості, де рік тому загадково зникла дівчина. Схоже, тепер ця ж доля спіткає і їх.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -505,6 +1418,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzk=",
+          slug: "koncert",
+          name: "Концерт",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "8100",
     rating: {
       imdb: {
@@ -522,6 +1453,29 @@ const movies = [
     shortDescription:
       "Експериментальне лікування хвороби Альцгеймера дарує колишньому детективу шанс розплутати давній злочин. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -539,6 +1493,34 @@ const movies = [
     shortDescription:
       "У постапокаліптичному світі батько з двома синами-підлітками мусять докладати щоденних зусиль, аби залишитися в живих.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -555,6 +1537,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -572,6 +1577,29 @@ const movies = [
     shortDescription:
       "Зведені сестри вирушають у довгу дорогу з Польщі до України в пошуках свого батька – пораненого волонтера. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -589,6 +1617,29 @@ const movies = [
     shortDescription:
       "Цьогорічний претендент від України на здобуття премії «Оскар». Подружжя митців із Харкова моделюють тендітні керамічні фігурки.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "5220",
     rating: {
       imdb: {
@@ -605,6 +1656,44 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -622,6 +1711,24 @@ const movies = [
     shortDescription:
       "Фільм-концерт на великому екрані з музикою з «ДЮНИ», «ГЛАДІАТОРА», «ІНТЕРСТЕЛЛАРА», «КОРОЛЯ ЛЬВА» та багатьох інших",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzk=",
+          slug: "koncert",
+          name: "Концерт",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "9480",
     rating: {
       imdb: {
@@ -639,6 +1746,29 @@ const movies = [
     shortDescription:
       "11 березня, о 20:30 – спецпоказ особливого фільму, «Простої історії» Девіда Лінча з вступною лекцією кіномена Станіслава Тарасенка",
     year: 1999,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "8520",
     rating: {
       imdb: {
@@ -656,6 +1786,24 @@ const movies = [
     shortDescription:
       "27 лютого, о 20:00 – спецпоказ історичного трилера «П'яте вересня» Тіма Фельбаума з вступною лекцією кіномена Станіслава Тарасенка",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7500",
     rating: {
       imdb: {
@@ -673,6 +1821,24 @@ const movies = [
     shortDescription:
       "25 лютого, о 20:00 – спецпоказ нового комедійного горору «Мавпа» Осґуда Перкінса з вступною лекцією кіномена Станіслава Тарасенка",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7680",
     rating: {
       imdb: {
@@ -690,6 +1856,29 @@ const movies = [
     shortDescription:
       "22 лютого, о 16:30 – спецпоказ фестивального аніме-фільму «Кіт-привид Анзу» з вступною лекцією кіномена Станіслава Тарасенка",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "7620",
     rating: {
       imdb: {
@@ -707,6 +1896,29 @@ const movies = [
     shortDescription:
       "21 лютого, о 20:00 – спецпоказ трагікомедії «Справжній біль» Джессі Айзенберґа з вступною лекцією кіномена Станіслава Тарасенка",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -724,6 +1936,24 @@ const movies = [
     shortDescription:
       "4 березня , о 18:30 – фантастична кіноманська подія у «Планеті Кіно» – «Бруталіст» Брейді Корбета з вступною лекцією кіномена Станіслава Тарасенка",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "14700",
     rating: {
       imdb: {
@@ -738,8 +1968,32 @@ const movies = [
     originalName: "M3GAN 2.0",
     slug: "m3gan-20-uk",
     ageRestrictions: "A16",
-    shortDescription: "М3ҐАН повертається! І цього разу вона не одна",
+    shortDescription:
+      "Технології, які дозволили з’явитися на світ смертоносній ляльці, нікуди не ділися. Тепер їх використали аби створити зброю.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -757,6 +2011,24 @@ const movies = [
     shortDescription:
       "17 лютого, о 20:00 – спецпоказ драматичного фільму «Тут і зараз» Роберта Земекіса з вступною лекцією кіномена Станіслава Тарасенка",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "8040",
     rating: {
       imdb: {
@@ -774,6 +2046,39 @@ const movies = [
     shortDescription:
       "13 лютого, о 20:30 – спецпоказ культової (відреставрованої!) мультиплікаційної фантастики «Володарі часу» Рене Лалу з вступною лекцією",
     year: 1982,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -791,6 +2096,39 @@ const movies = [
     shortDescription:
       "10 лютого, о 20:00 – спецпоказ нової італійської драми Паоло Соррентіно «Партенопа» з вступною лекцією кіномена Станіслава Тарасенка.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzQ=",
+          slug: "erotichne",
+          name: "Еротичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9960",
     rating: {
       imdb: {
@@ -808,6 +2146,24 @@ const movies = [
     shortDescription:
       "11 лютого, о 20:00 – спецпоказ нової драми Пола Шредера «Канадець» з вступною лекцією кіномена Станіслава Тарасенка",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7500",
     rating: {
       imdb: {
@@ -825,6 +2181,24 @@ const movies = [
     shortDescription:
       "7 лютого, о 20:00 – спецпоказ фестивального горору «Прокляті» Тордура Палссона з вступною лекцією кіномена Станіслава Тарасенка",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM1",
+          slug: "yqd7x",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7140",
     rating: {
       imdb: {
@@ -842,6 +2216,24 @@ const movies = [
     shortDescription:
       "16 лютого, о 20:00 – спецпоказ польської стрічки «Під вулканом» (1991) Даміана Коцура за участю українського актора Романа Луцького",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "8100",
     rating: {
       imdb: {
@@ -859,6 +2251,34 @@ const movies = [
     shortDescription:
       "6 лютого, о 20:00 – спецпоказ культового фантастичного бойовика «Термінатор 2»(1991) Джеймса Кемерона з вступною лекцією кіномена Станіслава Тарасенка",
     year: 1991,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "10020",
     rating: {
       imdb: {
@@ -876,6 +2296,29 @@ const movies = [
     shortDescription:
       "Яна прагне завести довготривалі романтичні стосунки, але кожен її партнер на ранок перетворюється на песика",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -893,6 +2336,29 @@ const movies = [
     shortDescription:
       "Учні Школи магічних тварин готуються до щорічного свята, тим часом Хелена докладає зусиль аби стати популярною блогеркою. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -910,6 +2376,29 @@ const movies = [
     shortDescription:
       "Найдобріший фільм Девіда Лінча в майстерній 4k-реставрації",
     year: 1999,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "6720",
     rating: {
       imdb: {
@@ -927,6 +2416,34 @@ const movies = [
     shortDescription:
       "Черговий фільм з Кіновсесвіту Marvel. Новий Капітан Америка Сем Уїлсон опиняється у центрі змови, яка вплине на порядок у всьому світі",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -944,6 +2461,24 @@ const movies = [
     shortDescription:
       "Він хотів пограбувати незамкнену машину, однак опинився в пастці у винахідливого та жорстокого власника автівки.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -961,6 +2496,29 @@ const movies = [
     shortDescription:
       "Урочистості з нагоди народження панди перериває напад бандитів, які хочуть вкрасти дитинча. Добре, що на свято запросили Джекі Чана.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -978,6 +2536,24 @@ const movies = [
     shortDescription:
       "Вхід до бліндажу завалило пряме влучання снаряду, тож тепер Антон мусить шукати способи вибратися. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5220",
     rating: {
       imdb: {
@@ -995,6 +2571,29 @@ const movies = [
     shortDescription:
       "У страху перед інопланетною навалою єдиною надією людства стають безстрашні Поркі Піг і Даффі Дак.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -1011,6 +2610,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -1028,6 +2655,29 @@ const movies = [
     shortDescription:
       "3 лютого, о 20:00 – спецпоказ комедійного трилера «Компаньйон» від творців «Варвара» з вступною лекцією кіномена Станіслава Тарасенка.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7620",
     rating: {
       imdb: {
@@ -1045,6 +2695,24 @@ const movies = [
     shortDescription:
       "Умова дострокового звільнення Річарда із в’язниці – провести тиждень у домі, де колись жила відьма, та звершувати ритуали для очищення. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM1",
+          slug: "yqd7x",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -1062,6 +2730,29 @@ const movies = [
     shortDescription:
       "Шалене кохання до одруженого двоюрідного брата приводить Ірму до місцевого шамана, який насилає на родину прокляття.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAy",
+          slug: "cwt92",
+          name: "Містичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -1079,6 +2770,29 @@ const movies = [
     shortDescription:
       "Запрошуємо на спеціальний показ фільму «Одного літа в Україні»,  який відбудеться  8 лютого  в кінотеатрі Планета кіно Київ Блокбастер",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -1096,6 +2810,24 @@ const movies = [
     shortDescription:
       "Замість того, щоб насолоджуватися побаченням, Вайолет до смерті налякана повідомленнями, які отримує на телефон.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -1113,6 +2845,29 @@ const movies = [
     shortDescription:
       "Мустафа Джамілєв, відомий своєю боротьбою за права кримськотатарського народу, відбуває заслання на Колимі.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -1130,6 +2885,34 @@ const movies = [
     shortDescription:
       "Гордовита принцеса кепкувала над усіма довкола. Аж поки не зустрілася із красенем-королем, який видав себе за садівника. \n",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -1146,6 +2929,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -1162,6 +2963,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "Головний блокбастер 1990-х, який змінив гру",
     year: 1991,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8220",
     rating: {
       imdb: {
@@ -1179,6 +3008,24 @@ const movies = [
     shortDescription:
       "Cпецпоказ комедійної містифікації «Мій Марчелло» Крістофа Оноре з вступною лекцією кіномена Станіслава Тарасенка. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9060",
     rating: {
       imdb: {
@@ -1196,6 +3043,34 @@ const movies = [
     shortDescription:
       "Cпецпоказ довгоочікуваного байопіку «Боб Ділан: цілковитий незнайомець» Джеймса Менголда з вступною лекцією кіномена Станіслава Тарасенка.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "10260",
     rating: {
       imdb: {
@@ -1213,6 +3088,24 @@ const movies = [
     shortDescription:
       "Фестивальна ісландська драма «Заломлення світла» Рунара Рунарссона з вступною лекцією кіномена Станіслава Тарасенка.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6720",
     rating: {
       imdb: {
@@ -1230,6 +3123,34 @@ const movies = [
     shortDescription:
       "Перед фільмом демонструватиметься 5-ти хвилинна короткометражка до ф. «Поганці 2».",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -1247,6 +3168,29 @@ const movies = [
     shortDescription:
       "Могутня відьма та безжальний мисливець поєднують зусилля аби знайти дещо цінне у загублених землях, де панує хаос. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -1264,6 +3208,29 @@ const movies = [
     shortDescription:
       "Аби знайти викрадену дівчину, Левон йде з будівельного майданчика та згадує свою службу у Королівській морській піхоті. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -1281,6 +3248,24 @@ const movies = [
     shortDescription:
       "Пенсіонерка з Бургундії Мішель має складні стосунки з донькою, але дуже хоче допомогти їй у вихованні онука",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6120",
     rating: {
       imdb: {
@@ -1298,6 +3283,34 @@ const movies = [
     shortDescription:
       "Підприємець Карш важко переживає смерть дружини та створює інноваційний пристрій, за допомогою якого можна стежити за померлими",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "7140",
     rating: {
       imdb: {
@@ -1314,6 +3327,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "Скандинавська драма про любов і смерть",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4920",
     rating: {
       imdb: {
@@ -1331,6 +3362,29 @@ const movies = [
     shortDescription:
       "Детектив, який нещодавно втратив слух, та глуха дічина-свідок разом тікають від тих, хто хоче їх вбити. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -1347,6 +3401,39 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2026,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -1364,6 +3451,24 @@ const movies = [
     shortDescription:
       "Торговець вугіллям та батько п’ятьох доньок обурений несправедливістю, яку бачить при жіночому монастирі. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -1377,10 +3482,33 @@ const movies = [
     name: "ВІДПУСТКА НАОСЛІП",
     originalName: "Відпустка наосліп",
     slug: "vidpustka-naoslip-uk",
-    ageRestrictions: "A16",
+    ageRestrictions: "A12",
     shortDescription:
       "Захоплива подорож переконала столичну бізнес-леді в тому, що для успіху не обов’язково все має бути ретельно сплановане",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -1397,6 +3525,29 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -1414,6 +3565,34 @@ const movies = [
     shortDescription:
       "Кривава бійня за владу зачепила двох сестер. Прагнучи помститися за родичів вони влаштовують різанину за своїм планом.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9000",
     rating: {
       imdb: {
@@ -1430,6 +3609,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: "Спеціальні тихі сеанси «КіноМама».",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -1447,6 +3654,29 @@ const movies = [
     shortDescription:
       "18 січня у Львові (Forum Lviv); 16:30 – початок лекції; 17:00 – початок кінопоказу.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "8160",
     rating: {
       imdb: {
@@ -1464,6 +3694,29 @@ const movies = [
     shortDescription:
       "31 січня у Львові (Forum Lviv); 20:00 – початок лекції; 20:30 – початок кінопоказу",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzQ=",
+          slug: "erotichne",
+          name: "Еротичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "8700",
     rating: {
       imdb: {
@@ -1481,6 +3734,29 @@ const movies = [
     shortDescription:
       "Допрем'єрний показ пригодницької  комедії «Пригоди Паддінгтона в Перу» від Девіда Хеймана.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -1497,6 +3773,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: "Боксер-любитель отримує шанс на професійну кар’єру",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -1514,6 +3808,29 @@ const movies = [
     shortDescription:
       "Дівчинка, яку відправили жити до дідуся, заводить дружбу з його величезним котом, який поводиться як людина.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -1531,6 +3848,34 @@ const movies = [
     shortDescription:
       "Софі подорожує Італією. У Палермо вона знайомиться з чотирма хлопцями та проводить з ними найнасиченішу добу у своєму житті.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -1548,6 +3893,24 @@ const movies = [
     shortDescription:
       "Молодий цап Артур отримує завдання доправити до імператорського двору цінний вантаж – сім яєць рідкісних пташок",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -1565,6 +3928,24 @@ const movies = [
     shortDescription:
       "Старанна студентка з хорошої родини та тату-майстер знайомі дуже давно і весь цей час дівчині бракувало сміливості зізнатися у почуттях",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -1582,6 +3963,29 @@ const movies = [
     shortDescription:
       "17 січня у Львові (Forum Lviv); 20:00 – початок лекції; 20:30 – початок кінопоказу.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAy",
+          slug: "cwt92",
+          name: "Містичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "9720",
     rating: {
       imdb: {
@@ -1599,6 +4003,24 @@ const movies = [
     shortDescription:
       "Екранізація популярного роману з платформи Wattpad про перше кохання, яке перевертає життя з ніг на голову. \n\n",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -1616,6 +4038,39 @@ const movies = [
     shortDescription:
       "У світі повно гномів у гостроверхих капелюшках. Хтось із них допомагає людям, а хтось прямо зараз тікає від поліцейської, яка хоче їх зловити. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4560",
     rating: {
       imdb: {
@@ -1633,6 +4088,24 @@ const movies = [
     shortDescription:
       "Хлопець, який має вроджену нечутливість до болю, робить усе аби звільнити із заручників свою кохану.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -1650,6 +4123,29 @@ const movies = [
     shortDescription:
       "Колишня солдатка Джоуї нині заробляє миттям вікон. Вона була на одному з верхніх поверхів, коли всередині хмарочоса захопили заручників.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -1667,6 +4163,39 @@ const movies = [
     shortDescription:
       "Падіння невеличкого уламку від метеориту зчинило справжній переполох у зоопарку, закритому на ніч.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -1684,6 +4213,34 @@ const movies = [
     shortDescription:
       "Моторошні пригоди трьох подруг, які багато часу проводять на балконі своєї квартири, спостерігаючи за сусідами",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -1701,6 +4258,24 @@ const movies = [
     shortDescription:
       "Чи варто рятувати моряків з тонучого корабля, якщо не матимеш чим їх прогодувати, а попереду безжальна зима? ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -1718,6 +4293,29 @@ const movies = [
     shortDescription:
       "У центрі сюжету – добровольці Міжнародного легіону ГУР, які розповідають про війну в Україні.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -1735,6 +4333,24 @@ const movies = [
     shortDescription:
       "Щемна історія порятунку єврейської дівчинки під час Другої світової війни, розказана оскароносним Мішелем Хазанавічусом. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4860",
     rating: {
       imdb: {
@@ -1752,6 +4368,24 @@ const movies = [
     shortDescription:
       "Бунтівна та дуже розумна дівчина Сас підбурює однокласника Дондо втекти з острова, на якому вони живуть.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -1769,6 +4403,24 @@ const movies = [
     shortDescription:
       "Не бажаючи сидіти без діла троє давніх друзів відкривають перспективний бізнес – вони доглядатимуть за маленькими дітьми.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -1786,6 +4438,34 @@ const movies = [
     shortDescription:
       "Швидкі лінивці існують і Лаура – яскраве цьому підтвердження. З усією спритністю вона піклується про сімейний ресторан на колесах. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -1803,6 +4483,29 @@ const movies = [
     shortDescription:
       "Яна прагне завести довготривалі романтичні стосунки, але кожен її партнер на ранок перетворюється на песика",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -1820,6 +4523,29 @@ const movies = [
     shortDescription:
       "Агент розвідки Джордж має викрити витік таємної інформації, а головна підозрювана у цьому – його дружина.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -1834,8 +4560,27 @@ const movies = [
     originalName: "Final Destination: Bloodlines",
     slug: "final-destination-bloodlines-uk",
     ageRestrictions: "A18",
-    shortDescription: null,
+    shortDescription:
+      "Повернення легендарної франшизи, герої якої відчайдушно намагатимуться уникнути смерті. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM1",
+          slug: "yqd7x",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -1853,6 +4598,39 @@ const movies = [
     shortDescription:
       "У Неаполі живе надзвичайно вродлива та небезпечно розумна дівчина Партенопа, якій цікаво спостерігати за людьми. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzQ=",
+          slug: "erotichne",
+          name: "Еротичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "8160",
     rating: {
       imdb: {
@@ -1870,6 +4648,24 @@ const movies = [
     shortDescription:
       "Уславлений диригент захворів та потребує донорської пересадки від родича. Але його всиновили, тож пошуки донора ускладнюються. \n",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -1887,6 +4683,34 @@ const movies = [
     shortDescription:
       "Пригоди юного Диплодока у чудернацьких світах, про які він так давно мріяв, затьмарені пошуками зниклих батьків. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -1904,6 +4728,39 @@ const movies = [
     shortDescription:
       "Видовищний мультфільм 1982 року, знятий провідними тогочасними митцями у жанрі наукової фантастики. ",
     year: 1982,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4740",
     rating: {
       imdb: {
@@ -1921,6 +4778,24 @@ const movies = [
     shortDescription:
       "Доньку Марчелло Мастроянні та Катрін Деньов Кьяру постійно порівнюють з батьком, тож вона почала вдягатися та поводитися як батько.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -1938,6 +4813,39 @@ const movies = [
     shortDescription:
       "Оскароносна Тільда Свінтон в екранізації сатиричного роману Вірджинії Вулф.",
     year: 1992,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -1954,6 +4862,24 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -1970,6 +4896,29 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -1987,6 +4936,24 @@ const movies = [
     shortDescription:
       "Напружена драма про робітників величезного ресторану на Таймс-Сквер, життя яких обмежене підземною кухнею-лабіринтом. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "8340",
     rating: {
       imdb: {
@@ -2004,6 +4971,24 @@ const movies = [
     shortDescription:
       "Аби усі нарешті помітили який він спритний та розумний, Бернард таємно проникає на космічний корабель та вирушає на Марс.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -2021,6 +5006,29 @@ const movies = [
     shortDescription:
       "Еммануель їде у відрядження до Гонконгу. Увесь вільний час вона присвячує пошукам нових граней насолоди. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzQ=",
+          slug: "erotichne",
+          name: "Еротичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -2038,6 +5046,24 @@ const movies = [
     shortDescription:
       "Божевільні пригоди з непередбачуваними друзями подарували сценаристу Марті натхнення для написання сценарію, який він давно не міг закінчити. ",
     year: 2012,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -2055,6 +5081,24 @@ const movies = [
     shortDescription:
       "Неконтрольований вірус змінив життя на планеті. Ті, хто вижив, живуть на віддаленому острові. Один сміливець наважується його покинути",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -2071,6 +5115,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 1988,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -2088,6 +5150,29 @@ const movies = [
     shortDescription:
       "Це поетичний 40-хвилинний автопортрет Леоса Каракса, яка принесла йому нагороду за найкращу режисуру.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "2460",
     rating: {
       imdb: {
@@ -2104,6 +5189,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -2121,6 +5224,24 @@ const movies = [
     shortDescription:
       "Революційна процедура пересадки шкіри, над якою працювала Вей, мала б полегшити їй життя, однак все вийшло з під контролю.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -2138,6 +5259,29 @@ const movies = [
     shortDescription:
       "Невпевнений у собі та сором’язливий юнак переходить у нову школу. Вчитель доручає йому головну роль у шкільному спектаклі. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -2155,6 +5299,24 @@ const movies = [
     shortDescription:
       "Часом випадкова розмова або навіть погляд справляють більше враження, аніж довгі бесіди чи стосунки. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -2172,6 +5334,29 @@ const movies = [
     shortDescription:
       "Місія з визволення заручника йде не за планом. Доля учасників операції залежить від зібраності та професіоналізму оператора безпілотника.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6780",
     rating: {
       imdb: {
@@ -2189,6 +5374,29 @@ const movies = [
     shortDescription:
       "Спецпоказ однієї з найобговорюваніших незалежний стрічок року горору «Субстанція» Коралі Фаржа з вступною лекцією кіномена Станіслава Тарасенка",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "10260",
     rating: {
       imdb: {
@@ -2206,6 +5414,34 @@ const movies = [
     shortDescription:
       "Неймовірні події, від яких ведеться літочислення та які змінили хід історії, розгортаються довкола юної Марії. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAy",
+          slug: "cwt92",
+          name: "Містичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -2222,6 +5458,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -2239,6 +5503,39 @@ const movies = [
     shortDescription:
       "Молодий та кмітливий вікінг Гикавка замість того, аби винищувати небезпечних драконів, знаходить спосіб дружити з ними.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -2256,6 +5553,29 @@ const movies = [
     shortDescription:
       "Вдавати перед батьками закохану пару, аби ті дали гроші на весілля – саме такий план на вихідні у Бенуа та таксистки Фіони. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -2273,6 +5593,39 @@ const movies = [
     shortDescription:
       "Мавпеня Шіммі помічає, що наділений надзвичайними здібностями і саме вони допоможуть йому врятувати світ.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -2290,6 +5643,29 @@ const movies = [
     shortDescription:
       "Детективна комедія про дивака з Лос-Анджелесу, які з оптимізмом береться за усе, що змінить місто на краще.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -2306,6 +5682,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAy",
+          slug: "cwt92",
+          name: "Містичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -2323,6 +5727,29 @@ const movies = [
     shortDescription:
       "Сучасна адаптація класичного твору Ґете, де замість трагедії сердечних мук – яскрава романтична комедія.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -2340,6 +5767,24 @@ const movies = [
     shortDescription:
       "Передноворічна комедія про зібрання сусідів, на якому важко дійти до спільної думки та ще важче стримати невдоволення сусідами.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -2357,6 +5802,24 @@ const movies = [
     shortDescription:
       "Хлопчик-альбінос на ім’я Хмаринка та дівчинка Сао, яка від народження є носієм зловісної сутності, закохалися.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "7800",
     rating: {
       imdb: {
@@ -2374,6 +5837,29 @@ const movies = [
     shortDescription:
       "Батько з донькою перебирається жити у маяк після того, як трагічно загинула його дружина, та бажаний спокій тут не знайти.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "5940",
     rating: {
       imdb: {
@@ -2384,12 +5870,40 @@ const movies = [
   },
   {
     id: "Z2lkOi8vbW92aWUvOTI4Mg==",
-    name: "FREAKIER FRIDAY",
+    name: "ЩЕ ОДНА ШАЛЕНА П'ЯТНИЦЯ",
     originalName: "Freakier Friday",
     slug: "freakier-friday-uk",
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -2407,6 +5921,29 @@ const movies = [
     shortDescription:
       "Кримінальна драма про надзвичайно обдарованого бухгалтера, який мислить інакше і завдяки цьому досягає поставленої мети.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7980",
     rating: {
       imdb: {
@@ -2424,6 +5961,29 @@ const movies = [
     shortDescription:
       "Надихаюча історія про сміливу дівчину, яка не побоялася кинути виклик усталеним традиціям.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -2441,6 +6001,24 @@ const movies = [
     shortDescription:
       "На небаченому судовому процесі, де у якості підсудного – собака, адвокатка Авріл робить усе, аби захистити тварину.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTM=",
+          slug: "tragikomediya",
+          name: "Трагікомедія",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4860",
     rating: {
       imdb: {
@@ -2458,6 +6036,24 @@ const movies = [
     shortDescription:
       "Лео перед смертю вирішує правдиво розповісти про своє життя. Чесність дається важко, бо виявляється, що він ніколи раніше так не робив",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -2475,6 +6071,34 @@ const movies = [
     shortDescription:
       "Віха з життя легендарного Антуана де Сент-Екзюпері, яка надихнула його та утвердила в своїх ідеалах. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -2491,6 +6115,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "8460",
     rating: {
       imdb: {
@@ -2508,6 +6160,29 @@ const movies = [
     shortDescription:
       "Поки королі мріють про більшу владу, долю країни вирішить сміливець, який дбає передусім про спокій свого народу. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7980",
     rating: {
       imdb: {
@@ -2525,6 +6200,24 @@ const movies = [
     shortDescription:
       "Радячи своєму пацієнту знайти кохання, психоаналітик Олів’є ніяк не очікував, що той зблизиться з його донькою. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -2542,6 +6235,29 @@ const movies = [
     shortDescription:
       "Розмірене життя ріелтора перериває низка пригод, від яких перехоплює подих. Він має повернутися до ризикованих справ, якими займався колись.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "4980",
     rating: {
       imdb: {
@@ -2559,6 +6275,29 @@ const movies = [
     shortDescription:
       "Засніжені простори – чудове місце для пустощів п’яти нерозлучних друзів. Вони пташки-іпатки і понад усе люблять дошкуляти місцевому моржу. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -2576,6 +6315,34 @@ const movies = [
     shortDescription:
       "Зимові пригоди двох братів, які під час канікул у бабусі помічають дещо вкрай дивне і хочуть це виправити.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -2592,6 +6359,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -2609,6 +6404,29 @@ const movies = [
     shortDescription:
       "Індонезійський фільм жахів про потяг, що мчить непрохідним лісом та древні сили, які не раді появі людей. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -2626,6 +6444,24 @@ const movies = [
     shortDescription:
       "Щоночі маленькому хлопчику погано спиться через жахіття, які приходять до нього із темної шафи. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -2643,6 +6479,24 @@ const movies = [
     shortDescription:
       "Харків’яни місяцями жили у метро, переховуючись від вибухів. Сонячне світло, як і будь який вихід на поверхню, означало для них небезпеку. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4260",
     rating: {
       imdb: {
@@ -2660,6 +6514,29 @@ const movies = [
     shortDescription:
       "Біографія Шарля Азнавура – француза вірменського походження, який написав понад тисячу пісень.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "8040",
     rating: {
       imdb: {
@@ -2677,6 +6554,24 @@ const movies = [
     shortDescription:
       "Потяг у 31 грудня мав стати звичайним, тихим рейсом, принаймні так вважав провідник Микола Іванович. Проте у долі на це були інші плани.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -2694,6 +6589,24 @@ const movies = [
     shortDescription:
       "Вже десять років у світі існують «ворота» – розлом між всесвітами, через який можуть проходити лише люди, наділені особливою силою.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -2711,6 +6624,24 @@ const movies = [
     shortDescription:
       "Звертаємо Вашу увагу, що фільм буде демонструватися з перервою в 15 хвилин.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "12900",
     rating: {
       imdb: {
@@ -2728,6 +6659,34 @@ const movies = [
     shortDescription:
       "Перед фільмом демонструватиметься 5-ти хвилинна короткометражка до ф. «Поганці 2»",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -2744,6 +6703,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -2761,6 +6748,29 @@ const movies = [
     shortDescription:
       "Втікши від деспотичного вітчима, Емма потрапляє у місце, де очікує знайти спокій. Але усе, що тут відбувається, здатне лише навіювати панічний страх.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "5160",
     rating: {
       imdb: {
@@ -2777,6 +6787,24 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "6120",
     rating: {
       imdb: {
@@ -2793,6 +6821,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+      ],
+    },
     durationInSec: "4080",
     rating: {
       imdb: {
@@ -2810,6 +6856,39 @@ const movies = [
     shortDescription:
       "Зворушлива історія кохання скрипальки та скляного майстра, чиї вразливі та ніжні стосунки зруйнувала війна. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -2827,6 +6906,29 @@ const movies = [
     shortDescription:
       "Напружений трилер, події якого розгортаються у машині таксі впродовж болісно довгої поїздки. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -2844,6 +6946,29 @@ const movies = [
     shortDescription:
       "Неуважний та забудькуватий татусь демонструє дива вигадливості, коли потрібно здійснювати мрії сина.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -2861,6 +6986,34 @@ const movies = [
     shortDescription:
       "Святкова пригода посеред неймовірних зимових пейзажів – оленятко Ніко мріє потрапити в упряжку саней Санти. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5160",
     rating: {
       imdb: {
@@ -2877,6 +7030,24 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7500",
     rating: {
       imdb: {
@@ -2894,6 +7065,29 @@ const movies = [
     shortDescription:
       "Знайшовши у лісі травмоване дитинча невловимого звіра, Юля наважується дбати про нього та допомагає знайти батьків.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -2911,6 +7105,34 @@ const movies = [
     shortDescription:
       "Трудоголік Енді раптом залишається сам на сам зі своїми дітьми та вчиться бути для них дбайливим татком. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -2927,6 +7149,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -2944,6 +7194,34 @@ const movies = [
     shortDescription:
       "Зазвичай коти самі дають собі раду, але цього разу доведеться бути частиною злагодженої команди.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -2961,6 +7239,24 @@ const movies = [
     shortDescription:
       "Знаний як місто кохання, Париж став для героїв фільму місцем, де їм доведеться зазирнути в очі смерті. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -2978,6 +7274,24 @@ const movies = [
     shortDescription:
       "Напружений трилер про те, як звичайна ніч у напівпорожньому складі перетворилася на боротьбу за життя.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "5160",
     rating: {
       imdb: {
@@ -2994,6 +7308,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzk=",
+          slug: "koncert",
+          name: "Концерт",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "7500",
     rating: {
       imdb: {
@@ -3011,6 +7343,29 @@ const movies = [
     shortDescription:
       "Випадково опинившись разом на Алясці на різдвяні свята, двоє непримиримих колег Олівер та Меган закохуються одне в одного.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -3027,6 +7382,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDM=",
+          slug: "myuzikl",
+          name: "Мюзикл",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "9660",
     rating: {
       imdb: {
@@ -3044,6 +7427,29 @@ const movies = [
     shortDescription:
       "Багато років тому рідні брати були розлучені при всиновленні. Тепер один з них хотів би розшукати іншого, однак чи готові до цього родини?",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -3061,6 +7467,24 @@ const movies = [
     shortDescription:
       "Бізнес двох братів перестав приносити прибуток, тож один із них знайшов дієвий, але протизаконний спосіб заробити гроші.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -3078,6 +7502,29 @@ const movies = [
     shortDescription:
       "Наркоманка Єва з містечка Боулдер у Колорадо зустрічається з трьома хлопцями одночасно і має нарешті визначитися що ж з ними робити.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -3095,6 +7542,29 @@ const movies = [
     shortDescription:
       "Наближається Різдво і у заклопотаного Санти багато роботи. Але він випадково вдаряється головою і вирішує змінити рід діяльності.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -3112,6 +7582,24 @@ const movies = [
     shortDescription:
       "Документальний фільм про реальні історії простих залізничників, які з перших днів повномасштабного вторгнення рятували життя мільйонів українців.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -3129,6 +7617,29 @@ const movies = [
     shortDescription:
       "Пристрасть здатна розчиняти страхи та сумніви, а буває так, що чим вищі ризики, тим палкішим стає бажання. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzQ=",
+          slug: "erotichne",
+          name: "Еротичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -3146,6 +7657,34 @@ const movies = [
     shortDescription:
       "Новий погляд на класичну казку Братів Грим про Рапунцель. Красуню з довгим волоссям, яка живе у високій вежі, знаходить принц.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -3162,6 +7701,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -3179,6 +7746,34 @@ const movies = [
     shortDescription:
       "Аби врятувати життя маленького хлопчика троє відчайдухів наважуються вийти з безпечного укриття та зустрітися віч-на-віч з монстрами.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -3196,6 +7791,24 @@ const movies = [
     shortDescription:
       "Геноцидні практики росії незмінні впродовж десятиліть. У об’єктивах своїх фотоапаратів це побачили прадід у 1933 та його правнучка у наші дні. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -3213,6 +7826,34 @@ const movies = [
     shortDescription:
       "Неймовірна подорож слонихи та свині, яка намагалась її спіймати та повернути жорстокому власнику",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -3230,6 +7871,29 @@ const movies = [
     shortDescription:
       "Історія життя та кохання всесвітньо відомої оперної співачки Марії Каллас у виконанні неперевершеної Анджеліни Джолі.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "7320",
     rating: {
       imdb: {
@@ -3247,6 +7911,34 @@ const movies = [
     shortDescription:
       "Сміливий хлопчик Анджело вирушає у подорож зачарованим лісом, де на нього чекає зустріч з чудернацькими тваринами.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4980",
     rating: {
       imdb: {
@@ -3264,6 +7956,34 @@ const movies = [
     shortDescription:
       "Вундеркінда Бо звинувачують у крадіжці з Музею старожитностей. Хлопчик проводить власне розслідування злочину, аби довести свою непричетність. ",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -3280,6 +8000,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -3297,6 +8040,34 @@ const movies = [
     shortDescription:
       "Історія популярності одного з найуспішніших співаків сучасності Роббі Вільямса від дитинства до сьогодення. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "8100",
     rating: {
       imdb: {
@@ -3314,6 +8085,29 @@ const movies = [
     shortDescription:
       "Рік ніколи не мав великих грошей, але завдяки диваку Джорджу успадкував чималі статки, а разом з ними і гріхи старого.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -3331,6 +8125,39 @@ const movies = [
     shortDescription:
       "Шериф Нік О'Брайн вирушає до Європи аби зустрітися з Донні Вілсоном, який пошив його у дурні під час пограбування банку. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7800",
     rating: {
       imdb: {
@@ -3348,6 +8175,29 @@ const movies = [
     shortDescription:
       "Після загибелі батьків підліток Респаті почав бачити зловісні та лякаючи сни, у яких помирають люди.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "6720",
     rating: {
       imdb: {
@@ -3365,6 +8215,29 @@ const movies = [
     shortDescription:
       "Ютубери, які шукають слави, опиняються в паранормальному кошмарі, коли рекламна команда, яку вони крадуть, пробуджує вбивчу окультиста з минулого.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4620",
     rating: {
       imdb: {
@@ -3382,6 +8255,34 @@ const movies = [
     shortDescription:
       "Захоплююча історія пташечки-іпатки Уни, яка разом із друзями рятує найцінніше, що є на острові де вона живе.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -3399,6 +8300,29 @@ const movies = [
     shortDescription:
       "14 січня у Львові (Forum Lviv);  20:00 – початок лекції;  20:30 – початок кінопоказу.",
     year: 1969,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -3415,6 +8339,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4920",
     rating: {
       imdb: {
@@ -3432,6 +8379,29 @@ const movies = [
     shortDescription:
       "Сповнена пристрасті історія про куртизанку, яка завжди ховає обличчя, та спокусника Джакомо Казанову.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -3449,6 +8419,34 @@ const movies = [
     shortDescription:
       "У світі, де лиходії та герої живуть у невпинній боротьбі, старшокласник Деку, хоч і не має особливих здібностей, прагне стати героєм. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -3466,6 +8464,34 @@ const movies = [
     shortDescription:
       "Struggling with his dual identity, failed comedian Arthur Fleck meets the love of his life, Harley Quinn, while incarcerated at Arkham State Hospital.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -3483,6 +8509,29 @@ const movies = [
     shortDescription:
       "Тільки приїхавши до батьківського будинку Блейк дізнається, що його тіло зазнає жахаючих змін при місячному світлі. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAy",
+          slug: "cwt92",
+          name: "Містичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -3499,6 +8548,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -3516,6 +8593,44 @@ const movies = [
     shortDescription:
       "Нові пригоди юного перевертня Фредді, який дуже хоче бути великим та сильним вовком, а натомість перетворюється на маленького, але сміливого пуделя. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -3533,6 +8648,34 @@ const movies = [
     shortDescription:
       "Історія підліткового кохання, яке пережило довгі роки розлуки та безліч життєвих негараздів.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9660",
     rating: {
       imdb: {
@@ -3550,6 +8693,24 @@ const movies = [
     shortDescription:
       "Змови та інтриги століттями супроводжують найтаємничішу церковну подію – обрання нового Папи Римського.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -3567,6 +8728,29 @@ const movies = [
     shortDescription:
       "Екранізація популярного роману про хранителів лісу – людей, що можуть перетворюватись на тварин і тримають свій дар у таємниці. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -3584,6 +8768,29 @@ const movies = [
     shortDescription:
       "Агент управління по боротьбі з наркотиками Джон готовий на все аби завершити давно розпочату справу, тож приїздить в Тайвань. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -3601,6 +8808,29 @@ const movies = [
     shortDescription:
       "Терористи викрадають чоловіка агентки ЦРУ Евері Грейвс аби змусити її надати доступ до секретної інформації. \n",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6120",
     rating: {
       imdb: {
@@ -3617,6 +8847,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2003,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -3634,6 +8887,29 @@ const movies = [
     shortDescription:
       "Показ відреставрованої версії фільму «Колір граната» приурочено до 100-річчя з дня народження режисера Сергія Параджанова.",
     year: 1969,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -3651,6 +8927,34 @@ const movies = [
     shortDescription:
       "Бріджит Джонс поринула у материнство та перестала звертати увагу на власні потреби. Аж поки не зустріла привабливого хлопця. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7500",
     rating: {
       imdb: {
@@ -3668,6 +8972,24 @@ const movies = [
     shortDescription:
       "Сентиментальна історія про Гарольда, який пішки здолав понад тисячу кілометрів щоб підтримати свою давню подругу.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -3685,6 +9007,29 @@ const movies = [
     shortDescription:
       "Сильні дощі призвели до масштабних затоплень. Молода мама з новонародженим сином шукає безпечне місце і не має права на помилку. \n",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -3701,6 +9046,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 1984,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -3718,6 +9086,29 @@ const movies = [
     shortDescription:
       "Едек, який дитиною пережив Голокост та виїхав до США, через багато років їде разом із дорослою донькою у Польщу. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6720",
     rating: {
       imdb: {
@@ -3734,6 +9125,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "«Я просто йду за власним компасом».",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzk=",
+          slug: "koncert",
+          name: "Концерт",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -3751,6 +9160,24 @@ const movies = [
     shortDescription:
       "Пряма трансляція нічного ток-шоу, яке так і не вийшло у ефір, переривається надприродними силами, дію яких неможливо осягнути. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -3768,6 +9195,29 @@ const movies = [
     shortDescription:
       "Починаюча блогерка разом зі своєю подругою переносяться у казковий світ, де на них чекають пригоди та халепи. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -3785,6 +9235,24 @@ const movies = [
     shortDescription:
       "Розумні та кмітливі учні поєднують зусилля аби зламати усталену практику, за якою у найкращі коледжі потрапляють лише діти багатіїв. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -3802,6 +9270,29 @@ const movies = [
     shortDescription:
       "Лицемірний журналіст у своїх статтях захищає робочий клас, а на ділі є одним з тих, хто створює простим людям найбільше клопоту. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -3818,6 +9309,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -3834,6 +9343,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -3851,6 +9383,34 @@ const movies = [
     shortDescription:
       "Іноді для перемоги недостатньо сумлінно тренуватися чи ж мати певний талант. Буває так, що запорукою успіху стає любов та рішучість. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -3868,6 +9428,24 @@ const movies = [
     shortDescription:
       "Екранізація оповідання Стівена Кінга, у якому знайдена на горищі іграшка запускає низку моторошних смертей. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -3884,6 +9462,49 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2027,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -3901,6 +9522,39 @@ const movies = [
     shortDescription:
       "Втікач-прибулець Стіч, бешкетний та милий, допомагає самотній гавайській дівчинці Ліло відчути родинне тепло",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -3918,6 +9572,39 @@ const movies = [
     shortDescription:
       "На радість всім мамам. Спеціальні тихі сеанси «КіноМама».",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -3934,6 +9621,34 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8940",
     rating: {
       imdb: {
@@ -3951,6 +9666,34 @@ const movies = [
     shortDescription:
       "Аби розвіяти релігійну маячню про могильні тортури дівчина добровільно опиняється зачиненою у могилі разом із тілом грішника.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "7020",
     rating: {
       imdb: {
@@ -3968,6 +9711,34 @@ const movies = [
     shortDescription:
       "Дослідження життєвого шляху найкривавішого диктатора сучасності – від дитинства, крізь жагу до влади, і аж до самої смерті. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -3984,6 +9755,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -4001,6 +9790,39 @@ const movies = [
     shortDescription:
       "Новий погляд на класичний роман Александра Дюма батька про жагу до життя та бажання помсти.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "10380",
     rating: {
       imdb: {
@@ -4018,6 +9840,29 @@ const movies = [
     shortDescription:
       "Випадкова зустріч докорінно змінює життя нещодавно розлученої Альмут та переростає у ніжні стосунки.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6420",
     rating: {
       imdb: {
@@ -4034,6 +9879,39 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2026,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4051,6 +9929,29 @@ const movies = [
     shortDescription:
       "Опинившись на безлюдному острові, 11-річний хлопчик вчиться не лише виживати в нових умовах, а й цінувати усе, що його оточує. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -4068,6 +9969,29 @@ const movies = [
     shortDescription:
       "Документальна біографічна драма показує історію першої української попзірки Назарія Яремчука. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -4085,6 +10009,34 @@ const movies = [
     shortDescription:
       "Геніальний винахід Альберта Ейнсвина викрадено одразу після презентації. За справу береться відома детективка Агата Гризті. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4200",
     rating: {
       imdb: {
@@ -4101,6 +10053,39 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2026,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4117,6 +10102,39 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2026,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4133,6 +10151,44 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2026,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4149,6 +10205,39 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2026,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8zNQ==",
+          slug: "4v32z",
+          name: "Космічне",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4165,6 +10254,39 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2027,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4181,6 +10303,39 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4197,6 +10352,39 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4213,6 +10401,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4229,6 +10445,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4245,6 +10489,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4261,6 +10533,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAy",
+          slug: "cwt92",
+          name: "Містичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4277,6 +10577,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4293,6 +10621,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4310,6 +10666,34 @@ const movies = [
     shortDescription:
       "Брати-близнюки Елайджа та Еліас на власному досвіді переконалися, що найстрашніші події відбуваються тоді, коли їх не чекаєш.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -4327,6 +10711,39 @@ const movies = [
     shortDescription:
       "Герої фільму потрапляють у світ Minecraft – найбільш продаваної гри усіх часів. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -4343,6 +10760,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAy",
+          slug: "cwt92",
+          name: "Містичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4360,6 +10800,34 @@ const movies = [
     shortDescription:
       "Перенесені на екран оповідання Харукі Муракамі химерно сплітаються між собою, допоки герої намагаються знайти сенс життя. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -4377,6 +10845,39 @@ const movies = [
     shortDescription:
       "While scavenging the deep ends of a derelict space station, a group of young space colonizers come face to face with the most terrifying life.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8zNQ==",
+          slug: "4v32z",
+          name: "Космічне",
+        },
+      ],
+    },
     durationInSec: "7140",
     rating: {
       imdb: {
@@ -4394,6 +10895,39 @@ const movies = [
     shortDescription:
       "Cпецпоказ популярного фільму 1997 року «АДВОКАТ ДИЯВОЛА» з вступною лекцією кіномена Станіслава Тарасенка. ",
     year: 1997,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "8640",
     rating: {
       imdb: {
@@ -4411,6 +10945,34 @@ const movies = [
     shortDescription:
       "Рімейк класичного мультфільму студії Disney про Білосніжку та мачуху, злу королеву, яка заздрить красі і юності своєї падчерки. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -4428,6 +10990,29 @@ const movies = [
     shortDescription:
       "Таємничий напружений трилер, у якому історія кохання перетворюється на криваві та сповнені насилля стосунки.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -4445,6 +11030,29 @@ const movies = [
     shortDescription:
       "Дві проповідниці так втомились від відмов слухати їхні повчання про віру, що не помітили небезпеки, зайшовши до будинку усміхненого дядечка. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -4461,6 +11069,44 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: 'Перезапуск епічної анімаційної франшизи "Шрек".',
     year: 2026,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4477,6 +11123,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 1992,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4493,6 +11167,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 1990,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -4510,6 +11207,34 @@ const movies = [
     shortDescription:
       "У центрі сюжету жінка, яка вийшла на стежку війни з поліцією міста, що відмовилася розслідувати вбивство її дочки.",
     year: 2017,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTU=",
+          slug: "chorna-komediya",
+          name: "Чорна комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -4527,6 +11252,34 @@ const movies = [
     shortDescription:
       "Пітер Паркер повертається до повсякденного життя школяра, але поява Стерв'ятника дає йому можливість проявити себе в ролі спритного супергероя.",
     year: 2017,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7980",
     rating: {
       imdb: {
@@ -4544,6 +11297,24 @@ const movies = [
     shortDescription:
       "Розлогі картини зображають руйнування, які спричинила війна в Україні. Перехоплені телефонні розмови між рос. солдатами та їхніми сім'ями – шокують.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -4561,6 +11332,34 @@ const movies = [
     shortDescription:
       "Особливий хлопчик Тонда так і сумував би, не виходячи з квартири, якби не нова сусідка Славка зі своєю жагою до пригод. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4980",
     rating: {
       imdb: {
@@ -4578,6 +11377,39 @@ const movies = [
     shortDescription:
       "Через чверть століття після Максимуса в центр Колізею виходить Люціус, син Луцилли, аби вигравати бої та мститися.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8880",
     rating: {
       imdb: {
@@ -4595,6 +11427,24 @@ const movies = [
     shortDescription:
       "Скільки подій розгорталося на невеличкій ділянці землі відколи існує світ? Скільки людей жило тут та що вони відчували? ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -4612,6 +11462,29 @@ const movies = [
     shortDescription:
       "Коли Патрік з родиною переїхав до будинку, у якому виріс, прокидаються старі страхи, які не дають йому спокою.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -4626,8 +11499,37 @@ const movies = [
     originalName: "F1",
     slug: "f1-uk",
     ageRestrictions: "A12",
-    shortDescription: null,
+    shortDescription:
+      "Про гонщика Формули-1, який вийшов на пенсію, щоб стати наставником і працювати в команді з молодшим гонщиком.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTA=",
+          slug: "sportivne",
+          name: "Спортивне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4645,6 +11547,34 @@ const movies = [
     shortDescription:
       "Wolverine is recovering from his injuries when he crosses paths with the loudmouth Deadpool. They team up to defeat a common enemy.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7560",
     rating: {
       imdb: {
@@ -4662,6 +11592,29 @@ const movies = [
     shortDescription:
       "Ремейк культового фільму жахів про вампіра, закоханого у молоду жінку. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDE=",
+          slug: "mistika",
+          name: "Містика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -4679,6 +11632,34 @@ const movies = [
     shortDescription:
       "Фентезійний мультфільм про команду відважних героїв, які поспішають врятувати світ від усіх лиходіїв.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -4696,6 +11677,44 @@ const movies = [
     shortDescription:
       "Галактика опиняється під загрозою коли принцесу Сіту, яка є носієм наймогутнішої сили, викрадено. На її пошуки вирушає загін відчайдухів. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -4713,6 +11732,29 @@ const movies = [
     shortDescription:
       "Лара страждає від жахливих сновидінь. Чоловік штовхає її звернутися за лікуванням до екзорциста, щоб намагається врятувати її душу.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -4730,6 +11772,29 @@ const movies = [
     shortDescription:
       "Після повідомлення про непорочне зачаття Ватикан боїться, що збудеться стародавнє пророцтво про народження двох близнюків, які втілюють добро і зло...",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -4747,6 +11812,39 @@ const movies = [
     shortDescription:
       "Після подій в «Месники: Завершення» (2019) Людина-павук має активізуватися, щоб протистояти новим загрозам у світі, який змінився назавжди.",
     year: 2019,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjU=",
+          slug: "marvel_uk",
+          name: "Marvel",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7740",
     rating: {
       imdb: {
@@ -4764,6 +11862,34 @@ const movies = [
     shortDescription:
       "Уперше за всю кіноісторію Людини-павука улюбленого супергероя викрито. Щоб повернути все назад, він звертається по допомогу до Доктора Стренджа.",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8880",
     rating: {
       imdb: {
@@ -4781,6 +11907,24 @@ const movies = [
     shortDescription:
       "Пілот літака, агентка ФБР та підсудний, який є цінним свідком, разом у літаку, що долає безлюдні гори Аляски. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -4797,6 +11941,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4814,6 +11976,29 @@ const movies = [
     shortDescription:
       "У світі, де ніхто не говорить, жінка полює на молоду дівчину, яка втекла з ув’язнення.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5160",
     rating: {
       imdb: {
@@ -4831,6 +12016,29 @@ const movies = [
     shortDescription:
       "Істрорія про досвідченого вбивцю, який вводить жінці паралітичний препарат. Вона повинна тікати, боротися і ховатися, перш ніж її тіло вимкнеться.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -4847,6 +12055,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "5940",
     rating: {
       imdb: {
@@ -4863,6 +12094,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -4880,6 +12134,34 @@ const movies = [
     shortDescription:
       "Після довгих років наполегливої праці найманий вбивця дізнається, що невиліковно хворий, тож наймає колег аби вони його вбили. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -4897,6 +12179,29 @@ const movies = [
     shortDescription:
       "Розвиток стосунків між двома героями проказує, що ніщо не є таким, чим видається на перший погляд. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -4914,6 +12219,39 @@ const movies = [
     shortDescription:
       "Досвідченому юристу з Флориди пропонують роботу в елітній нью-йоркській юридичній фірмі з висококласним босом — найбільша можливість у його кор'єрі.",
     year: 1997,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "8640",
     rating: {
       imdb: {
@@ -4931,6 +12269,24 @@ const movies = [
     shortDescription:
       "Nirvana: Live at the Paramount - відео-альбом американської гранж-групи Nirvana, записаний на концерті в Сіетлі у 1991р.",
     year: 2011,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "4260",
     rating: {
       imdb: {
@@ -4948,6 +12304,29 @@ const movies = [
     shortDescription:
       "Між двома Днями подяки з різницею в два роки чоловік Ханни закохується в її сестру Лі, а її колишній чоловік відновлює стосунки з її сестрою Холлі.",
     year: 1986,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "6420",
     rating: {
       imdb: {
@@ -4965,6 +12344,24 @@ const movies = [
     shortDescription:
       "Команда блогерів-інфлюенсерів вирішує провести ритуал у особняку «чорної графині» і впускають у світ потойбічні сили. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDE=",
+          slug: "mistika",
+          name: "Містика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "4380",
     rating: {
       imdb: {
@@ -4982,6 +12379,34 @@ const movies = [
     shortDescription:
       "Мальований анімаційний фільм “Кріпачка” про роль жінки на межі 19-20 століть.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -4999,6 +12424,29 @@ const movies = [
     shortDescription:
       "Тісна дружба між Артуром і Феліксом піддається випробуванню, коли один позичає іншому картку медичного страхування.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6660",
     rating: {
       imdb: {
@@ -5016,6 +12464,29 @@ const movies = [
     shortDescription:
       "Одна з найвпізнаваніших мелодій у світі народжувалась поступово, поки композитор шукав натхнення у звуках, що його оточують. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -5033,6 +12504,24 @@ const movies = [
     shortDescription:
       "Кожен, хто хоч раз купував лотерейний квиток, мріяв виграти велику суму. Героям фільму це вдалося і тепер на них чекає чималий клопіт. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -5050,6 +12539,24 @@ const movies = [
     shortDescription:
       "Чотири любительки серфінгу шукають безлюдне місце аби насолодитися хвилями та опиняються на острові, якого немає на картах.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -5067,6 +12574,34 @@ const movies = [
     shortDescription:
       "Заснована на реальних подіях історія молодої селянки Агнес з Австрії, самотньої у своєму нещасливому шлюбі. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -5084,6 +12619,29 @@ const movies = [
     shortDescription:
       "Життя проносить Андреаса крізь вир подій. Навколо нього змінюються люди та пейзажі, та найспокійніше йому у горах.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -5101,6 +12659,24 @@ const movies = [
     shortDescription:
       "Багатий землевласник наймає трьох вершників, щоб окреслити периметр його великої власності та відкрити шлях до Атлантичного океану.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -5118,6 +12694,29 @@ const movies = [
     shortDescription:
       "Надмірно зайнята і недооплачувана асистентка продюсера приїздить до Бухаресту, щоб зняти відео про безпеку на робочому місці.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9780",
     rating: {
       imdb: {
@@ -5135,6 +12734,29 @@ const movies = [
     shortDescription:
       "Її звільнили з роботи через вік, тож вона наважилася вколоти собі препарат, який гарантував появу нової, молодої і кращої версії її самої. \n",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "8460",
     rating: {
       imdb: {
@@ -5152,6 +12774,29 @@ const movies = [
     shortDescription:
       "Після руйнівної катастрофи велике місто потребує відбудови. Геніальний архітектор виношує амбіційні плани, які суперечать планам мера міста. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -5169,6 +12814,34 @@ const movies = [
     shortDescription:
       "Пор-зірка Скай Райлі готується до світового турне, коли починає помічали дещо жахливе в усіх людях, які її оточують. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7620",
     rating: {
       imdb: {
@@ -5186,6 +12859,34 @@ const movies = [
     shortDescription:
       "Перенесений на екран досвід жителів Бучі, які опинилися в окупації та не мали можливості вільно потрапити на підконтрольну Україні територію. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -5203,6 +12904,39 @@ const movies = [
     shortDescription:
       "Глобальний катаклізм ставить під загрозу існування усього живого на планеті. Родина, відрізана від решти світу, бореться за виживання. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -5220,6 +12954,29 @@ const movies = [
     shortDescription:
       "Голова сімейства купує жінку-робота, аби та була хатньою помічницею, однак пристрій розвивається самостійно та починає бути небезпечним. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -5237,6 +12994,29 @@ const movies = [
     shortDescription:
       "Департамент поліції Альбукерке шукають серійного вбивцю на прізвисько Збирач кісток. Однак деякі вважають, що вбивцею може бути хтось у відділі. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -5254,6 +13034,34 @@ const movies = [
     shortDescription:
       "Дружика Ніка Емі зникає, що стає центром напруженого медіа-цирку, де чоловік знаходиться в центрі уваги через підозри у його вині...",
     year: 2014,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "9000",
     rating: {
       imdb: {
@@ -5271,6 +13079,29 @@ const movies = [
     shortDescription:
       "Фільм знайомить з історією життя та творчості письменника з Ірландії – володарем Нобелівської премії Семюеля Бекета.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -5288,6 +13119,34 @@ const movies = [
     shortDescription:
       "Довгоніг — це фірмова естетика Perkins із максимальним об’ємом, що затримується у ваших думках, під шкірою та в животі навіть після закінчення.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -5305,6 +13164,29 @@ const movies = [
     shortDescription:
       "Коли віддалене село охоплено смертельним прокляттям, брат наодинці повинен боротися, щоб врятувати свою сім’ю від жахливої ​​надприродної загрози.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -5322,6 +13204,29 @@ const movies = [
     shortDescription:
       "Черговий фільм з Кіновсесвіту Marvel. Новий Капітан Америка Сем Уїлсон опиняється у центрі змови, яка вплине на порядок у всьому світі",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -5339,6 +13244,29 @@ const movies = [
     shortDescription:
       "Команда відчайдушних героїв, яких раніше знали як поганців, з’являється у новому фільмі Кіновсесвіту Marvel.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -5356,6 +13284,34 @@ const movies = [
     shortDescription:
       "Мікі Барнз згодився брати участь в освоєнні космосу. Щоразу, коли він помирав, йому виготовляли нове тіло, залишаючи спогади",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "8400",
     rating: {
       imdb: {
@@ -5373,6 +13329,34 @@ const movies = [
     shortDescription:
       "Том Гарді в образі Венома – одного з найскравіших персонажів Marvel – повертається на великі екрани в останньому фільмі трилогії!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -5390,6 +13374,29 @@ const movies = [
     shortDescription:
       "Чесний, справедливий та добрий Кларк Кент вважає за потрібне допомагати людям, використовуючи свою особливу силу",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -5404,8 +13411,32 @@ const movies = [
     originalName: "The Fantastic Four: First Steps",
     slug: "the-fantastic-four-first-steps-uk",
     ageRestrictions: "A12",
-    shortDescription: "Кінокомікс, заснований на однойменних мальописах Marvel",
+    shortDescription:
+      "Перед Фантастичною четвіркою стоїть відповідальна місія – вони мусять захистити Землю від навали космічного монстра.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -5423,6 +13454,34 @@ const movies = [
     shortDescription:
       "Історія про народження генія, який поглине світ. Довгоочікуване футбольне аніме нарешті виходить на великі екрани!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -5440,6 +13499,24 @@ const movies = [
     shortDescription:
       "Документальний фільм Мартіна Ськорсезе, присвячений творчості рок-групи Rollіng Stones.",
     year: 2008,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjY=",
+          slug: "8o6zc",
+          name: "Документальний",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "7320",
     rating: {
       imdb: {
@@ -5457,6 +13534,24 @@ const movies = [
     shortDescription:
       "У центрі сюжету – прадавня відьма з Конотопу, яка, закохавшись у звичайного хлопця, зреклася своїх відьомських сил.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -5474,6 +13569,29 @@ const movies = [
     shortDescription:
       "Джордж Клуні та Бред Пітт у новому комедійному бойовику!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -5491,6 +13609,29 @@ const movies = [
     shortDescription:
       "Розумна, але розсудлива випускниця отримує роботу помічника Міранди Прістлі, вимогливого головного редактора журналу високої моди.",
     year: 2006,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -5508,6 +13649,24 @@ const movies = [
     shortDescription:
       "У цьому світі немає місця для напівтонів: палке кохання — назавжди, непохитна дружба — назавжди, життєва драма — назавжди. Назавжди?",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6420",
     rating: {
       imdb: {
@@ -5525,6 +13684,34 @@ const movies = [
     shortDescription:
       "Проводячи літо на курорті Кетскілз зі своєю родиною, Френсіс «Бейбі» Гаусман закохується в інструктора танців табору Джонні Кастла.",
     year: 1987,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -5542,6 +13729,29 @@ const movies = [
     shortDescription:
       "Екранізація літературного бестселера на великих екранах!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7800",
     rating: {
       imdb: {
@@ -5559,6 +13769,29 @@ const movies = [
     shortDescription:
       "Випадково сфотографувавши навмисний підпал лісу, Юра хоче викрити злочинців через редакцію місцевої газети. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7620",
     rating: {
       imdb: {
@@ -5576,6 +13809,29 @@ const movies = [
     shortDescription:
       "Ніна разом зі своїм другом вирушає на пошуки порятунку життя, після того, як її батько втратив роботу, і це приводить її до захованого скарбу.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4740",
     rating: {
       imdb: {
@@ -5593,6 +13849,24 @@ const movies = [
     shortDescription:
       "Сюжет охоплює 45 років життя Аніли Весолі і її подорож до особистої свободи як транс-жінки на тлі польської трансформації від комунізму до капіталізму",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7560",
     rating: {
       imdb: {
@@ -5610,6 +13884,39 @@ const movies = [
     shortDescription:
       "Заснований на реальних подіях трилер про конвої з вантажних суден, які доставляли зброю під час Другої світової війни. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -5627,6 +13934,34 @@ const movies = [
     shortDescription:
       "Реальна історія Стелли – єврейської красуні з арійською зовнішністю, яка стала цінною агенткою нацистів. На її совісті майже 3000 жертв",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -5644,6 +13979,34 @@ const movies = [
     shortDescription:
       "Масштабна захоплива пригода для всієї родини на великих екранах цього літа!",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -5661,6 +14024,29 @@ const movies = [
     shortDescription:
       "Кумедна історія від виконавчого продюсера Мартіна Скорсезе про три покоління жінок, які нарешті зібрались разом!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -5678,6 +14064,29 @@ const movies = [
     shortDescription:
       'Неймовірна історія, заснована на реальних подіях, від режисера фільму "Це кляте серце" для перегляду всією родиною!',
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -5695,6 +14104,29 @@ const movies = [
     shortDescription:
       "Англія Тюдорів — епоха крові та інтриг. Кетрін Парр, остання дружина Генріха VIII, намагається вижити при дворі.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -5711,6 +14143,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: "Музична сімейна подорож.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -5728,6 +14178,29 @@ const movies = [
     shortDescription:
       "Сім’ю вже багато років переслідує злий дух. Безпека їх та оточення опиняються під сумнівом, коли котрийсь з дітей задається питанням, чи реальне зло.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -5745,6 +14218,29 @@ const movies = [
     shortDescription:
       "Історія створення однієї з найпопулярніших соціальних мереж — Facebook.",
     year: 2010,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -5762,6 +14258,29 @@ const movies = [
     shortDescription:
       "Після порятунку від розливу нафти маленький загублений пінгвін змінює життя та душу розбитого горем рибалки.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -5779,6 +14298,24 @@ const movies = [
     shortDescription:
       "Історія сім'ї та бізнесу шампанського будинку Вев Кліко, яка розпочалася наприкінці XVIII століття.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -5796,6 +14333,29 @@ const movies = [
     shortDescription:
       "Несамовитий нічний сторож полює на еко-активістів покоління Z після того, як вони проникли в магазин меблів і випадково вбили його брата.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "4980",
     rating: {
       imdb: {
@@ -5813,6 +14373,34 @@ const movies = [
     shortDescription:
       "Наближається ніч, яка може стати останньою в історії людства. Аби захистити вцілілих людей від перевертнів, Веслі Маршалл бере до рук зброю.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -5830,6 +14418,29 @@ const movies = [
     shortDescription:
       "Колишня наркоманка стає свідком убивства. Вона змушена співпрацювати з убивцею, щоб урятувати життя своєї доньки.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -5847,6 +14458,24 @@ const movies = [
     shortDescription:
       "Домогосподарку з передмістя з вищого класу психологічно тероризує маніпулятивний підрядник, який ремонтує її ванну кімнату...",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "5220",
     rating: {
       imdb: {
@@ -5864,6 +14493,29 @@ const movies = [
     shortDescription:
       "12-річна Шарлотта таємно виростила неймовірно павука,  та тепер, через свого улюбленця, вона повинна боротися за виживання своєї сім’ї...",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -5881,6 +14533,24 @@ const movies = [
     shortDescription:
       "Спільнота прихильників електронної музики існує у безпечному просторі, стираючи межі між соціальним статусом, расою та сексуальною орієнтацією.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4020",
     rating: {
       imdb: {
@@ -5898,6 +14568,29 @@ const movies = [
     shortDescription:
       "Натхненний мрійник Берт Монро долає півсвіту, аби встановити рекорд швидкості на старенькому мотоциклі.",
     year: 2005,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8y",
+          slug: "utih6",
+          name: "спортивний",
+        },
+      ],
+    },
     durationInSec: "7620",
     rating: {
       imdb: {
@@ -5915,6 +14608,34 @@ const movies = [
     shortDescription:
       "Young ape goes on a journey that will lead him to question everything he's been taught about the past and make choices that will define a future.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8700",
     rating: {
       imdb: {
@@ -5932,6 +14653,29 @@ const movies = [
     shortDescription:
       "Джон та Мей упродовж 25 років зустрічаються в одному нічному клубі і чекають на невідому подію",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -5949,6 +14693,29 @@ const movies = [
     shortDescription:
       "Попри сильну конкуренцію, збірна команда школи Карасуно з волейболу вийшла до третього туру турніру Харутака.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -5966,6 +14733,29 @@ const movies = [
     shortDescription:
       "Кумедний непосидько Паддінгтон хоче поїхати у Перу аби навідати там свою тітоньку Люсі. Звісно, у дорогу краще вирушати великою компанією. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -5983,6 +14773,29 @@ const movies = [
     shortDescription:
       "Етьєн, молодий батько, повинен зіткнутися з тим фактом, що його донька підліток Роза готова рухатися вперед і будувати власне життя подалі від нього.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -6000,6 +14813,29 @@ const movies = [
     shortDescription:
       "The origin story of renegade warrior Furiosa before her encounter and teamup with Mad Max.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8880",
     rating: {
       imdb: {
@@ -6017,6 +14853,34 @@ const movies = [
     shortDescription:
       "Ерік застряг між світами живих та мертвих. Його душу тепер веде Ворон - містичний птах, що повертає тих, хто прагне помсти за себе та за своїх коханих",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -6034,6 +14898,44 @@ const movies = [
     shortDescription:
       "Колишня порноакторка прямує до голлівудської слави, але назаваді стає таємничий вбивця",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDQ=",
+          slug: "nuar",
+          name: "Нуар",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDk=",
+          slug: "slesher",
+          name: "Слешер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -6051,6 +14953,29 @@ const movies = [
     shortDescription:
       "Одне життя може змінити долі сотень людей — як у минулому, так і сьогодення.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -6068,6 +14993,24 @@ const movies = [
     shortDescription:
       "Фільм корифеїв світового РОКУ складений із записів концертів Led Zeppelin в Madison Square Garden та зйомок за кулісами в Baltimore Civic Centre.",
     year: 1976,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "8220",
     rating: {
       imdb: {
@@ -6085,6 +15028,29 @@ const movies = [
     shortDescription:
       "У Нью-Йорку в 1928 році драматург змушений взяти безталанну дівчину гангстера в свою останню драму, щоб її поставили.",
     year: 1994,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -6102,6 +15068,24 @@ const movies = [
     shortDescription:
       "Підліток з дивовижною здатністю спілкуватися з мертвими повинен зупинити демона, який мстить учням його середньої школи.",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -6119,6 +15103,29 @@ const movies = [
     shortDescription:
       "Елліас Барнс став головою великого будинку моди в Парижі, але повинен зіткнутися зі своїм минулим, коли його батько несподівано помирає.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6720",
     rating: {
       imdb: {
@@ -6136,6 +15143,29 @@ const movies = [
     shortDescription:
       "Наталі й Емерік — двоє незнайомців, які випадково зіштовхнулися в нічному метро. Їхня суперечка переросте в палку пристрасть.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -6153,6 +15183,24 @@ const movies = [
     shortDescription:
       "Метр Помпіньяк вважає, що знайшов справу свого життя, захищаючи молоду і невинну козу Жозетту, помилково звинувачену у вбивстві маршала... ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -6170,6 +15218,34 @@ const movies = [
     shortDescription:
       "Політичний трилер про придушення Празької весни та боротьбу народу Чехословаччини проти радянської окупації.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -6187,6 +15263,24 @@ const movies = [
     shortDescription:
       "Дуже смішна комедія про родичів та їх справжнє походження, яке не приховаєш від тесту ДНК.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -6204,6 +15298,29 @@ const movies = [
     shortDescription:
       "Дахозносний кіноекспірієнс про таємне життя єті, якого ви ще не бачили.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -6221,6 +15338,24 @@ const movies = [
     shortDescription:
       "Історія найвидатнішого та найепатажнішого дизайнера світу високої моди.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -6238,6 +15373,34 @@ const movies = [
     shortDescription:
       "Історія, як батько Сімби став королем, знайшов кохання і зіпсував стосунки з братом.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -6255,6 +15418,34 @@ const movies = [
     shortDescription:
       "Король Рогану Гельм відчайдушно обороняє фортецю Горнбурґ від нападу дунландців. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "8040",
     rating: {
       imdb: {
@@ -6272,6 +15463,44 @@ const movies = [
     shortDescription:
       "Отримавши несподіваний знак від своїх предків, Моана вирушає в небезпечні далекі моря Океанії, щоб пережити нову пригоду.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -6289,6 +15518,34 @@ const movies = [
     shortDescription:
       "Різдво під загрозою, бо Святого Миколая викрали невідомі злочинці. Аби знайти Санту, його помічники задіюють усі можливі способи. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -6306,6 +15563,39 @@ const movies = [
     shortDescription:
       "Повнометражний фільм на основі популярної аніме- та манга- франшизи, якої було продано понад 30 мільйонів екземплярів.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -6323,6 +15613,34 @@ const movies = [
     shortDescription:
       "Цієї осені нова частина масштабної історії розкаже про походження Кібертрону — батьківщини автоботів і десептиконів.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -6340,6 +15658,34 @@ const movies = [
     shortDescription:
       "Аарон Тейлор-Джонсон у новій брутальний історії про становлення одного з найвідоміших антигероїв у всесвіті Marvel!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7620",
     rating: {
       imdb: {
@@ -6357,6 +15703,29 @@ const movies = [
     shortDescription:
       "Американська родина під час відпустки вирушає до британської сім’ї, проте зовсім скоро відпочинок мрії перетвориться на справжній кошмар.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -6374,6 +15743,29 @@ const movies = [
     shortDescription:
       "Скарлетт Йоганссон і Ченнінґ Татум у гостросюжетній комедії, події якої розгортаються на тлі історичної посадки космічного корабля «Апполон-11».",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8zNQ==",
+          slug: "4v32z",
+          name: "Космічне",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -6390,6 +15782,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9840",
     rating: {
       imdb: {
@@ -6407,6 +15822,24 @@ const movies = [
     shortDescription:
       "Tough and unsettling by design, Civil War is a gripping close-up look at the violent uncertainty of life in a nation in crisis.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -6424,6 +15857,29 @@ const movies = [
     shortDescription:
       "Молодий, талановитий актор отримує з військкомісаріату повістку. Він змушений залишити сцену та вирушити у зону АТО. Його батько, колишній кадровий ві",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -6441,6 +15897,34 @@ const movies = [
     shortDescription:
       "Рейчел виховала своїх синів та онука у культі шахрайства. Їхня доля приймає несподіваний поворот, коли вони викрадають дуже коштовну роботу.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7140",
     rating: {
       imdb: {
@@ -6456,8 +15940,51 @@ const movies = [
     slug: "the-bad-guys-2-uk",
     ageRestrictions: "A0",
     shortDescription:
-      "Бути поганцем усе ще прикольно! Улюблені персонажі повертаються на великі екрани влітку наступного року!",
+      "Колись вони були відомі як загін Поганців. А нині плани хлопців жити чесним життям порушують дівчата, які надихнулися їхніми злочинами.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -6475,6 +16002,24 @@ const movies = [
     shortDescription:
       "Криптограф ЦРУ втрачає дружину під час теракту та дуже скоро розуміє, що організація не зацікавлена у пошуках вбивць.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -6492,6 +16037,34 @@ const movies = [
     shortDescription:
       "Після того, як їх покійного колишнього капітана підставили, Лоурі та Бернетт намагаються очистити його ім’я, але самі опиняються в ролі втікачів. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -6509,6 +16082,29 @@ const movies = [
     shortDescription:
       "Проблемний актор починає втрачати розум під час зйомок надприродного фільму жахів.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -6526,6 +16122,39 @@ const movies = [
     shortDescription:
       "Авантюрний та смілий Гарольд здатен оживити будь-яку річ просто намалювавши її за допомогою вірного атрибуту – магічного олівця. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -6543,6 +16172,24 @@ const movies = [
     shortDescription:
       "Розповідь про один з найбільших злочинів радянської влади — знищення потужного мистецького руху, що виник в 20−30- х роках в Харкові.",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -6560,6 +16207,29 @@ const movies = [
     shortDescription:
       "Пару, що зупинилася на ніч у відокремленому будинку в Ореґоні, тероризують троє незнайомців у масках.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -6577,6 +16247,29 @@ const movies = [
     shortDescription:
       "Stop Making Sense —фільм-концерт 1984 року з живим виступом американської рок-групи Talking Heads. ",
     year: 1984,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -6594,6 +16287,29 @@ const movies = [
     shortDescription:
       "У Балтиморі 1950-х років поганий хлопець із золотим серцем завойовує кохання хорошої дівчини, чий хлопець збирається помститися.",
     year: 1990,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -6611,6 +16327,34 @@ const movies = [
     shortDescription:
       "Три сучасні відьми сумують за своїм ідеальним чоловіком у маленькому містечку Нової Англії.",
     year: 1987,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -6628,6 +16372,39 @@ const movies = [
     shortDescription:
       "Two ancient titans, Godzilla and Kong, clash in an epic battle as humans unravel their intertwined origins and connection to Skull Island's mysteries.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -6645,6 +16422,34 @@ const movies = [
     shortDescription:
       "Під час розчищення занедбаної космічної станції група молодих космічних колонізаторів зіштовхується з найстрашнішою формою життя у Всесвіті.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7140",
     rating: {
       imdb: {
@@ -6662,6 +16467,34 @@ const movies = [
     shortDescription:
       "Фріда, молода та розумна офіціантка, звернула увагу на технічного магната Слейтера Кінга і її запрошують на інтимну зустріч на його приватному острові",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDE=",
+          slug: "mistika",
+          name: "Містика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6120",
     rating: {
       imdb: {
@@ -6679,6 +16512,29 @@ const movies = [
     shortDescription:
       "Warner Bros. Pictures презентує нову стрічку М. Найта Ш'ямалана «Западня» з висхідною музичною зіркою Салікою Ш'ямалан.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDE=",
+          slug: "mistika",
+          name: "Містика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -6696,6 +16552,24 @@ const movies = [
     shortDescription:
       "Команда розробників ігор на основі міських страшилок вирішує провести тестування нового продукту у будинку з паранормальними явищами.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -6713,6 +16587,24 @@ const movies = [
     shortDescription:
       "17-річна Кіра стає свідком розлучення батьків, розпаду однієї країни та народження іншої.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -6730,6 +16622,29 @@ const movies = [
     shortDescription:
       "Познайомтеся з історією Лампо — вірного, як Лессі, сміливого, як Белла, і смішного, як Бетховен.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -6747,6 +16662,34 @@ const movies = [
     shortDescription:
       "Бой - глухонімий хлопець з бурхливою уявою, і коли його родину вбивають, таємничий шаман навчає його ставати знаряддям смерті для помсти.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "6660",
     rating: {
       imdb: {
@@ -6764,6 +16707,39 @@ const movies = [
     shortDescription:
       "Беккет — розпещений егоїстичний кіт. Однак усе зміниться, коли він необережно втрачає своє дев’яте життя.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -6781,6 +16757,24 @@ const movies = [
     shortDescription:
       "Через проблеми з візою Адрієн змушений повернутися до Парижа після 15 років, проведених у Сенегалі з дружиною Амінатою.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -6798,6 +16792,24 @@ const movies = [
     shortDescription:
       "Емілія, бунтівна та непокірна дівчина, заслана батьком до монастиря проти власної волі. Її приїзд супроводжується серією паранормальних явищ...",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -6815,6 +16827,24 @@ const movies = [
     shortDescription:
       "Мешканці занедбаного французького житлового будинку борються з армією смертоносних павуків, які швидко розмножуються.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -6832,6 +16862,34 @@ const movies = [
     shortDescription:
       "Якщо ти заснеш, ти помреш – такий жахливий побічний ефект виник у піддослідних після невдалих випробувань ліків.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -6849,6 +16907,34 @@ const movies = [
     shortDescription:
       "Відставний солдат Людвіг Кален прибуває до безплідної пустелі Ютландії, щоб за королівським наказом підкорити дикі землі.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "7620",
     rating: {
       imdb: {
@@ -6866,6 +16952,24 @@ const movies = [
     shortDescription:
       "Весняний касовий комедійний хіт про війну з сусідами за можливість спокійно пити каву на терасі власного будинку!",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -6883,6 +16987,39 @@ const movies = [
     shortDescription:
       "Злий технічний геній загрожує перетворити місто на симулятор метавсесвіту, залишивши бойового вомбата врятувати ситуацію.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4860",
     rating: {
       imdb: {
@@ -6900,6 +17037,29 @@ const movies = [
     shortDescription:
       "Найближчим часом повітря стане нестачею, що змушує матір і доньку боротися за виживання.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -6917,6 +17077,44 @@ const movies = [
     shortDescription:
       "Чиказький детектив вирушає до Шотландії після того, як злочини нового серійного вбивці збігаються з тими, які він розслідував п’ять років тому.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDE=",
+          slug: "mistika",
+          name: "Містика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -6934,6 +17132,29 @@ const movies = [
     shortDescription:
       "1887 рік. Історія про феміністку, яка просить послуг відомого майстра фехтування, щоб допомогти підготуватися до захисту її честі.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -6951,6 +17172,24 @@ const movies = [
     shortDescription:
       "Бездоганний трилер із зірковим кастом, карколомним сюжетом та приголомшливим твістом у фіналі!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -6968,6 +17207,39 @@ const movies = [
     shortDescription:
       "Пригоди найвідомішого їжака у світі набирають нових обертів. Аби врятувати світ від катастрофи Сонік створює могутню команду. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -6982,8 +17254,37 @@ const movies = [
     originalName: "Jurassic World Rebirth",
     slug: "jurassic-world-rebirth-uk",
     ageRestrictions: "A16",
-    shortDescription: null,
+    shortDescription:
+      "Люди думали, що знають усе про динозаврів. Однак на віддаленому острові живуть набачені раніше істоти. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -7000,6 +17301,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -7017,6 +17346,29 @@ const movies = [
     shortDescription:
       "Історія суперництва двох відьом із країни Оз – злої Ельфаби та доброї Ґалінди.\n",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "9660",
     rating: {
       imdb: {
@@ -7034,6 +17386,24 @@ const movies = [
     shortDescription:
       "Після відео-скандалу оперна діва з економкою беруть участь у Чемпіонаті світу з караоке в Японії.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -7051,6 +17421,44 @@ const movies = [
     shortDescription:
       "Після аварії корабля, розумний робот на ім'я Роз опиняється на безлюдному острові і піклується про самотнього каченя-сироту.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "6120",
     rating: {
       imdb: {
@@ -7068,6 +17476,29 @@ const movies = [
     shortDescription:
       "70-ті роки ХХ сторіччя. Герої фільму стикаються з винаходом тоталітарної радянської системи – «каральною психіатрією».",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -7085,6 +17516,34 @@ const movies = [
     shortDescription:
       "Втративши суперздібності в битві з Планетою Ікс, супергерої збираються разом - їм потрібно врятувати планету Сін від могутніх монстрів.",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -7102,6 +17561,34 @@ const movies = [
     shortDescription:
       "Це історія Озі, орангутанга-сироти, яка використовує свої незвичайні вміння, щоб врятувати свій ліс і будинок від вирубки.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -7119,6 +17606,39 @@ const movies = [
     shortDescription:
       "Красива анімація про порятунок друга з відомими персонажами.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -7136,6 +17656,24 @@ const movies = [
     shortDescription:
       "Комедія про складні стосунки між колись успішним сценаристом нічних комедій, а тепер не надто успішним стендапером і його непересічним 9-річним сином ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -7153,6 +17691,29 @@ const movies = [
     shortDescription:
       "Молода римська жінка їде до Чинечитта, щоб пройти прослуховування як статист, і потрапляє в цю майже нескінченну ніч, під час якої відкриває себе.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7140",
     rating: {
       imdb: {
@@ -7170,6 +17731,49 @@ const movies = [
     shortDescription:
       "У стародавньому Китаї дракони колись були друзями людей, але жадібність занапастила їхній союз, і на цих чарівних істот почалося полювання. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -7187,6 +17791,24 @@ const movies = [
     shortDescription:
       "Головний герой — житель Нью-Йорка, що страждає від еротоманії і нездатний контролювати своє сексуальне життя.",
     year: 2011,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -7204,6 +17826,24 @@ const movies = [
     shortDescription:
       "Цей фільм – спроба показати події в Україні під іншим кутом, через стосунки людей та тварин, що стали як свідками, так інколи і жертвами цієї війни.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "4740",
     rating: {
       imdb: {
@@ -7221,6 +17861,29 @@ const movies = [
     shortDescription:
       " Він був народжений о 6 годині 6 червня. Як передбачено в Книзі одкровень, настане кінець світу, останнім протистояння сил добра і зла, і початком йог",
     year: 1976,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "6660",
     rating: {
       imdb: {
@@ -7238,6 +17901,29 @@ const movies = [
     shortDescription:
       "Смілива та зухвала дівчинка Маржан, яка фанатіє від Брюса Лі, слухає платівки Bee Gees та Iron Maiden і відчайдушно намагається зрозуміти світ навколо",
     year: 2007,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -7255,6 +17941,29 @@ const movies = [
     shortDescription:
       "Сага про двох підлітків, які мріють стати зірками репу в Європі та потрапити на MTV.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -7272,6 +17981,29 @@ const movies = [
     shortDescription:
       "Історія кохання між чоловіком і жінкою, яка стала неможливою після того, як чоловік вирішує змінити стать.",
     year: 2012,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "10080",
     rating: {
       imdb: {
@@ -7289,6 +18021,39 @@ const movies = [
     shortDescription:
       "Ґіттес приймає пропозицію загадкової багатої красуні зайнятися розслідуванням обставин таємного роману на стороні її чоловіка - інженера.",
     year: 1974,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "7860",
     rating: {
       imdb: {
@@ -7306,6 +18071,29 @@ const movies = [
     shortDescription:
       "Леся — молода мама, яка народила первістка у спеціальній вʼязниці. Це світ, населений лише жінками: медсестрами, увʼязненими та наглядачками. Лесю тур",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -7323,6 +18111,39 @@ const movies = [
     shortDescription:
       "Надзвичайна історія Емі Вайнгауз, що розповість про створення її революційного альбому «Back to Black». ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -7340,6 +18161,34 @@ const movies = [
     shortDescription:
       "Пригодницький екшн розповідає про команду невдах, які виконають завдання врятувати зниклу дівчину, яка тримає ключ до неймовірної влади.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6120",
     rating: {
       imdb: {
@@ -7357,6 +18206,39 @@ const movies = [
     shortDescription:
       "Матьє всім завдячує своєму другові Вінсенту: будинком, роботою і навіть порятунком життя десять років тому.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -7373,6 +18255,39 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: "Кохання, що розпалює насильство та затягує в кримінал.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTg=",
+          slug: "epichne",
+          name: "Епічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -7390,6 +18305,34 @@ const movies = [
     shortDescription:
       "Енні нещодавно переїхала жити в інше місто, де вона зовсім не має приятелів. Незабаром у дівчинки з'являється справжній вірний друг — дикий, але добри",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5940",
     rating: {
       imdb: {
@@ -7407,6 +18350,24 @@ const movies = [
     shortDescription:
       "Найрезонансніший фільм року від режисерки «Ціни правди» Аґнєшки Голланд. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "9120",
     rating: {
       imdb: {
@@ -7424,6 +18385,24 @@ const movies = [
     shortDescription:
       "Сесілію, жінку побожної віри, тепло приймають у чудовій італійській місцевості, де їй пропонують посаду у знаменитому монастирі.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -7442,6 +18421,24 @@ const movies = [
     shortDescription:
       "VESELKA: THE RAINBOW ON THE CORNER AT THE CENTER OF THE WORLD is the story of New York City's beloved Ukrainian restaurant Veselka and its father and ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjY=",
+          slug: "8o6zc",
+          name: "Документальний",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS80",
+          slug: "g3slc",
+          name: "Документальний",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -7459,6 +18456,24 @@ const movies = [
     shortDescription:
       "Коли група друзів порушує священне правило ворожіння на Таро — ніколи не користуватися чужою колодою — вони несвідомо випускають на волю зло.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -7476,6 +18491,34 @@ const movies = [
     shortDescription:
       "Нова глава культової франшизи розповідає про перші дні жахливого вторгнення загадкових інопланетних монстрів на Землю.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5940",
     rating: {
       imdb: {
@@ -7493,6 +18536,29 @@ const movies = [
     shortDescription:
       "Жити, щоб ганяти. Ганяти, щоб жити. Дивись кримінальну історію становлення та розвитку клубу Вандали.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -7510,6 +18576,34 @@ const movies = [
     shortDescription:
       "Продюсери стрічок «Парк Юрського періоду», «Джейсон Борн» та «Індіана Джонс» випускають фільм «Смерчі» – сучасну версію блокбастера 1996 року «Смерч».",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7320",
     rating: {
       imdb: {
@@ -7527,6 +18621,39 @@ const movies = [
     shortDescription:
       "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "9960",
     rating: {
       imdb: {
@@ -7544,6 +18671,34 @@ const movies = [
     shortDescription:
       "Тенісистка, яка стала тренером, взяла свого чоловіка і перетворила його на всесвітньо відомого чемпіона Великого шолома. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTA=",
+          slug: "sportivne",
+          name: "Спортивне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -7561,6 +18716,29 @@ const movies = [
     shortDescription:
       "Подруга Сема починає дуже дивно поводитися. Вона каже, що її переслідує якась потойбічна істота. Після її зникнення Сем з'ясовує, що це істота, яка на",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -7578,6 +18756,34 @@ const movies = [
     shortDescription:
       "Бен і Лора, які зустрічаються вже п'ять років, вирішили здійснити навколосвітню подорож на яхті. Прямуючи до Південної Америки, вони вирішили зупинити",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6780",
     rating: {
       imdb: {
@@ -7594,6 +18800,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -7611,6 +18845,29 @@ const movies = [
     shortDescription:
       "Бітлджюс знову тут! Після несподіваної сімейної трагедії, три покоління родини Дітц повертаються додому у Вінтер-Рівер.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -7628,6 +18885,24 @@ const movies = [
     shortDescription:
       "Історія про родину Забіяк, яка не бачилася багато років, і попри війну вирішує зібратись на Великдень у батьківському будинку. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -7645,6 +18920,39 @@ const movies = [
     shortDescription:
       "Для Ґру та його дівчаток розпочинається новий етап життя, адже вони вітають нового члена сім’ї – Ґру молодшого, який точно знає як насолити татові.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -7662,6 +18970,29 @@ const movies = [
     shortDescription:
       "Коли світ поглинає вбивча корупція, безкарна поліція та продажні політики - одна маленька іскра здатна спалити всіх.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -7679,6 +19010,39 @@ const movies = [
     shortDescription:
       "У світі майбутнього приватним особам мати робота-двійника заборонено. Різними шляхами Чарльзу та Елен вдається зробити собі копії: Чарльзу — щоб кадри",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -7695,6 +19059,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "Він тепер не самотній.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -7712,6 +19104,34 @@ const movies = [
     shortDescription:
       "Міна потрапляє в пастку у великому хижому лісі разом із трьома незнайомцями, за якими щоночі спостерігають та переслідують таємничі істоти.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "6120",
     rating: {
       imdb: {
@@ -7729,6 +19149,34 @@ const movies = [
     shortDescription:
       "Ласкаво просимо до Лос-Анджелеса, з його яскравим сонцем, широкими ваблячими пляжами і ... процвітаючою організованою злочинністю.",
     year: 1997,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -7746,6 +19194,34 @@ const movies = [
     shortDescription:
       "Ми у центрі уявного світу, населеного фантастичними істотами та небезпечними монстрами.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -7763,6 +19239,39 @@ const movies = [
     shortDescription:
       "У чарівному світі тисячі островів з'явився небезпечний Темний Маг. Молодий чародій кинув йому виклик, але мало не занапастив весь світ і був вигнаний ",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+      ],
+    },
     durationInSec: "5940",
     rating: {
       imdb: {
@@ -7780,6 +19289,18 @@ const movies = [
     shortDescription:
       'Грандіозний виступ AC/DC в серпні 1991 року, який розпочав фестиваль "Monsters of Rock" на території замку Donnington (Великобританія).',
     year: 1992,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -7797,6 +19318,18 @@ const movies = [
     shortDescription:
       "Чеський письменник Мілан Кундера більш як тридцять років не давав інтерв'ю. «Усе, що я хотів сказати, я вже сказав у своїх творах», – пояснює автор, ч",
     year: 2021,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS80",
+          slug: "g3slc",
+          name: "Документальний",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -7814,6 +19347,24 @@ const movies = [
     shortDescription:
       "Нова історія зі всесвіту культового аніме розповідає про завершення запеклої битви між Танджіро та Четвертим Вищим Місяцем Хантенґу, а також про тріум",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -7831,6 +19382,18 @@ const movies = [
     shortDescription:
       "Графиня Ірма стає супутницею найпопулярнішої жінки своєї доби. Вона подорожуватиме зі знаменитою Сісі, стане її подругою, і навіть закохається в неї. ",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7320",
     rating: {
       imdb: {
@@ -7848,6 +19411,24 @@ const movies = [
     shortDescription:
       "Душевний, зворушливий та чудовий фільм про перемогу над самотністю, невпевненістю та скорботою.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7980",
     rating: {
       imdb: {
@@ -7865,6 +19446,29 @@ const movies = [
     shortDescription:
       "Чоловік вирішив, що у дружини з’явився коханець - її молодий бос!\nІ він терміново має щось робити. Для початку- зареєструватись у додатку для знайомст",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -7882,6 +19486,24 @@ const movies = [
     shortDescription:
       "Яскрава сімейна історія про дівча, яке втекло з притулку та опинилось у чарівному місті майстрів. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -7899,6 +19521,29 @@ const movies = [
     shortDescription:
       "Парочка журналістів-невдах намагається з’ясувати все про нового кандидата в президенти і розкрити «зраду» державного масштабу!",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -7916,6 +19561,29 @@ const movies = [
     shortDescription:
       "Комедія про справи родинні. Коли батько працює фокусником і вирушає в турне - дитиною займеться дідусь!",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -7933,6 +19601,34 @@ const movies = [
     shortDescription:
       "У недалекому майбутньому, група військових журналістів намагаються вижити, розповідаючи правду про громадянську війну в США.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -7950,6 +19646,29 @@ const movies = [
     shortDescription:
       "Жінка повертається до будинку, де зростала, і дізнається, що уявний друг з її дитинства дуже реальний і незадоволений тим, що вона його покинула.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -7967,6 +19686,18 @@ const movies = [
     shortDescription:
       "Міфічна й емоційно заряджена подорож головного героя, Пола Атріда. На цього блискучого й обдарованого хлопця чекають великі справи, які йому важко ося",
     year: 2021,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "9300",
     rating: {
       imdb: {
@@ -7984,6 +19715,29 @@ const movies = [
     shortDescription:
       "Еліс та Селін, здаєтья, мають все, втім трагічний випадок знищує цю ідеальну гармонію. Почуття провини знищує дружбу, а, можливо, й їхні життя.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -8001,6 +19755,29 @@ const movies = [
     shortDescription:
       "Забагато сексу на 14 лютого не буває. Дует неперевершеної Емми Томпсон та сексуального гуру!",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5820",
     rating: {
       imdb: {
@@ -8018,6 +19795,18 @@ const movies = [
     shortDescription:
       "Горор від режисера «Ляльки» про таємничий культ до свята врожаю.",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -8035,6 +19824,34 @@ const movies = [
     shortDescription:
       "Сезар — музикант, який грає на вулицях Монмарта. Три роки тому він раптово зник із життя Саломі, не сказавши коханій жодного слова і не пояснивши прич",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -8052,6 +19869,34 @@ const movies = [
     shortDescription:
       "Росомаха оговтується від травм і зустрічається з Дедпулом. Вони об'єднуються, щоб перемогти спільного ворога.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7680",
     rating: {
       imdb: {
@@ -8069,6 +19914,24 @@ const movies = [
     shortDescription:
       "Молоду американку відправляють до Риму, щоб розпочати служіння церкви, але вона стикається з темрявою, яка змушує її засумніватися у своїй вірі.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -8085,6 +19948,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "Чоловік Феллон блукає по землі як істота ночі.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -8102,6 +19983,29 @@ const movies = [
     shortDescription:
       "Грабіжники викрадають 12-річну доньку кримінальної фігури, і для отримання викупу їм необхїідно простежити за не звичайною дівчинкою протягом ночі...",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -8119,6 +20023,34 @@ const movies = [
     shortDescription:
       "Кіт і собака вислизають із кліток та тікають від господарів в аеропорту. Тепер їхнім власникам потрібно пройти довгий шлях, щоб повернути їх.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5220",
     rating: {
       imdb: {
@@ -8136,6 +20068,29 @@ const movies = [
     shortDescription:
       "Шалені 90-ті. За три дні до запланованого концерту музикант-початківець Кузьма вирушає зі своїм другом Бардом до Берліна на старій «Побєді».",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -8153,6 +20108,29 @@ const movies = [
     shortDescription:
       "Фільм розкриває історію Варі, яка понад усе мріє присвятити життя улюбленій справі – кулінарії.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -8170,6 +20148,34 @@ const movies = [
     shortDescription:
       "На порозі свого тринадцятиріччя Бетті Флад стоїть перед вибором: бути нормальною людиною, або неймовірно дивакуватою, як решта її родини. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -8186,6 +20192,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "За мотивами п’єси Ігоря Білиця «Гей-парад».",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -8203,6 +20232,29 @@ const movies = [
     shortDescription:
       "Супер Джет найшвидший літак у світі, проте його недооцінюють і він змушений займатись невдячною доставкою посилок. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -8220,6 +20272,18 @@ const movies = [
     shortDescription:
       "П’ять монахинь вирішують взяти участь у великій велогонці, щоб виграти грошовий приз, який вони планують витратити на ремонт будинку для літніх людей.",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5220",
     rating: {
       imdb: {
@@ -8237,6 +20301,29 @@ const movies = [
     shortDescription:
       "Талановита письменниця Каіра Світ отримує творче завдання від нового вчителя Джонатана Міллера , яке заплутує їх стосунки та розмиває рольові кордони.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -8254,6 +20341,29 @@ const movies = [
     shortDescription:
       "Засновник Пласту Петро Франко в умовах радянської окупації робить все від себе можливе, щоб рятувати людей, які на нього покладаються.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -8271,6 +20381,24 @@ const movies = [
     shortDescription:
       "Подружжя Джо та Ґрейсі колись були учнем та вчителькою, а тепер виховують близнюків. Про їхню історію вирішують зняти художній фільм. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7020",
     rating: {
       imdb: {
@@ -8288,6 +20416,18 @@ const movies = [
     shortDescription:
       "Успадкувавши родинний будинок, четверо відчужених братів і сестер опиняються в полоні демонічної одержимості. Коли приїжджає ексцентрична незнайомка, ",
     year: 2024,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "4260",
     rating: {
       imdb: {
@@ -8305,6 +20445,34 @@ const movies = [
     shortDescription:
       "Елла – дівчинка, яка виросла в тропічних лісах Амазонки. Вона живе з Гоуп, милим дитинчам ягуара, яке колись прихистила. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -8322,6 +20490,34 @@ const movies = [
     shortDescription:
       "1885 рік. Незрівнянна кухарка Євгенія останні 20 років працювала на відомого гурмана Додіна.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "8100",
     rating: {
       imdb: {
@@ -8338,6 +20534,39 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: "Пара мишей намагається піднятися на Ноїв ковчег.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -8355,6 +20584,18 @@ const movies = [
     shortDescription:
       "Сара зі своєю семирічною донькою приїжджає до батьківського дому. Вперше побачивши дівчинку, бабуся сприймає онуку за свою зниклу дочку Еліс, якій на ",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -8372,6 +20613,29 @@ const movies = [
     shortDescription:
       "Поліцейський психолог Евелін має провести допит Дугласа. Вдягнений у скривавлену сукню, він керував фургоном, повним собак – тоді його й затримали. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -8389,6 +20653,34 @@ const movies = [
     shortDescription:
       "Основна увага приділяється обов’язкам і рішенням, з якими зіткнулася Голда Меїр, також відома як «Залізна леді Ізраїлю», під час війни Судного дня.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTg=",
+          slug: "epichne",
+          name: "Епічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -8406,6 +20698,18 @@ const movies = [
     shortDescription:
       "Дружина Хе Фея, Лі Музі, зникає під час їхньої ювілейної подорожі. Коли вона знову з'являється, він наполягає, що вона не його дружина. Оскільки Чен М",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -8423,6 +20727,18 @@ const movies = [
     shortDescription:
       "Іа — це ім’я  зірки пересувного цирку, допитливого сірого ослика з сумними очима. Невдовзі після закриття цирку розпочинається його велика подорож Євр",
     year: 2022,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -8440,6 +20756,18 @@ const movies = [
     shortDescription:
       "84-річна діджейка Віка – зірка варшавських нічних клубів. Харизматична та яскрава жінка, енергії якої позаздрить молодь, відмовляється старіти. ",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4440",
     rating: {
       imdb: {
@@ -8457,6 +20785,34 @@ const movies = [
     shortDescription:
       "Спортивна драма «Залізний кіготь» заснована на реальних подіях – історії родини фон Еріх, батька та п’яти його синів.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTA=",
+          slug: "sportivne",
+          name: "Спортивне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -8474,6 +20830,34 @@ const movies = [
     shortDescription:
       "«Велетні Ла-Манчі» —сповнена пригод надзвичайна подорож для всієї родини, яка розповідає про 11-річного спадкоємця Дон Кіхота та його друзів.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5220",
     rating: {
       imdb: {
@@ -8491,6 +20875,18 @@ const movies = [
     shortDescription:
       "Дрейфуючи у своєму зламаному космічному шатлі з маленькою надією на порятунок, двоє астронавтів сперечаються - як їм краще провести решту днів, як дру",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -8508,6 +20904,34 @@ const movies = [
     shortDescription:
       "Це неймовірна історія Чемпіонату світу з ралі 1983 року.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTA=",
+          slug: "sportivne",
+          name: "Спортивне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -8525,6 +20949,29 @@ const movies = [
     shortDescription:
       "Заможній бізнесмен Генріх Вангер звертається до опального журналіста Мікаеля Блумквіста з проханням провести розслідування.",
     year: 2011,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS81",
+          slug: "u5rps",
+          name: "Кримінал",
+        },
+      ],
+    },
     durationInSec: "9480",
     rating: {
       imdb: {
@@ -8542,6 +20989,18 @@ const movies = [
     shortDescription:
       "Фільм-концерт, створений угорським режисером Яношем Жомбояї із кадрів групи під час перебування в Будапешті та запису концерту на стадіоні «Непштадіон",
     year: 1986,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -8559,6 +21018,18 @@ const movies = [
     shortDescription:
       'Повний пригод комедійний екшн із плюшевою мавпою, яка всіх навчить життя, у найкращих традиціях Теда з "Третього зайвого" та Альфа.',
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -8576,6 +21047,24 @@ const movies = [
     shortDescription:
       "Немолодий японець працює прибиральником у громадських туалетах Токіо, намагаючись знаходити задоволення у повсякденних дрібницях",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "7440",
     rating: {
       imdb: {
@@ -8593,6 +21082,34 @@ const movies = [
     shortDescription:
       "Колишній бізнесмен влаштовується мажордомом до старовинного палацу, де живуть дивні, але милі жінки.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -8610,6 +21127,34 @@ const movies = [
     shortDescription:
       "У віддаленому ірландському селі постраждалий Фінбар намагається спокутувати гріхи, якими було сповнене все його життя.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -8627,6 +21172,29 @@ const movies = [
     shortDescription:
       "Тіффані Вільямс з нетерпінням очікує настання Різдва, збираючись возз'єднатися зі своїм давнім другом Бреттом. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -8644,6 +21212,18 @@ const movies = [
     shortDescription:
       "Напередодні Різдва та Нового року Довженко-Центр запрошує зануритись у світ казкової і зимової української анімації.\n\nУ добірці «Зима і казка» предста",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4500",
     rating: {
       imdb: {
@@ -8661,6 +21241,18 @@ const movies = [
     shortDescription:
       "Неймовірна історія двох лисиць, Кіни та Юка, які живуть на Півночі. Вони готуються вперше стати батьками і чекають на появу лисеняти. Однак глобальне ",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -8678,6 +21270,39 @@ const movies = [
     shortDescription:
       "Фантастична історія про дівчинку, яка виявляє, що може бачити Уявних Друзів — фантастичних істот, яких кожна людина коли-небудь вигадувала.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -8695,6 +21320,39 @@ const movies = [
     shortDescription:
       "Потужна й правдива історія життя афганістанського біженця.",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -8712,6 +21370,18 @@ const movies = [
     shortDescription:
       "Чоловік потрапляє за ґрати, де він незрозумілим чином перетворюється в іншу людину.",
     year: 1997,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7800",
     rating: {
       imdb: {
@@ -8729,6 +21399,34 @@ const movies = [
     shortDescription:
       "Продовження улюбленої комедійної франшизи від DreamWorks Animation «Панда Кунг-Фу 4»!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -8746,6 +21444,18 @@ const movies = [
     shortDescription:
       "Іда та Бенні ходять до надзвичайної школи і повинні об’єднатися зі своїми чарівними тваринами, щоб вирішити загадку таємничих дір, які з’явилися на те",
     year: 2022,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -8763,6 +21473,18 @@ const movies = [
     shortDescription:
       "Фільм розповідає дев’ять реальних історій, які дивовижним чином переплітають між собою всіх героїв напередодні Різдва.",
     year: 2003,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "8100",
     rating: {
       imdb: {
@@ -8780,6 +21502,34 @@ const movies = [
     shortDescription:
       'Тревіс та Еббі вирушають до Мексики на "медовий місяць" із друзями та родиною. Але звісно, все піде зовсім не за планом неочікуваних "молодят". ',
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -8797,6 +21547,29 @@ const movies = [
     shortDescription:
       "Історія про дівчину Катю, якій випадково дістається ноутбук незнайомого чоловіка.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -8814,6 +21587,34 @@ const movies = [
     shortDescription:
       "Письменниця, що стала генеральним директором модного бренду, має об'єднатися із конкурентами для порятунку своєї компанії. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -8831,6 +21632,18 @@ const movies = [
     shortDescription:
       "Напередодні свого 90-річчя український архітектор Флоріан Юр’єв отримує погані новини. Держава здала в оренду забудовнику його головний архітектурний ",
     year: 2022,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS80",
+          slug: "g3slc",
+          name: "Документальний",
+        },
+      ],
+    },
     durationInSec: "4200",
     rating: {
       imdb: {
@@ -8848,6 +21661,24 @@ const movies = [
     shortDescription:
       "Незграбний поліцейський Раян втрапив у неймовірну ситуацію: його бабусю викрав мексиканський картель, і у них є 3 дні, щоб її врятувати...",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -8865,6 +21696,44 @@ const movies = [
     shortDescription:
       "Після усіх пригод, пережитих разом, Мачок та Пагін нарешті офіційно стали парою. Настав час дізнатися більше одне про одного.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -8882,6 +21751,18 @@ const movies = [
     shortDescription:
       "Король, продане левеня, втікає з аеропорту та знаходить притулок в Інес і Алекса, у яких потім виникає божевільна ідея повернути його до Африки. Все м",
     year: 2022,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -8899,6 +21780,18 @@ const movies = [
     shortDescription:
       "Сара намагається вписатися до компанії підлітків. Якось увечері вона йде з ними в нічний клуб, а дорогою додому друзі зустрічають маленьку дівчинку з ",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -8916,6 +21809,18 @@ const movies = [
     shortDescription:
       "Двоє друзів збираються вбити себе, але вирішують провести свій останній день разом",
     year: 2021,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -8933,6 +21838,18 @@ const movies = [
     shortDescription:
       "Aquaman balances his duties as king and as a member of the Justice League, all while planning a wedding. Black Manta is on the hunt for Atlantean tech",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -8950,6 +21867,24 @@ const movies = [
     shortDescription:
       "Перспективний горор, що створений на основі успішної короткометражки.\n",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -8966,6 +21901,44 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -8983,6 +21956,18 @@ const movies = [
     shortDescription:
       "Чудово поставлений фільм про ненормальних, саморуйнівних взаєминах між зіркою панк-року 1970-х Сідом Вішес з групи «Sex Pistols» та американкою Ненсі ",
     year: 1986,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -9000,6 +21985,34 @@ const movies = [
     shortDescription:
       "Тепла та душевна комедія режисера Зази Буадзе «Мій карпатській дідусь» із Богданом Бенюком та молодою італійською зіркою у головних ролях.",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -9017,6 +22030,34 @@ const movies = [
     shortDescription:
       "Історія походження воїна-відступника Фуріози до її зустрічі та об’єднання з Божевільним Максом.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8880",
     rating: {
       imdb: {
@@ -9034,6 +22075,18 @@ const movies = [
     shortDescription:
       "Ремі та Сандра — молода пара. Вони кохають одне одного, проте щось заважає їм мати дитину. ",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -9051,6 +22104,18 @@ const movies = [
     shortDescription:
       "Елізабет працює на компанію з нерухомості батька свого нареченого. Майбутній свекор відправляє її у рідне місто з завданням: переконати колишнього хло",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5160",
     rating: {
       imdb: {
@@ -9068,6 +22133,18 @@ const movies = [
     shortDescription:
       "Усі діти обожнюють зимові свята, особливо юна корівка Клара. Вона з нетерпінням очікує святкування Різдва на Веселій фермі разом із татом.",
     year: 2020,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4080",
     rating: {
       imdb: {
@@ -9085,6 +22162,18 @@ const movies = [
     shortDescription:
       "Бідолашний привид сера Саймона Кентервіля блукав своїм замком у марних пошуках відважного нащадка, який би звільнив його від Кентервільського проклятт",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -9102,6 +22191,18 @@ const movies = [
     shortDescription:
       "Як зрозуміти, що йдеш за своєю мрією, а не за ілюзією? Тоні працює в спа-центрі і готується до підвищення, але його звільняють через непорозуміння. Ві",
     year: 2022,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -9119,6 +22220,18 @@ const movies = [
     shortDescription:
       "Двоє тендітних і чутливих вампірів, Адам і Єва, були коханцями протягом століть. Вони — культурні інтелектуали з всеосяжною пристрастю до музики, літе",
     year: 2013,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -9136,6 +22249,18 @@ const movies = [
     shortDescription:
       "Нарешті родина зібралась на свята до казкової засніженої Норвегії, щоб провести найкращі дні року в затишному будиночку.",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -9153,6 +22278,18 @@ const movies = [
     shortDescription:
       "Передріздвяна метушня та сезон знижок – усі намагаються купити якомога більше подарунків! Але для двох головних героїв це все недоступно: через величе",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -9170,6 +22307,18 @@ const movies = [
     shortDescription:
       "Невелика сексуальна пригода обертається бурхливим романом.",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -9187,6 +22336,34 @@ const movies = [
     shortDescription:
       "Засмучений горем батько розпочинає свою довгоочікувану помсту безжальній банді напередодні Різдва.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -9204,6 +22381,24 @@ const movies = [
     shortDescription:
       "Після закінчення школи три подруги рушають на відривні канікули у Грецію. Тут вони планують розважитися, перш ніж поринуть в університетське життя. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -9221,6 +22416,34 @@ const movies = [
     shortDescription:
       "Лексі просять залишити своє життя в Нью-Йорку, щоб відновити свою таємну особу королівської принцеси під пильним наглядом красивого охоронця.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -9238,6 +22461,18 @@ const movies = [
     shortDescription:
       "Коли Бернадетт Ширак прибула до Єлисейського палацу, вона очікувала, що нарешті отримає місце, на яке вона заслуговувала. Вона завжди працювала в тіні",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -9255,6 +22490,18 @@ const movies = [
     shortDescription:
       "Дон Жуан із Жашкова - український комедійний фільм за однойменною п’єсою Оксани Гриценко.",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -9272,6 +22519,34 @@ const movies = [
     shortDescription:
       "Продовження фантастичних пригод з оригінального всесвіту Мисливців на привидів! Нове та старе покоління «Мисливців» мусить об’єднати зусилля.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -9289,6 +22564,34 @@ const movies = [
     shortDescription:
       "Після вибухового протистояння Годзілла та Конг повинні возз’єднатися проти колосальної невідомої загрози, прихованої в нашому світі.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -9306,6 +22609,18 @@ const movies = [
     shortDescription:
       "Життя Грега було досить спокійним після закриття агентства, доки він не вирішив зробити пропозицію Фло та не познайомив її зі своїм батьком негідником",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -9323,6 +22638,34 @@ const movies = [
     shortDescription:
       "У центрі сюжету — подружня пара Емма та Дейв, які вирішують “внести перчинку” в стосунки, тож влаштовують просту “рольову гру”.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -9340,6 +22683,34 @@ const movies = [
     shortDescription:
       "Улюбленець мільйонів – рудий кіт Ґарфілд повертається на великі екрани!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -9357,6 +22728,39 @@ const movies = [
     shortDescription:
       "Зустрічайте одну з найзагадковіших героїнь кіновсесвіту Marvel «Мадам Павутину»!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjU=",
+          slug: "marvel_uk",
+          name: "Marvel",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -9374,6 +22778,18 @@ const movies = [
     shortDescription:
       'Адаптація бродвейського мюзиклу "Барва пурпурова", заснованого на романі та екранізації',
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "8700",
     rating: {
       imdb: {
@@ -9391,6 +22807,44 @@ const movies = [
     shortDescription:
       "Історія про Еліо, хлопчика-аутсайдера з багатою уявою, який ненароком потрапляє до міжпланетної організації з представниками усіх куточків галактики.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -9408,6 +22862,34 @@ const movies = [
     shortDescription:
       "Колт — каскадер. Переживши нещасний випадок на майданчику, який майже знищив його кар’єру, йому знову доведеться повернутися до роботи. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7560",
     rating: {
       imdb: {
@@ -9425,6 +22907,18 @@ const movies = [
     shortDescription:
       "Епічна пригодницька анімаційна комедія від авторів «Історії іграшок». Дон та Діджей Доґґі Доґ – неочікувані друзі, чиї шляхи перетинаються у легендарн",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -9442,6 +22936,34 @@ const movies = [
     shortDescription:
       'Нова частина серії "Планета мавп" події якої відбуваються через багато після кінця фільму "Битва за планету мавп".',
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8700",
     rating: {
       imdb: {
@@ -9459,6 +22981,34 @@ const movies = [
     shortDescription:
       "Популярна авторка шпигунських бестселерів Еллі Конвей обожнює проводити час вдома за комп’ютером і в компанії улюбленого кота Алфі. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "8340",
     rating: {
       imdb: {
@@ -9476,6 +23026,29 @@ const movies = [
     shortDescription:
       "На ранок після ідеального першого побачення фатальна пристрасть закоханих перетворюється на холодну ненависть, доки доля не зводить їх разом...",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -9493,6 +23066,39 @@ const movies = [
     shortDescription:
       "An account of the fantastical evolution of Bella Baxter, a young woman brought back to life by the brilliant and unorthodox scientist Dr. Baxter.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "8460",
     rating: {
       imdb: {
@@ -9510,6 +23116,34 @@ const movies = [
     shortDescription:
       "Україна, 1996 рік. За 5 місяців до скасування смертної кари двоє давніх друзів – слідчий і судовий психіатр – розслідують вбивство колеги.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -9527,6 +23161,18 @@ const movies = [
     shortDescription:
       "Метелик Патрік — сміливий і милий, але незграбний, бо…має лиш одне крило. Разом зі своїм найкращим другом, кумедною гусінню на ім’я Марті, та Дженніфе",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -9544,6 +23190,39 @@ const movies = [
     shortDescription:
       "Продовження мультфільму від Disney та Pixar повертає глядачів у свідомість новоспеченої підлітки Райлі.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -9561,6 +23240,34 @@ const movies = [
     shortDescription:
       "Яскрава історія, що прославляє життя та музику ікони, яка надихала цілі покоління своїми посланнями любові та єдності. Уперше на великому екрані відкр",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6420",
     rating: {
       imdb: {
@@ -9578,6 +23285,29 @@ const movies = [
     shortDescription:
       "Культовий Blumhouse та продюсери трилеру М3ҐАН запрошують поринути у глибини найпотаємніших страхів у новому надприродному трилері «Нічний заплив».",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -9595,6 +23325,34 @@ const movies = [
     shortDescription:
       "Футбольний тренер Томас Ронґен на початку 2000-х приїхав до Самоа, щоб допомогти підготувати місцеву команду до відбірного циклу чемпіонату світу 2014",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTA=",
+          slug: "sportivne",
+          name: "Спортивне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -9612,6 +23370,39 @@ const movies = [
     shortDescription:
       "Зв’язок двох молодих людей призводить до подружньої невірності і, зрештою, до злочину.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5760",
     rating: {
       imdb: {
@@ -9629,6 +23420,24 @@ const movies = [
     shortDescription:
       "Коли бешкетні брати-ведмеді Бріар та Брамбл були маленькими ведмежатами, їхня любляча мама таємниче зникла. Через багато років на виставці «Планета Ро",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -9646,6 +23455,18 @@ const movies = [
     shortDescription:
       "Одна з найвеличніших історій про народження Ісуса оживе на великих екранах! Цього року пориньте у сімейну музичну пригоду, що поєднає класичні різдвян",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -9663,6 +23484,18 @@ const movies = [
     shortDescription:
       "Фільм розповість про дитячого тренера з плавання Алекса, який по вуха закохується у недосяжну красуню. Для того, щоб вразити кохану і різко змінити св",
     year: 2022,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -9680,6 +23513,18 @@ const movies = [
     shortDescription:
       "Саманта та Клара – учениці школи-інтернату. Вони не змогли поїхати додому на різдвяні канікули, і, здається, гірше не буває. Однак саме на Різдво на п",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -9697,6 +23542,34 @@ const movies = [
     shortDescription:
       "Міфічну подорож Пола Атріда та фременів на шляху помсти заколотникам, які знищили його родину.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xOQ==",
+          slug: "f9ihb",
+          name: "Фантастичне",
+        },
+      ],
+    },
     durationInSec: "9960",
     rating: {
       imdb: {
@@ -9714,6 +23587,44 @@ const movies = [
     shortDescription:
       "Нова анімаційна пригода від Illumination – творців таких хітів, як «Посіпаки», «Нікчемний Я», «Співай» і «Секрети домашніх тварин», на великих екранах",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -9731,6 +23642,18 @@ const movies = [
     shortDescription:
       "Д'Артаньян змушений об'єднати зусилля з Міледі, щоб врятувати Констанцію, яку викрали на його очах. Але оголошено війну, і Атос, Портос і Араміс уже п",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -9748,6 +23671,34 @@ const movies = [
     shortDescription:
       "«Бджоляр» – це екшн, який розповідає про Адама Клея, колишнього оперативника суперсекретної організації.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDE=",
+          slug: "mistika",
+          name: "Містика",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -9765,6 +23716,18 @@ const movies = [
     shortDescription:
       "Гелена має люблячого чоловіка, двох прекрасних доньок, бізнес… та одну таємницю. Поява Гелени на світ – це наслідок викрадення. Чоловік викрав її маті",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -9782,6 +23745,39 @@ const movies = [
     shortDescription:
       "Чорна Манта не зміг перемогти Аквамена з першого разу, але не полишив бажання помститися за смерть батька.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjQ=",
+          slug: "dc_uk",
+          name: "DC",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7020",
     rating: {
       imdb: {
@@ -9799,6 +23795,18 @@ const movies = [
     shortDescription:
       "Володар премії «Оскар» Хоакін Фенікс у ролі культового французького імператора Наполеона Бонапарта! Епічна історія про тернистий шлях Бонапарта до вла",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "9480",
     rating: {
       imdb: {
@@ -9816,6 +23824,34 @@ const movies = [
     shortDescription:
       "Фантастичний бойовик та трилер «Голодні ігри: Балада про співочих пташок і змій» є пріквелом до серії фільмів «Голодні ігри».",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "9900",
     rating: {
       imdb: {
@@ -9833,6 +23869,39 @@ const movies = [
     shortDescription:
       "Історія розповідає про кмітливу дівчину-ідеалістку, яка загадує настільки сильне бажання, що на нього відгукується космічна сила.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -9850,6 +23919,39 @@ const movies = [
     shortDescription:
       "Щоб врятувати сімейний бізнес, колишній автогонщик Енцо Феррарі вирішує ризикнути та поставити усе на культову гонку довжиною 1000 миль Італією.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7800",
     rating: {
       imdb: {
@@ -9867,6 +23969,39 @@ const movies = [
     shortDescription:
       "Глибоко особистий портрет видатної фотографки Нен Ґолдін -  її творчості та протистояння опіоїдній залежності",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjE=",
+          slug: "socialne",
+          name: "Соціальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjM=",
+          slug: "mistecke",
+          name: "Мистецьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+      ],
+    },
     durationInSec: "7320",
     rating: {
       imdb: {
@@ -9884,6 +24019,39 @@ const movies = [
     shortDescription:
       "Кримінальна драма «Вбивці квіткової повні» – нова робота Мартіна Скорсезе з оскароносними Робертом Де Ніро та Леонардо ДіКапріо у головних ролях.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "12360",
     rating: {
       imdb: {
@@ -9901,6 +24069,44 @@ const movies = [
     shortDescription:
       "Щенячий патруль повертається у новій анімаційній пригоді! ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -9918,6 +24124,34 @@ const movies = [
     shortDescription:
       "У першій половині XVIII ст. у містичних Карпатських горах розгортається драма життя Олекси Довбуша, його непростого кохання та боротьби за гідну долю.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -9935,6 +24169,34 @@ const movies = [
     shortDescription:
       "Пуаро вийшов на пенсію та живе у Венеції, неохоче відвідує спіритичний сеанс у напівзруйнованому палаці з привидами, де вбивають одного з гостей...",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -9952,6 +24214,18 @@ const movies = [
     shortDescription:
       "Керол Денверс вдалось віднайти себе, здолавши тиранів Крі та помстившись Абсолютному Інтелекту. Одного разу обов’язок кличе її в аномальну червоточину",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -9969,6 +24243,39 @@ const movies = [
     shortDescription:
       "Мріючи відкрити магазин у місті, відомому своїм шоколадом, молодий і бідний Віллі Вонка виявляє, що галуззю керує картель жадібних шоколатьє.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -9986,6 +24293,34 @@ const movies = [
     shortDescription:
       "Максимально озброєні і з навичками найвищого рівня. «Нестримні» – остання лінія оборони світу. Це команда, яку кличуть, коли інших варіантів уже немає",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -10002,6 +24337,24 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -10018,6 +24371,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -10032,8 +24413,27 @@ const movies = [
     originalName: "Yaroslav The Wise",
     slug: "yaroslav-the-wise-uk",
     ageRestrictions: "A12",
-    shortDescription: null,
+    shortDescription:
+      "Ярослав Мудрий на довгі роки визначив стратегічний напрямок зовнішньої політики Київської Русі.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS80",
+          slug: "g3slc",
+          name: "Документальний",
+        },
+      ],
+    },
     durationInSec: "2880",
     rating: {
       imdb: {
@@ -10050,6 +24450,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: "До 3-ї річниці початку повномасштабного вторгнення рф",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "1800",
     rating: {
       imdb: {
@@ -10066,6 +24489,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2026,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -10080,8 +24531,32 @@ const movies = [
     originalName: "The Opera!",
     slug: "the-opera-2025-uk",
     ageRestrictions: "A16",
-    shortDescription: null,
+    shortDescription:
+      "Видовищне дійство за мотивами міфу про Орфея і Еврідіку, костюми для якого створив модний дім Dolce&Gabbana.\n",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -10096,8 +24571,37 @@ const movies = [
     originalName: "Каховський об'єкт",
     slug: "kahovskij-obyekt-uk",
     ageRestrictions: "A16",
-    shortDescription: null,
+    shortDescription:
+      "Відчайдушні, чесні та сміливі – лише такі люди здатні захистити світ від ворожої навали бездумних істот. \n",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTM2",
+          slug: "c065f",
+          name: "Жахаюче",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -10112,8 +24616,32 @@ const movies = [
     originalName: "Smurfs",
     slug: "the-smurfs-movie-2025-uk",
     ageRestrictions: "A0",
-    shortDescription: null,
+    shortDescription:
+      "Аби врятувати тата Смурфа команда сміливців на чолі зі Смурфеттою вирушає у реальний світ. \n",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -10131,6 +24659,24 @@ const movies = [
     shortDescription:
       "Кіноверсія театральної постановки про митців, які жили у будинку «Слово» у Харкові на початку ХХ століття. \n\n",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDM=",
+          slug: "myuzikl",
+          name: "Мюзикл",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -10148,6 +24694,29 @@ const movies = [
     shortDescription:
       "Телеведуча з окупованих територій помилково приїздить до Ужгорода, де на власні очі бачить щоденне життя українців.",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -10162,8 +24731,37 @@ const movies = [
     originalName: "Miss Moxy",
     slug: "miss-moxy-uk",
     ageRestrictions: "A0",
-    shortDescription: null,
+    shortDescription:
+      "Захоплююча подорож через усю Європу покаже зарозумілій кішці, якими вірними друзями можуть бути собака та пташка. ",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -10180,6 +24778,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -10197,6 +24818,39 @@ const movies = [
     shortDescription:
       "Українська авантюрна комедія про пригоди мистецтвознавиці Ксенії після того, як її перед самим весіллям покинув наречений.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -10214,6 +24868,24 @@ const movies = [
     shortDescription:
       "Різні за походженням, статусом та вихованням, вони опинилися в однаковому жаху у перші години наступу на Чернігів",
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7680",
     rating: {
       imdb: {
@@ -10231,6 +24903,29 @@ const movies = [
     shortDescription:
       "Український та міжнародний конкурс. Фільми-переможці найбільшого українського фестивалю короткого метру",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjAy",
+          slug: "8ifu6",
+          name: "Короткий метр",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -10247,6 +24942,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -10263,6 +24981,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 1988,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "9720",
     rating: {
       imdb: {
@@ -10279,6 +25015,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 1992,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "9000",
     rating: {
       imdb: {
@@ -10295,6 +25059,34 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "7680",
     rating: {
       imdb: {
@@ -10311,6 +25103,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -10327,6 +25137,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -10343,6 +25171,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2012,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTU=",
+          slug: "chorna-komediya",
+          name: "Чорна комедія",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "8400",
     rating: {
       imdb: {
@@ -10359,6 +25210,39 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 1992,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -10376,6 +25260,39 @@ const movies = [
     shortDescription:
       'Запрошуємо на спеціальний  показ української авантюрної комедії "Коли ти вийдеш заміж?",  який відбудеться 27 січня в кінотеатрі Планета кіно ТЦ Форум',
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -10393,6 +25310,39 @@ const movies = [
     shortDescription:
       "Українська авантюрна комедія про пригоди мистецтвознавиці Ксенії після того, як її перед самим весіллям покинув наречений.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "9780",
     rating: {
       imdb: {
@@ -10409,6 +25359,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjk=",
+          slug: "antiutopiya",
+          name: "Антиутопія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8y",
+          slug: "utih6",
+          name: "спортивний",
+        },
+      ],
+    },
     durationInSec: "8100",
     rating: {
       imdb: {
@@ -10425,6 +25398,24 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzc=",
+          slug: "kazka",
+          name: "Казка",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6780",
     rating: {
       imdb: {
@@ -10441,6 +25432,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2025,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -10457,6 +25471,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzQ=",
+          slug: "erotichne",
+          name: "Еротичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "8100",
     rating: {
       imdb: {
@@ -10473,6 +25510,24 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -10490,6 +25545,24 @@ const movies = [
     shortDescription:
       "Потяг у 31 грудня мав стати звичайним, тихим рейсом, принаймні так вважав провідник Микола Іванович. Проте у долі на це були інші плани.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -10506,6 +25579,24 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -10523,6 +25614,24 @@ const movies = [
     shortDescription:
       "У центрі сюжету маленький хлопчик Мауґлі, якого знайшла та виростила  у нетрях джунглів Індії зграя вовків. ",
     year: 2018,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -10539,6 +25648,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -10555,6 +25687,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -10571,6 +25731,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "12120",
     rating: {
       imdb: {
@@ -10587,6 +25765,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -10603,6 +25809,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5160",
     rating: {
       imdb: {
@@ -10619,6 +25853,29 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9720",
     rating: {
       imdb: {
@@ -10635,6 +25892,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "8100",
     rating: {
       imdb: {
@@ -10651,6 +25926,24 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "8640",
     rating: {
       imdb: {
@@ -10667,6 +25960,29 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4260",
     rating: {
       imdb: {
@@ -10683,6 +25999,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "3720",
     rating: {
       imdb: {
@@ -10699,6 +26033,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -10715,6 +26067,34 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAy",
+          slug: "cwt92",
+          name: "Містичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "8700",
     rating: {
       imdb: {
@@ -10732,6 +26112,39 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "9840",
     rating: {
       imdb: {
@@ -10748,6 +26161,24 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "3600",
     rating: {
       imdb: {
@@ -10764,6 +26195,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -10780,6 +26239,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2018,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -10796,6 +26278,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 1998,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -10812,6 +26317,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "9240",
     rating: {
       imdb: {
@@ -10829,6 +26357,29 @@ const movies = [
     shortDescription:
       "Молоді київські розробники вирішують зробити найскладнішу гру в світі з реалістичною графікою і нетиповим сюжетом довкола Чорнобильської зони.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "4620",
     rating: {
       imdb: {
@@ -10845,6 +26396,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "8400",
     rating: {
       imdb: {
@@ -10861,6 +26435,29 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9360",
     rating: {
       imdb: {
@@ -10877,6 +26474,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -10893,6 +26518,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -10909,6 +26557,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9000",
     rating: {
       imdb: {
@@ -10925,6 +26601,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "11220",
     rating: {
       imdb: {
@@ -10941,6 +26645,39 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 1987,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "7680",
     rating: {
       imdb: {
@@ -10957,6 +26694,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8y",
+          slug: "utih6",
+          name: "спортивний",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "8220",
     rating: {
       imdb: {
@@ -10973,6 +26733,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -10989,6 +26772,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -11005,6 +26816,29 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9420",
     rating: {
       imdb: {
@@ -11021,6 +26855,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2003,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "8700",
     rating: {
       imdb: {
@@ -11037,6 +26894,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -11053,6 +26928,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4980",
     rating: {
       imdb: {
@@ -11070,6 +26973,29 @@ const movies = [
     shortDescription:
       "Захоплююча документальна розповідь про силу, що змушує багатотонні машини з легкістю підніматися у повітря.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5220",
     rating: {
       imdb: {
@@ -11086,6 +27012,39 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTg=",
+          slug: "epichne",
+          name: "Епічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzk=",
+          slug: "hvtsf",
+          name: "Екшн",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "10680",
     rating: {
       imdb: {
@@ -11102,6 +27061,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -11118,6 +27105,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -11134,6 +27149,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "8940",
     rating: {
       imdb: {
@@ -11150,6 +27193,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8880",
     rating: {
       imdb: {
@@ -11166,6 +27232,34 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9600",
     rating: {
       imdb: {
@@ -11182,6 +27276,24 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "9300",
     rating: {
       imdb: {
@@ -11198,6 +27310,24 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -11215,6 +27345,24 @@ const movies = [
     shortDescription:
       "Документальне свідчення про легендарного командира батальйону «Вовки Да Вінчі», його становлення та бойовий шлях. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "4860",
     rating: {
       imdb: {
@@ -11231,6 +27379,39 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -11248,6 +27429,24 @@ const movies = [
     shortDescription:
       "Це стрічка про хліб та інші вироби з тіста як елемент культурного коду, і новий проєкт покликаний дослідити це дивовижне різноманіття традицій.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -11265,6 +27464,34 @@ const movies = [
     shortDescription:
       "Це історія про силу та віру в себе. І про червень 2006-го, коли вся Україна, від Львова до Луганська, була за синьо-жовтих.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTA=",
+          slug: "sportivne",
+          name: "Спортивне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "4740",
     rating: {
       imdb: {
@@ -11282,6 +27509,24 @@ const movies = [
     shortDescription:
       "Щоденники війни з усієї України. Цей фільм створено із 200 годин хроніки, виживання, супротиву і життя під час війни.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -11299,6 +27544,24 @@ const movies = [
     shortDescription:
       "«Любов варта всього» — добірка коротких метрів про кохання в умовах воєнного стану.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "4620",
     rating: {
       imdb: {
@@ -11315,6 +27578,44 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7800",
     rating: {
       imdb: {
@@ -11331,6 +27632,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "4800",
     rating: {
       imdb: {
@@ -11347,6 +27676,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "3300",
     rating: {
       imdb: {
@@ -11363,6 +27715,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "8220",
     rating: {
       imdb: {
@@ -11379,6 +27754,39 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6120",
     rating: {
       imdb: {
@@ -11395,6 +27803,24 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -11411,6 +27837,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "9000",
     rating: {
       imdb: {
@@ -11427,6 +27876,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "3300",
     rating: {
       imdb: {
@@ -11443,6 +27915,24 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7620",
     rating: {
       imdb: {
@@ -11459,6 +27949,24 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "10080",
     rating: {
       imdb: {
@@ -11475,6 +27983,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -11491,6 +28022,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -11507,6 +28066,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6960",
     rating: {
       imdb: {
@@ -11523,6 +28100,34 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -11540,6 +28145,24 @@ const movies = [
     shortDescription:
       "Потрібно чимало зусиль аби боротися за своє право на життя і щастя. Особливо якщо навколо лише жорстокість і свавілля. ",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7740",
     rating: {
       imdb: {
@@ -11556,6 +28179,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7740",
     rating: {
       imdb: {
@@ -11572,6 +28218,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "10080",
     rating: {
       imdb: {
@@ -11588,6 +28257,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -11604,6 +28296,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9600",
     rating: {
       imdb: {
@@ -11620,6 +28335,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -11636,6 +28374,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -11652,6 +28413,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -11668,6 +28457,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -11684,6 +28496,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2019,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDM=",
+          slug: "myuzikl",
+          name: "Мюзикл",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "8100",
     rating: {
       imdb: {
@@ -11700,6 +28540,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 1984,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "7860",
     rating: {
       imdb: {
@@ -11716,6 +28579,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -11732,6 +28623,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "11640",
     rating: {
       imdb: {
@@ -11748,6 +28662,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -11765,6 +28702,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "11040",
     rating: {
       imdb: {
@@ -11781,6 +28741,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -11797,6 +28785,29 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "8040",
     rating: {
       imdb: {
@@ -11813,6 +28824,39 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "12180",
     rating: {
       imdb: {
@@ -11829,6 +28873,39 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5340",
     rating: {
       imdb: {
@@ -11845,6 +28922,39 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "10380",
     rating: {
       imdb: {
@@ -11861,6 +28971,34 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7860",
     rating: {
       imdb: {
@@ -11877,6 +29015,24 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -11893,6 +29049,34 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAy",
+          slug: "cwt92",
+          name: "Містичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -11909,6 +29093,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5100",
     rating: {
       imdb: {
@@ -11925,6 +29137,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -11941,6 +29181,34 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -11957,6 +29225,34 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS80",
+          slug: "g3slc",
+          name: "Документальний",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -11973,6 +29269,24 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: null,
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7380",
     rating: {
       imdb: {
@@ -11990,6 +29304,29 @@ const movies = [
     shortDescription:
       "Тур групи BLACKPINK під назвою BORN PINK, який захопив світ, виходить на великі екрани на честь восьмої річниці колективу!",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -12006,6 +29343,24 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: null,
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "13140",
     rating: {
       imdb: {
@@ -12023,6 +29378,29 @@ const movies = [
     shortDescription:
       "Комедійна детективна історія із втечами, переодяганнями та кримінальним минулим героїв, сповнена співпадіннями, які бувають лише в кіно. ",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -12040,6 +29418,24 @@ const movies = [
     shortDescription:
       "Щоб описати життя кожної людини – можна видати окремий роман, або  подивитися документальний фільм «ВІДНОВЛЕННЯ». Тут кожний знайде себе.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS80",
+          slug: "g3slc",
+          name: "Документальний",
+        },
+      ],
+    },
     durationInSec: "4380",
     rating: {
       imdb: {
@@ -12057,6 +29453,18 @@ const movies = [
     shortDescription:
       "Безмежні українські ліси з давніх-давен приховують безліч таємниць і загадок. Тут, серед столітніх дерев, живуть незвичайні міфічні істоти, а серед ни",
     year: 2023,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5940",
     rating: {
       imdb: {
@@ -12074,6 +29482,29 @@ const movies = [
     shortDescription:
       "З 7 до 16 червня в Україні проходитиме 11-й Чілдрен Кінофест— наймасштабніший український кінофестиваль для дітей і підлітків.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -12091,6 +29522,24 @@ const movies = [
     shortDescription:
       "Фільм мотивація, щоб зрозуміти хто такі справжні герої сьогоднішніх днів.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDc=",
+          slug: "roud-muvi",
+          name: "Роуд-муві",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS80",
+          slug: "g3slc",
+          name: "Документальний",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -12108,6 +29557,29 @@ const movies = [
     shortDescription:
       "Довгоочікуваний фільм із завершальним концертом SUGA з BTS. Зі спеціальними виступами від інших учасників BTS: RM, Jimin і Jung Kook.",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -12125,6 +29597,29 @@ const movies = [
     shortDescription:
       "Легендарний відеозапис не менш легендарного концерту в США групи The Doors від режисера Рея Манзарека.",
     year: 2012,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8yMA==",
+          slug: "a402k",
+          name: "Музичне",
+        },
+      ],
+    },
     durationInSec: "4320",
     rating: {
       imdb: {
@@ -12142,6 +29637,34 @@ const movies = [
     shortDescription:
       "Історія становлення магната з будівництва нерухомості, який злетів занадто високо, але досі не згорів",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjA=",
+          slug: "politichne",
+          name: "Політичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS82",
+          slug: "tl4qu",
+          name: "Історичний",
+        },
+      ],
+    },
     durationInSec: "7200",
     rating: {
       imdb: {
@@ -12159,6 +29682,39 @@ const movies = [
     shortDescription:
       "Політичний трилер на основі стенограм реального допиту американки Реаліті Віннер",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjA=",
+          slug: "politichne",
+          name: "Політичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "4920",
     rating: {
       imdb: {
@@ -12176,6 +29732,24 @@ const movies = [
     shortDescription:
       "Родина з України дізнається про початок великої війни у останній день свого відпочинку на Тенеріфе",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -12193,6 +29767,44 @@ const movies = [
     shortDescription:
       "Уривки з життя дітей та працівників дитячого будинку у прифронтовому Лисичанську",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjg=",
+          slug: "antivoyenne",
+          name: "Антивоєнне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5220",
     rating: {
       imdb: {
@@ -12209,6 +29821,39 @@ const movies = [
     ageRestrictions: "A12",
     shortDescription: "Драматична історія єврейського поселення на Львівщині",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTc=",
+          slug: "chorno-bile",
+          name: "Чорно-біле",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6540",
     rating: {
       imdb: {
@@ -12226,6 +29871,39 @@ const movies = [
     shortDescription:
       "Молода гімнастка у Швейцарії готується до чемпіонату Європи, поки її мати-журналістка у Києві висвітлює події Євромайдану",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTA=",
+          slug: "sportivne",
+          name: "Спортивне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjA=",
+          slug: "politichne",
+          name: "Політичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -12242,6 +29920,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "Невидимий бік стосунків Елвіса та Прісцилли Преслі",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "6780",
     rating: {
       imdb: {
@@ -12259,6 +29965,39 @@ const movies = [
     shortDescription:
       "З наближенням свого 40-річчя, Австрійська імператриця Єлизавета повстає проти свого публічного іміджу",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -12276,6 +30015,29 @@ const movies = [
     shortDescription:
       "Француженка Сандра доглядає хворого батька та намагається владнати особисте життя",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6780",
     rating: {
       imdb: {
@@ -12293,6 +30055,34 @@ const movies = [
     shortDescription:
       "Успішній телеведучій діагностують рак, і це перевертає світ самовпевненої і цинічної жінки",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTk=",
+          slug: "psihologichne",
+          name: "Психологічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -12310,6 +30100,34 @@ const movies = [
     shortDescription:
       "Випадковий запис на камеру військового захоплює півтори години важкого контрнаступу",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -12327,6 +30145,49 @@ const movies = [
     shortDescription:
       "Безробітні члени родини Кім один за одним, як паразити, проникають у заможну сім'ю Пак.",
     year: 2019,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDg=",
+          slug: "satira",
+          name: "Сатира",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTU=",
+          slug: "chorna-komediya",
+          name: "Чорна комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjE=",
+          slug: "socialne",
+          name: "Соціальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -12344,6 +30205,49 @@ const movies = [
     shortDescription:
       "До юристки з незвичним проханням звертається наркобарон - він хоче зникнути з радарів, змінивши свою стать та ідентичність",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDM=",
+          slug: "myuzikl",
+          name: "Мюзикл",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTY=",
+          slug: "eksperimentalne",
+          name: "Експериментальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7920",
     rating: {
       imdb: {
@@ -12360,6 +30264,29 @@ const movies = [
     ageRestrictions: "A18",
     shortDescription: "Історичний репортаж облоги Маріуполя",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5640",
     rating: {
       imdb: {
@@ -12369,18 +30296,41 @@ const movies = [
     },
   },
   {
-    id: "Z2lkOi8vbW92aWUvNjI=",
-    name: "НАЙКРАЩИЙ БОС",
-    originalName: "El buen patrón",
-    slug: "el-buen-patron-uk",
-    ageRestrictions: "A16",
+    id: "Z2lkOi8vbW92aWUvMjk0",
+    name: "ТИХА ДІВЧИНКА",
+    originalName: "An Cailín Ciúin",
+    slug: "the-quiet-girl-uk",
+    ageRestrictions: "A0",
     shortDescription:
-      "Харизматичний та нахабний керівник фабрики маніпулює підлеглими у власних цілях",
-    year: 2021,
-    durationInSec: "7200",
+      "Дівчинка з неблагополучної сім’ї на літо відправляється до родичів, де вперше відчує любов, тепло та піклування",
+    year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
+    durationInSec: "5640",
     rating: {
       imdb: {
-        rating: 7.1,
+        rating: 7.7,
         voteCount: null,
       },
     },
@@ -12394,6 +30344,29 @@ const movies = [
     shortDescription:
       "Сподіваючись нарешті влаштувати своє життя, Юлія кидається у вир нових стосунків та пошуків себе",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7680",
     rating: {
       imdb: {
@@ -12411,6 +30384,34 @@ const movies = [
     shortDescription:
       "Детектив береться за розслідування загадкового вбивства, яке, здається, неможливо розкрити",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -12420,18 +30421,51 @@ const movies = [
     },
   },
   {
-    id: "Z2lkOi8vbW92aWUvMjk0",
-    name: "ТИХА ДІВЧИНКА",
-    originalName: "An Cailín Ciúin",
-    slug: "the-quiet-girl-uk",
-    ageRestrictions: "A0",
+    id: "Z2lkOi8vbW92aWUvNjI=",
+    name: "НАЙКРАЩИЙ БОС",
+    originalName: "El buen patrón",
+    slug: "el-buen-patron-uk",
+    ageRestrictions: "A16",
     shortDescription:
-      "Дівчинка з неблагополучної сім’ї на літо відправляється до родичів, де вперше відчує любов, тепло та піклування",
-    year: 2022,
-    durationInSec: "5640",
+      "Харизматичний та нахабний керівник фабрики маніпулює підлеглими у власних цілях",
+    year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDg=",
+          slug: "satira",
+          name: "Сатира",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTM=",
+          slug: "tragikomediya",
+          name: "Трагікомедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTU=",
+          slug: "chorna-komediya",
+          name: "Чорна комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
+    durationInSec: "7200",
     rating: {
       imdb: {
-        rating: 7.7,
+        rating: 7.1,
         voteCount: null,
       },
     },
@@ -12445,6 +30479,29 @@ const movies = [
     shortDescription:
       "Пара намагається побудувати стосунки, борючись із психологічними травмами та деменцією",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "5940",
     rating: {
       imdb: {
@@ -12462,6 +30519,39 @@ const movies = [
     shortDescription:
       "Втомлена від одноманітного життя Софія наважується на таємні стосунки з пристрасним Сільвеном",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6720",
     rating: {
       imdb: {
@@ -12479,6 +30569,54 @@ const movies = [
     shortDescription:
       "У постапокаліптичному майбутньому чоловік порушує всі правила, щоб врятувати свою дружину",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjk=",
+          slug: "antiutopiya",
+          name: "Антиутопія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODU=",
+          slug: "sz3zh",
+          name: "Наукова фантастика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "6600",
     rating: {
       imdb: {
@@ -12496,6 +30634,34 @@ const movies = [
     shortDescription:
       "Стрічка про життя і діяльність українського дисидента Івана Дзюби за розповідями його дружини Марти",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "4500",
     rating: {
       imdb: {
@@ -12513,6 +30679,49 @@ const movies = [
     shortDescription:
       "Вийшовши з в'язниці, хлопець возз'єднується з місцевою бандою розкрадачів гробниць. Він має особливий дар, завдяки якому може віднаходити скарби",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7860",
     rating: {
       imdb: {
@@ -12530,6 +30739,24 @@ const movies = [
     shortDescription:
       "Тимофій зростає на тлі українських 90-их та заводить дружбу з ветераном війни в Афганістані",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5520",
     rating: {
       imdb: {
@@ -12547,6 +30774,49 @@ const movies = [
     shortDescription:
       "Марс, 23 століття. Детективка та її напарник-андроїд розслідують загадкову справу, за якою ховається глобальна загроза",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzg=",
+          slug: "kiberpank",
+          name: "Кіберпанк",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5280",
     rating: {
       imdb: {
@@ -12564,6 +30834,39 @@ const movies = [
     shortDescription:
       "Комендант концтабору влаштовує затишний дім для своєї родини через стіну від пекла",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -12581,6 +30884,39 @@ const movies = [
     shortDescription:
       "Змонтована з касетного відеоархіву стрічка про фігуриста, який гастролює за кордоном у 80-ті",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5580",
     rating: {
       imdb: {
@@ -12598,6 +30934,59 @@ const movies = [
     shortDescription:
       "Продовження історії пригод ведмедика Паддінгтона у Лондоні",
     year: 2018,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDc=",
+          slug: "roud-muvi",
+          name: "Роуд-муві",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+      ],
+    },
     durationInSec: "6300",
     rating: {
       imdb: {
@@ -12615,6 +31004,59 @@ const movies = [
     shortDescription:
       "Ведмежа з Далекого Перу подорожує до Лондона, у пошуках нової родини та теплої домівки",
     year: 2014,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDc=",
+          slug: "roud-muvi",
+          name: "Роуд-муві",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -12632,6 +31074,44 @@ const movies = [
     shortDescription:
       "Вчителя мистецтв відправляють викладати у віддалений куточок Туреччини",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjE=",
+          slug: "socialne",
+          name: "Соціальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "11820",
     rating: {
       imdb: {
@@ -12649,6 +31129,39 @@ const movies = [
     shortDescription:
       "У 2025 році війна закінчується перемогою України, але схід країни стає непридатним для життя",
     year: 2019,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjg=",
+          slug: "antivoyenne",
+          name: "Антивоєнне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -12666,6 +31179,39 @@ const movies = [
     shortDescription:
       "Люблячий батько йде на фронт і проходить нелюдські умови російського полону",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjg=",
+          slug: "antivoyenne",
+          name: "Антивоєнне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzM=",
+          slug: "vijskove",
+          name: "Військове",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "7500",
     rating: {
       imdb: {
@@ -12683,6 +31229,59 @@ const movies = [
     shortDescription:
       "Справжня історія конструктора дирижаблів та підкорення Північного полюса його собакою",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDc=",
+          slug: "roud-muvi",
+          name: "Роуд-муві",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAw",
+          slug: "pcizv",
+          name: "Пригоди",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTY5",
+          slug: "eteso",
+          name: "Анімаційне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNg==",
+          slug: "dityam",
+          name: "Дітям",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -12700,6 +31299,39 @@ const movies = [
     shortDescription:
       "Екранізація міфу корінних народів Америки про створення світу",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzQ=",
+          slug: "95djw",
+          name: "Анімація",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODc=",
+          slug: "hponb",
+          name: "Фентезі",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -12717,6 +31349,39 @@ const movies = [
     shortDescription:
       "Зустріч двох ворогів дитинства призводить до жахливих наслідків",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDk=",
+          slug: "slesher",
+          name: "Слешер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTU=",
+          slug: "chorna-komediya",
+          name: "Чорна комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzU=",
+          slug: "n8zwa",
+          name: "Жахи",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6120",
     rating: {
       imdb: {
@@ -12734,6 +31399,34 @@ const movies = [
     shortDescription:
       "Коли Керол зустрічає Терезу, між ними спалахує неймовірна дружба, яка згодом переростає у заборонене кохання",
     year: 2015,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzQ=",
+          slug: "erotichne",
+          name: "Еротичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "7080",
     rating: {
       imdb: {
@@ -12751,6 +31444,34 @@ const movies = [
     shortDescription:
       "Письменниця стає підозрюваною у вбивстві після загадкової смерті свого чоловіка",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "9060",
     rating: {
       imdb: {
@@ -12768,6 +31489,39 @@ const movies = [
     shortDescription:
       "У світі, де люди поступово перетворюються на тварин, батько та син вирушають у подорож на пошуки близької людини",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "7800",
     rating: {
       imdb: {
@@ -12784,6 +31538,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "Зворушлива історія родини фермерів з сонячної Каталонії",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "7260",
     rating: {
       imdb: {
@@ -12801,6 +31583,44 @@ const movies = [
     shortDescription:
       "Ревізор снів занурюється у спогади літньої жінки і потрапляє у спільну пригоду з її молодою версією",
     year: 2021,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTQ=",
+          slug: "fantasmagoriya",
+          name: "Фантасмагорія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+      ],
+    },
     durationInSec: "5460",
     rating: {
       imdb: {
@@ -12817,6 +31637,29 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: "Грандіозна подорож разом з китами.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODQ=",
+          slug: "iauap",
+          name: "Сімейне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "4920",
     rating: {
       imdb: {
@@ -12834,6 +31677,29 @@ const movies = [
     shortDescription:
       "Документальний фільм, який розвінчує міфи про про «збудований радянським союзом» Донбас та розповідає про його європейське історичне минуле",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "4380",
     rating: {
       imdb: {
@@ -12851,6 +31717,24 @@ const movies = [
     shortDescription:
       "Коли одного з учнів школи підозрюють у крадіжці, вчителька-ідеалістка вирішує докопатися до суті справи.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -12868,6 +31752,54 @@ const movies = [
     shortDescription:
       "Троє дітей стають жертвами експерименту батьків, які створюють для них ізольований викривлений світ.",
     year: 2009,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjk=",
+          slug: "antiutopiya",
+          name: "Антиутопія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTY=",
+          slug: "eksperimentalne",
+          name: "Експериментальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTk=",
+          slug: "psihologichne",
+          name: "Психологічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "5880",
     rating: {
       imdb: {
@@ -12885,6 +31817,49 @@ const movies = [
     shortDescription:
       "Успішний піаніст повертається в рідне містечко, де стає свідком конфлікту між місцевими та мігрантами",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjE=",
+          slug: "socialne",
+          name: "Соціальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "5940",
     rating: {
       imdb: {
@@ -12902,6 +31877,29 @@ const movies = [
     shortDescription:
       "Усиновлена француженка повертається до Кореї аби розшукати своїх біологічних батьків",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "7140",
     rating: {
       imdb: {
@@ -12919,6 +31917,54 @@ const movies = [
     shortDescription:
       "Багатії вирушають у круїзну подорож, під час якої соціальна піраміда перевертається догори дриґом",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDg=",
+          slug: "satira",
+          name: "Сатира",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTU=",
+          slug: "chorna-komediya",
+          name: "Чорна комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjA=",
+          slug: "politichne",
+          name: "Політичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjE=",
+          slug: "socialne",
+          name: "Соціальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjI=",
+          slug: "katastrofa",
+          name: "Катастрофа",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "8820",
     rating: {
       imdb: {
@@ -12936,6 +31982,39 @@ const movies = [
     shortDescription:
       "Двоє друзів вирушають на південь Франції за покликом кохання та пригод",
     year: 2020,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDc=",
+          slug: "roud-muvi",
+          name: "Роуд-муві",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAw",
+          slug: "pcizv",
+          name: "Пригоди",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -12953,6 +32032,29 @@ const movies = [
     shortDescription:
       "Звільнена з російського полону аеророзвідниця долає труднощі нового життя",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjg=",
+          slug: "antivoyenne",
+          name: "Антивоєнне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6420",
     rating: {
       imdb: {
@@ -12970,6 +32072,24 @@ const movies = [
     shortDescription:
       "Відокремившись від шкільної екскурсії у Вашингтоні, Ліліан рушає у власну мандрівку містами й лісами східного узбережжя США.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -12987,6 +32107,39 @@ const movies = [
     shortDescription:
       "Історикиня-аматорка вирушає на пошуки втрачених решток Річарда Третього",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTM=",
+          slug: "tragikomediya",
+          name: "Трагікомедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjc=",
+          slug: "yiijd",
+          name: "Комедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6480",
     rating: {
       imdb: {
@@ -13004,6 +32157,34 @@ const movies = [
     shortDescription:
       "Дослідження особистості Єлизавети ІІ через спогади її видатних фотографів\n",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjM=",
+          slug: "mistecke",
+          name: "Мистецьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5700",
     rating: {
       imdb: {
@@ -13021,6 +32202,24 @@ const movies = [
     shortDescription:
       "Стурбований життям свого нащадка, батько створює фейковий акаунт та починає спілкування з сином під виглядом молодої офіціантки.",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNw==",
+          slug: "golivudske",
+          name: "Голівудське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -13038,6 +32237,49 @@ const movies = [
     shortDescription:
       "Відлюдькуватий письменник закохується у нову знайому, поки в околицях розгортається лісова пожежа",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjI=",
+          slug: "katastrofa",
+          name: "Катастрофа",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzY=",
+          slug: "a3kj3",
+          name: "Мелодрама",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODA=",
+          slug: "xylov",
+          name: "Романтичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "6180",
     rating: {
       imdb: {
@@ -13054,6 +32296,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "Український погляд на трагедію рейсу МН17",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTY=",
+          slug: "eksperimentalne",
+          name: "Експериментальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzg=",
+          slug: "djaf7",
+          name: "Воєнне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "5040",
     rating: {
       imdb: {
@@ -13071,6 +32341,29 @@ const movies = [
     shortDescription:
       "Історія подружжя, яке переживає падіння літака рейсу MH17 поруч зі своїм домом",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjg=",
+          slug: "antivoyenne",
+          name: "Антивоєнне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6000",
     rating: {
       imdb: {
@@ -13087,6 +32380,39 @@ const movies = [
     ageRestrictions: "A0",
     shortDescription: null,
     year: 1989,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMg==",
+          slug: "klasika",
+          name: "Класика",
+        },
+      ],
+    },
     durationInSec: "8400",
     rating: {
       imdb: {
@@ -13104,6 +32430,49 @@ const movies = [
     shortDescription:
       "Фільм-подорож про майже загублений світ традиційної народної музики східноєвропейських євреїв",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDc=",
+          slug: "roud-muvi",
+          name: "Роуд-муві",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjM=",
+          slug: "mistecke",
+          name: "Мистецьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzc=",
+          slug: "5gtr8",
+          name: "Музика",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS84",
+          slug: "avtorske",
+          name: "Авторське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNQ==",
+          slug: "festivalne",
+          name: "Фестивальне",
+        },
+      ],
+    },
     durationInSec: "6900",
     rating: {
       imdb: {
@@ -13121,6 +32490,34 @@ const movies = [
     shortDescription:
       "Елітні самураї таємно об'єднуються у групу задля знищення брата Сьоґуна - садиста, диктатора та, ймовірно, майбутнього володара Японії.",
     year: 2010,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS85",
+          slug: "azijske",
+          name: "Азійське",
+        },
+      ],
+    },
     durationInSec: "8460",
     rating: {
       imdb: {
@@ -13138,6 +32535,44 @@ const movies = [
     shortDescription:
       "Поліцейський мріє про спокійне життя, як раптом його плани змінює загадкове вбивство",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzU=",
+          slug: "istern",
+          name: "Істерн",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNTM=",
+          slug: "tragikomediya",
+          name: "Трагікомедія",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMTAx",
+          slug: "uklbv",
+          name: "Комедійне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -13154,6 +32589,34 @@ const movies = [
     ageRestrictions: "A16",
     shortDescription: "Як далеко готова зайти матір заради справедливості?",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNTk=",
+          slug: "psihologichne",
+          name: "Психологічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjE=",
+          slug: "socialne",
+          name: "Соціальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+      ],
+    },
     durationInSec: "6060",
     rating: {
       imdb: {
@@ -13171,6 +32634,24 @@ const movies = [
     shortDescription:
       "Лялька Барбі, вигнана зі свого лялькового світу за те, що є недостатньо ідеальною, відправляється в світ людей.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzA=",
+          slug: "balet",
+          name: "Балет",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6840",
     rating: {
       imdb: {
@@ -13188,6 +32669,29 @@ const movies = [
     shortDescription:
       "Команда Планети Кіно про реліз нового Щось та масштабні оновлення бренду",
     year: 2024,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNzE=",
+          slug: "mg36o",
+          name: "Документальне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xNA==",
+          slug: "ukrayinske",
+          name: "Українське",
+        },
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8zNg==",
+          slug: "5re68",
+          name: "Ексклюзив від Планети Кіно",
+        },
+      ],
+    },
     durationInSec: "1920",
     rating: {
       imdb: {
@@ -13205,6 +32709,39 @@ const movies = [
     shortDescription:
       "Цього разу на Майлза Моралеса чекає несподівана подорож крізь всесвіт, у якій він об’єднає зусилля з Ґвен Стейсі та новою командою «павуків», щоби про",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjU=",
+          slug: "marvel_uk",
+          name: "Marvel",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzI=",
+          slug: "w2923",
+          name: "Пригодницьке",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzM=",
+          slug: "9uz4l",
+          name: "Фантастичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "8400",
     rating: {
       imdb: {
@@ -13222,6 +32759,39 @@ const movies = [
     shortDescription:
       "Колишній спецназівець веде війну на вулицях Амстердама, щоби врятувати доньку свого друга від місцевого злочинного синдикату.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjg=",
+          slug: "9yhho",
+          name: "Трилер",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODE=",
+          slug: "q9wdt",
+          name: "Бойовик",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvODY=",
+          slug: "kal3f",
+          name: "Детектив",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMQ==",
+          slug: "yevropejske",
+          name: "Європейське",
+        },
+      ],
+    },
     durationInSec: "5400",
     rating: {
       imdb: {
@@ -13239,6 +32809,18 @@ const movies = [
     shortDescription:
       "Після автомобільної аварії молода жінка приходить до тями в підвалі незнайомця, котрий переконує, що врятував її життя. Вона не знає, як і чому опинил",
     year: 2016,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8z",
+          slug: "126cg",
+          name: "Жахи",
+        },
+      ],
+    },
     durationInSec: "6240",
     rating: {
       imdb: {
@@ -13256,6 +32838,34 @@ const movies = [
     shortDescription:
       "Портрет німецького репера, підприємця і колишнього ув’язненого Дживара Хаджабі",
     year: 2022,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzI=",
+          slug: "bajopik",
+          name: "Байопік",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNDA=",
+          slug: "kriminalne",
+          name: "Кримінальне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNjk=",
+          slug: "5a17z",
+          name: "Драма",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "8280",
     rating: {
       imdb: {
@@ -13273,6 +32883,24 @@ const movies = [
     shortDescription:
       "Нора та Хе-сон були друзями дитинства, але їхній зв’язок перервався, коли дівчина переїхала до Канади з батьками. Через 20 років вони відновлюють спіл",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMjc=",
+          slug: "anime",
+          name: "Аніме",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "6360",
     rating: {
       imdb: {
@@ -13290,6 +32918,18 @@ const movies = [
     shortDescription:
       "Колись безжалісний вбивця Вільям Манні доживає свій вік на фермі з дітьми. Більше десяти років він не брав в руки зброю, втративши минулу ковбойську з",
     year: 1992,
+    genres: {
+      nodes: [],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8x",
+          slug: "rozvazhal-nie",
+          name: "Розважальне",
+        },
+      ],
+    },
     durationInSec: "7800",
     rating: {
       imdb: {
@@ -13307,6 +32947,34 @@ const movies = [
     shortDescription:
       "Масштабна історія про винайдення атомної бомби американським вченим Робертом Оппенгеймером від одного з найвидатніших режисерів сучасності.",
     year: 2023,
+    genres: {
+      nodes: [
+        {
+          id: "Z2lkOi8vZ2VucmUvMzE=",
+          slug: "biografichne",
+          name: "Біографічне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvMzY=",
+          slug: "istorichne",
+          name: "Історичне",
+        },
+        {
+          id: "Z2lkOi8vZ2VucmUvNzA=",
+          slug: "a3219",
+          name: "Драматичне",
+        },
+      ],
+    },
+    categories: {
+      nodes: [
+        {
+          id: "Z2lkOi8vbW92aWVjYXRlZ29yeS8xMA==",
+          slug: "blokbaster",
+          name: "Блокбастер",
+        },
+      ],
+    },
     durationInSec: "10800",
     rating: {
       imdb: {
@@ -13330,7 +32998,7 @@ function escapeValue(value) {
   return value;
 }
 
-function generateInsertSQL(data) {
+function generateInsertMoviesSQL(data) {
   let sql =
     "INSERT INTO movie (name, original_name, slug, age_restrictions, short_description, year, duration) VALUES\n";
 
@@ -13348,10 +33016,65 @@ function generateInsertSQL(data) {
       ].join(", ")})`;
     });
 
-  sql += values.join(",\n") + ";\n";
+  sql += values.join(",\n") + ";\n\n";
+
+  sql += insertIntoMovie_Category(movies);
+  sql += insertIntoMovie_Category(movies, "genres", "genre");
+
   return sql;
 }
 
-const sqlOutput = generateInsertSQL(movies);
+function insertIntoMovie_Category(
+  data,
+  key = "categories",
+  table = "category"
+) {
+  let sql = `INSERT INTO movie_${table} (movie_id, ${table}_id) VALUES\n`;
+  const categories_movies = data
+    .filter(
+      ({ [key]: categories, year }) =>
+        categories.nodes.length > 0 && year < 2026
+    )
+    .map(({ [key]: categories, slug: movie_id }) =>
+      categories.nodes
+        .map(
+          ({ slug: category_id }) =>
+            `(${escapeValue(movie_id)}, ${escapeValue(category_id)})`
+        )
+        .join(",\n")
+    )
+    .join(",\n");
+  sql += categories_movies + ";\n\n";
+  return sql;
+}
+
+function generateInsertCategoriesSQL(data, key = "genres", table = "genre") {
+  let sql = `INSERT INTO ${table} (slug, name) VALUES\n`;
+
+  const set = new Map(
+    data
+      .map(({ [key]: genres }) => genres.nodes)
+      .flat()
+      .map(({ slug, name }) => [slug, name])
+  );
+
+  sql +=
+    Array.from(set)
+      .map(
+        ([slug, name]) =>
+          `(${[escapeValue(slug), escapeValue(name)].join(", ")})`
+      )
+      .join(",\n") + ";\n";
+  return sql;
+}
+
+const sqlOutput = `
+${generateInsertCategoriesSQL(movies)}
+${generateInsertCategoriesSQL(movies, "categories", "category")}
+${generateInsertMoviesSQL(movies)}
+`;
 fs.writeFileSync("movies.sql", sqlOutput);
+
 console.log("SQL-файл створено: movies.sql");
+
+// node movies.js

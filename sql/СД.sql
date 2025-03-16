@@ -160,13 +160,13 @@ CREATE INDEX idx_rental_ticket_session ON rental_ticket(session_id);
 -- Таблиця категорій фільмів
 CREATE TABLE category (
     slug VARCHAR(50) PRIMARY KEY,
-    name VARCHAR(50) NOT NULL UNIQUE
+    name VARCHAR(50) NOT NULL
 );
 
 -- Таблиця жанрів фільмів
 CREATE TABLE genre (
     slug VARCHAR(50) PRIMARY KEY,
-    name VARCHAR(50) NOT NULL UNIQUE
+    name VARCHAR(50) NOT NULL
 );
 
 -- Проміжна таблиця для зв’язку фільмів і категорій
@@ -186,4 +186,3 @@ CREATE TABLE movie_genre (
     CONSTRAINT fk_movie FOREIGN KEY (movie_id) REFERENCES movie(slug) ON DELETE CASCADE,
     CONSTRAINT fk_genre FOREIGN KEY (genre_id) REFERENCES genre(slug) ON DELETE CASCADE
 );
-
