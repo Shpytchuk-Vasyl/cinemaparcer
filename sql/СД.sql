@@ -148,7 +148,7 @@ WHERE false;
 -- Зміни на каскадне видалення
 
 ALTER TABLE rental_ticket
-    ADD CONSTRAINT fk_session FOREIGN KEY (session_id) REFERENCES session(id) 
+    ADD CONSTRAINT fk_session FOREIGN KEY (session_id) REFERENCES rental_sessions(id) 
         ON DELETE CASCADE;
 
 ALTER TABLE rental_ticket
