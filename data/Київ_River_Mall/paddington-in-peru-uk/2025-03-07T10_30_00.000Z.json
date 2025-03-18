@@ -4,7 +4,7 @@
   "response": {
     "movieBySlug": {
       "offlineRental": {
-        "end": "2025-03-12T00:00:00.000Z",
+        "end": "2025-03-09T00:00:00.000Z",
         "start": "2025-01-16T00:00:00.000Z",
         "status": "ACTIVE",
         "labels": [
@@ -24,24 +24,16 @@
         "calendar": [
           "2025-03-07T00:00:00.000Z",
           "2025-03-08T00:00:00.000Z",
-          "2025-03-09T00:00:00.000Z",
-          "2025-03-10T00:00:00.000Z",
-          "2025-03-11T00:00:00.000Z",
-          "2025-03-12T00:00:00.000Z"
+          "2025-03-09T00:00:00.000Z"
         ],
         "rentalTechnologies": [
           {
             "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS8x",
             "name": "RE'LUX",
             "slug": "relux"
-          },
-          {
-            "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS81",
-            "name": "Cinetech+",
-            "slug": "сinetech"
           }
         ],
-        "sessionsNumber": 7,
+        "sessionsNumber": 4,
         "sessions": [
           {
             "canPayWithBonuses": false,
@@ -56,567 +48,323 @@
               "activeStatus": "ACTIVE",
               "doorNumberEntranceToHall": 2,
               "isAlphabeticalRowsEnumeration": true,
-              "config": {
-                "direction": "LEFT_TO_RIGHT",
-                "rowMargin": 25,
-                "side": "LEFT",
-                "seatWidth": 25,
-                "seatHeight": 50,
-                "seatMargin": 5
-              },
               "rows": [
                 {
                   "rowNumber": "A",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0,
-                    "marginTop": "20"
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC80NDkz",
                       "type": "STANDARD",
                       "rowNumber": "A",
                       "seatNumber": 1,
-                      "state": "BLOCKED",
-                      "styles": {
-                        "transformX": "13",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "BLOCKED"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NDk0",
                       "type": "STANDARD",
                       "rowNumber": "A",
                       "seatNumber": 2,
-                      "state": "BLOCKED",
-                      "styles": {
-                        "transformX": "13",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "BLOCKED"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NDk1",
                       "type": "STANDARD",
                       "rowNumber": "A",
                       "seatNumber": 3,
-                      "state": "BLOCKED",
-                      "styles": {
-                        "transformX": "35",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "BLOCKED"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NDk2",
                       "type": "STANDARD",
                       "rowNumber": "A",
                       "seatNumber": 4,
-                      "state": "BLOCKED",
-                      "styles": {
-                        "transformX": "35",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "BLOCKED"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NDk3",
                       "type": "STANDARD",
                       "rowNumber": "A",
                       "seatNumber": 5,
-                      "state": "BLOCKED",
-                      "styles": {
-                        "transformX": "48",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "BLOCKED"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NDk4",
                       "type": "STANDARD",
                       "rowNumber": "A",
                       "seatNumber": 6,
-                      "state": "BLOCKED",
-                      "styles": {
-                        "transformX": "48",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "BLOCKED"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NDk5",
                       "type": "STANDARD",
                       "rowNumber": "A",
                       "seatNumber": 7,
-                      "state": "BLOCKED",
-                      "styles": {
-                        "transformX": "68",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "BLOCKED"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTAw",
                       "type": "STANDARD",
                       "rowNumber": "A",
                       "seatNumber": 8,
-                      "state": "BLOCKED",
-                      "styles": {
-                        "transformX": "68",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "BLOCKED"
                     }
                   ]
                 },
                 {
                   "rowNumber": "B",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC80NTAx",
                       "type": "STANDARD",
                       "rowNumber": "B",
                       "seatNumber": 1,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "13",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTAy",
                       "type": "STANDARD",
                       "rowNumber": "B",
                       "seatNumber": 2,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "13",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTAz",
                       "type": "STANDARD",
                       "rowNumber": "B",
                       "seatNumber": 3,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "35",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTA0",
                       "type": "STANDARD",
                       "rowNumber": "B",
                       "seatNumber": 4,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "35",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTA1",
                       "type": "STANDARD",
                       "rowNumber": "B",
                       "seatNumber": 5,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "48",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTA2",
                       "type": "STANDARD",
                       "rowNumber": "B",
                       "seatNumber": 6,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "48",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTA3",
                       "type": "STANDARD",
                       "rowNumber": "B",
                       "seatNumber": 7,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "68",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTA4",
                       "type": "STANDARD",
                       "rowNumber": "B",
                       "seatNumber": 8,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "68",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     }
                   ]
                 },
                 {
                   "rowNumber": "C",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC80NTA5",
                       "type": "STANDARD",
                       "rowNumber": "C",
                       "seatNumber": 1,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "13",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTEw",
                       "type": "STANDARD",
                       "rowNumber": "C",
                       "seatNumber": 2,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "13",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTEx",
                       "type": "STANDARD",
                       "rowNumber": "C",
                       "seatNumber": 3,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "35",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTEy",
                       "type": "STANDARD",
                       "rowNumber": "C",
                       "seatNumber": 4,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "35",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTEz",
                       "type": "STANDARD",
                       "rowNumber": "C",
                       "seatNumber": 5,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "48",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTE0",
                       "type": "STANDARD",
                       "rowNumber": "C",
                       "seatNumber": 6,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "48",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTE1",
                       "type": "STANDARD",
                       "rowNumber": "C",
                       "seatNumber": 7,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "68",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTE2",
                       "type": "STANDARD",
                       "rowNumber": "C",
                       "seatNumber": 8,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "68",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     }
                   ]
                 },
                 {
                   "rowNumber": "D",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC80NTE3",
                       "type": "STANDARD",
                       "rowNumber": "D",
                       "seatNumber": 1,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "13",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTE4",
                       "type": "STANDARD",
                       "rowNumber": "D",
                       "seatNumber": 2,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "13",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTE5",
                       "type": "STANDARD",
                       "rowNumber": "D",
                       "seatNumber": 3,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "35",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTIw",
                       "type": "STANDARD",
                       "rowNumber": "D",
                       "seatNumber": 4,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "35",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTIx",
                       "type": "STANDARD",
                       "rowNumber": "D",
                       "seatNumber": 5,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "48",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTIy",
                       "type": "STANDARD",
                       "rowNumber": "D",
                       "seatNumber": 6,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": "48",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTIz",
                       "type": "STANDARD",
                       "rowNumber": "D",
                       "seatNumber": 7,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "68",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTI0",
                       "type": "STANDARD",
                       "rowNumber": "D",
                       "seatNumber": 8,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "68",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     }
                   ]
                 },
                 {
                   "rowNumber": "E",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": "29"
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC80NTI1",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 1,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "0",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTI2",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 2,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "0",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTI3",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 3,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "7",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTI4",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 4,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "7",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTI5",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 5,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "14",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTMw",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 6,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "14",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTMx",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 7,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "21",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTMy",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 8,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "21",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTMz",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 9,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "28",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC80NTM0",
                       "type": "STANDARD",
                       "rowNumber": "E",
                       "seatNumber": 10,
-                      "state": "ACTIVE",
-                      "styles": {
-                        "transformX": "28",
-                        "transformY": 0,
-                        "rotate": 0
-                      }
+                      "state": "ACTIVE"
                     }
                   ]
                 }
@@ -649,900 +397,482 @@
             "durationInSec": 6360,
             "startSessionAt": "2025-03-07T10:40:00.000Z",
             "endSessionAt": "2025-03-07T12:26:00.000Z",
-            "countFreeSeats": 26,
+            "countFreeSeats": 19,
             "labels": [],
             "cinemaHall": {
               "id": "Z2lkOi8vY2luZW1haGFsbC81OQ==",
               "activeStatus": "ACTIVE",
               "doorNumberEntranceToHall": 5,
               "isAlphabeticalRowsEnumeration": false,
-              "config": {
-                "direction": "LEFT_TO_RIGHT",
-                "rowMargin": 10,
-                "side": "LEFT",
-                "seatWidth": 20,
-                "seatHeight": 30,
-                "seatMargin": 5
-              },
               "rows": [
                 {
                   "rowNumber": "1",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0,
-                    "marginTop": "30"
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC81NDEw",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 1,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 45,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDEx",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 2,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDEy",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 3,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDEz",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 4,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDE0",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 5,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDE1",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 6,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDE2",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 7,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDE3",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 8,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDE4",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 9,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDE5",
                       "type": "STANDARD",
                       "rowNumber": "1",
                       "seatNumber": 10,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 60,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     }
                   ]
                 },
                 {
                   "rowNumber": "2",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC81NDIw",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 1,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 45,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDIx",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 2,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDIy",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 3,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDIz",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 4,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDI0",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 5,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDI1",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 6,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDI2",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 7,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDI3",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 8,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDI4",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 9,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "BLOCKED_3D"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDI5",
                       "type": "STANDARD",
                       "rowNumber": "2",
                       "seatNumber": 10,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 60,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "TEMPORARY_BLOCKED_FOR_SALE"
                     }
                   ]
                 },
                 {
                   "rowNumber": "3",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC81NDMw",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 1,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 45,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "TEMPORARY_BLOCKED_FOR_SALE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDMx",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 2,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDMy",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 3,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDMz",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 4,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDM0",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 5,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDM1",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 6,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDM2",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 7,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDM3",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 8,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDM4",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 9,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDM5",
                       "type": "STANDARD",
                       "rowNumber": "3",
                       "seatNumber": 10,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 60,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     }
                   ]
                 },
                 {
                   "rowNumber": "4",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQw",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 1,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 45,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "TEMPORARY_BLOCKED_FOR_SALE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQx",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 2,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQy",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 3,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQz",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 4,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQ0",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 5,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQ1",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 6,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQ2",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 7,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQ3",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 8,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQ4",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 9,
-                      "state": "BOOKED",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDQ5",
                       "type": "STANDARD",
                       "rowNumber": "4",
                       "seatNumber": 10,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 60,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     }
                   ]
                 },
                 {
                   "rowNumber": "5",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC81NDUw",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 1,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 45,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "TEMPORARY_BLOCKED_FOR_SALE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDUx",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 2,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDUy",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 3,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 48,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDUz",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 4,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDU0",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 5,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 51,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDU1",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 6,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDU2",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 7,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 54,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDU3",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 8,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDU4",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 9,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 57,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "TEMPORARY_BLOCKED_FOR_SALE"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDU5",
                       "type": "STANDARD",
                       "rowNumber": "5",
                       "seatNumber": 10,
-                      "state": "BLOCKED_3D",
-                      "styles": {
-                        "transformX": 60,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     }
                   ]
                 },
                 {
                   "rowNumber": "6",
-                  "styles": {
-                    "justifyContent": "normal",
-                    "marginLeft": 0,
-                    "marginRight": 0,
-                    "marginTop": "20"
-                  },
                   "seats": [
                     {
                       "id": "Z2lkOi8vc2VhdC81NDYw",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 1,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": -8,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDYx",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 2,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": -8,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDYy",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 3,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": -6,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDYz",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 4,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": -6,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDY0",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 5,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": -4,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDY1",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 6,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": -4,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDY2",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 7,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": -2,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDY3",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 8,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": -2,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDY4",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 9,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 0,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDY5",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 10,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 0,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDcw",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 11,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 2,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDcx",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 12,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 2,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 0
-                      }
+                      "state": "SOLD"
                     },
                     {
                       "id": "Z2lkOi8vc2VhdC81NDcy",
                       "type": "STANDARD",
                       "rowNumber": "6",
                       "seatNumber": 13,
-                      "state": "SOLD",
-                      "styles": {
-                        "transformX": 2,
-                        "transformY": 0,
-                        "rotate": 0,
-                        "marginLeft": 4
-                      }
+                      "state": "SOLD"
                     }
                   ]
                 }
@@ -1572,1533 +902,5 @@
         ]
       }
     }
-  },
-  "sessions": [
-    {
-      "canPayWithBonuses": false,
-      "dimensionType": "2D",
-      "durationInSec": 6360,
-      "startSessionAt": "2025-03-07T10:30:00.000Z",
-      "endSessionAt": "2025-03-07T12:16:00.000Z",
-      "countFreeSeats": 24,
-      "labels": [],
-      "cinemaHall": {
-        "id": "Z2lkOi8vY2luZW1haGFsbC81Mw==",
-        "activeStatus": "ACTIVE",
-        "doorNumberEntranceToHall": 2,
-        "isAlphabeticalRowsEnumeration": true,
-        "config": {
-          "direction": "LEFT_TO_RIGHT",
-          "rowMargin": 25,
-          "side": "LEFT",
-          "seatWidth": 25,
-          "seatHeight": 50,
-          "seatMargin": 5
-        },
-        "rows": [
-          {
-            "rowNumber": "A",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": "20"
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC80NDkz",
-                "type": "STANDARD",
-                "rowNumber": "A",
-                "seatNumber": 1,
-                "state": "BLOCKED",
-                "styles": {
-                  "transformX": "13",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NDk0",
-                "type": "STANDARD",
-                "rowNumber": "A",
-                "seatNumber": 2,
-                "state": "BLOCKED",
-                "styles": {
-                  "transformX": "13",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NDk1",
-                "type": "STANDARD",
-                "rowNumber": "A",
-                "seatNumber": 3,
-                "state": "BLOCKED",
-                "styles": {
-                  "transformX": "35",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NDk2",
-                "type": "STANDARD",
-                "rowNumber": "A",
-                "seatNumber": 4,
-                "state": "BLOCKED",
-                "styles": {
-                  "transformX": "35",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NDk3",
-                "type": "STANDARD",
-                "rowNumber": "A",
-                "seatNumber": 5,
-                "state": "BLOCKED",
-                "styles": {
-                  "transformX": "48",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NDk4",
-                "type": "STANDARD",
-                "rowNumber": "A",
-                "seatNumber": 6,
-                "state": "BLOCKED",
-                "styles": {
-                  "transformX": "48",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NDk5",
-                "type": "STANDARD",
-                "rowNumber": "A",
-                "seatNumber": 7,
-                "state": "BLOCKED",
-                "styles": {
-                  "transformX": "68",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTAw",
-                "type": "STANDARD",
-                "rowNumber": "A",
-                "seatNumber": 8,
-                "state": "BLOCKED",
-                "styles": {
-                  "transformX": "68",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              }
-            ]
-          },
-          {
-            "rowNumber": "B",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC80NTAx",
-                "type": "STANDARD",
-                "rowNumber": "B",
-                "seatNumber": 1,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "13",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTAy",
-                "type": "STANDARD",
-                "rowNumber": "B",
-                "seatNumber": 2,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "13",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTAz",
-                "type": "STANDARD",
-                "rowNumber": "B",
-                "seatNumber": 3,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "35",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTA0",
-                "type": "STANDARD",
-                "rowNumber": "B",
-                "seatNumber": 4,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "35",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTA1",
-                "type": "STANDARD",
-                "rowNumber": "B",
-                "seatNumber": 5,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "48",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTA2",
-                "type": "STANDARD",
-                "rowNumber": "B",
-                "seatNumber": 6,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "48",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTA3",
-                "type": "STANDARD",
-                "rowNumber": "B",
-                "seatNumber": 7,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "68",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTA4",
-                "type": "STANDARD",
-                "rowNumber": "B",
-                "seatNumber": 8,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "68",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              }
-            ]
-          },
-          {
-            "rowNumber": "C",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC80NTA5",
-                "type": "STANDARD",
-                "rowNumber": "C",
-                "seatNumber": 1,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "13",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTEw",
-                "type": "STANDARD",
-                "rowNumber": "C",
-                "seatNumber": 2,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "13",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTEx",
-                "type": "STANDARD",
-                "rowNumber": "C",
-                "seatNumber": 3,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "35",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTEy",
-                "type": "STANDARD",
-                "rowNumber": "C",
-                "seatNumber": 4,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "35",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTEz",
-                "type": "STANDARD",
-                "rowNumber": "C",
-                "seatNumber": 5,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "48",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTE0",
-                "type": "STANDARD",
-                "rowNumber": "C",
-                "seatNumber": 6,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "48",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTE1",
-                "type": "STANDARD",
-                "rowNumber": "C",
-                "seatNumber": 7,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "68",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTE2",
-                "type": "STANDARD",
-                "rowNumber": "C",
-                "seatNumber": 8,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "68",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              }
-            ]
-          },
-          {
-            "rowNumber": "D",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC80NTE3",
-                "type": "STANDARD",
-                "rowNumber": "D",
-                "seatNumber": 1,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "13",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTE4",
-                "type": "STANDARD",
-                "rowNumber": "D",
-                "seatNumber": 2,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "13",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTE5",
-                "type": "STANDARD",
-                "rowNumber": "D",
-                "seatNumber": 3,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "35",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTIw",
-                "type": "STANDARD",
-                "rowNumber": "D",
-                "seatNumber": 4,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "35",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTIx",
-                "type": "STANDARD",
-                "rowNumber": "D",
-                "seatNumber": 5,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "48",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTIy",
-                "type": "STANDARD",
-                "rowNumber": "D",
-                "seatNumber": 6,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": "48",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTIz",
-                "type": "STANDARD",
-                "rowNumber": "D",
-                "seatNumber": 7,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "68",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTI0",
-                "type": "STANDARD",
-                "rowNumber": "D",
-                "seatNumber": 8,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "68",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              }
-            ]
-          },
-          {
-            "rowNumber": "E",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": "29"
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC80NTI1",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 1,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "0",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTI2",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 2,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "0",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTI3",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 3,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "7",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTI4",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 4,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "7",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTI5",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 5,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "14",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTMw",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 6,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "14",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTMx",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 7,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "21",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTMy",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 8,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "21",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTMz",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 9,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "28",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC80NTM0",
-                "type": "STANDARD",
-                "rowNumber": "E",
-                "seatNumber": 10,
-                "state": "ACTIVE",
-                "styles": {
-                  "transformX": "28",
-                  "transformY": 0,
-                  "rotate": 0
-                }
-              }
-            ]
-          }
-        ]
-      },
-      "priceBundle": {
-        "minPrices": {
-          "price": 600,
-          "priceInBonuses": 15000
-        },
-        "items": [
-          {
-            "price": 600,
-            "priceInBonuses": 15000,
-            "seatType": "STANDARD",
-            "canBePaidByBonuses": true
-          }
-        ]
-      },
-      "id": "Z2lkOi8vc2Vzc2lvbi8yNzM5MDIw",
-      "rentalTechnology": {
-        "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS8x",
-        "name": "RE'LUX"
-      },
-      "cinemaHallId": "Z2lkOi8vY2luZW1haGFsbC81Mw=="
-    },
-    {
-      "canPayWithBonuses": false,
-      "dimensionType": "2D",
-      "durationInSec": 6360,
-      "startSessionAt": "2025-03-07T10:40:00.000Z",
-      "endSessionAt": "2025-03-07T12:26:00.000Z",
-      "countFreeSeats": 26,
-      "labels": [],
-      "cinemaHall": {
-        "id": "Z2lkOi8vY2luZW1haGFsbC81OQ==",
-        "activeStatus": "ACTIVE",
-        "doorNumberEntranceToHall": 5,
-        "isAlphabeticalRowsEnumeration": false,
-        "config": {
-          "direction": "LEFT_TO_RIGHT",
-          "rowMargin": 10,
-          "side": "LEFT",
-          "seatWidth": 20,
-          "seatHeight": 30,
-          "seatMargin": 5
-        },
-        "rows": [
-          {
-            "rowNumber": "1",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": "30"
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC81NDEw",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 1,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 45,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDEx",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 2,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDEy",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 3,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDEz",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 4,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDE0",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 5,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDE1",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 6,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDE2",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 7,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDE3",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 8,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDE4",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 9,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDE5",
-                "type": "STANDARD",
-                "rowNumber": "1",
-                "seatNumber": 10,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 60,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              }
-            ]
-          },
-          {
-            "rowNumber": "2",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC81NDIw",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 1,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 45,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDIx",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 2,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDIy",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 3,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDIz",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 4,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDI0",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 5,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDI1",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 6,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDI2",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 7,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDI3",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 8,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDI4",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 9,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDI5",
-                "type": "STANDARD",
-                "rowNumber": "2",
-                "seatNumber": 10,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 60,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              }
-            ]
-          },
-          {
-            "rowNumber": "3",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC81NDMw",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 1,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 45,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDMx",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 2,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDMy",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 3,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDMz",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 4,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDM0",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 5,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDM1",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 6,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDM2",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 7,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDM3",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 8,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDM4",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 9,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDM5",
-                "type": "STANDARD",
-                "rowNumber": "3",
-                "seatNumber": 10,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 60,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              }
-            ]
-          },
-          {
-            "rowNumber": "4",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQw",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 1,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 45,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQx",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 2,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQy",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 3,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQz",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 4,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQ0",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 5,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQ1",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 6,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQ2",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 7,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQ3",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 8,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQ4",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 9,
-                "state": "BOOKED",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDQ5",
-                "type": "STANDARD",
-                "rowNumber": "4",
-                "seatNumber": 10,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 60,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              }
-            ]
-          },
-          {
-            "rowNumber": "5",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC81NDUw",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 1,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 45,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDUx",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 2,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDUy",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 3,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 48,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDUz",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 4,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDU0",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 5,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 51,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDU1",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 6,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDU2",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 7,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 54,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDU3",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 8,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDU4",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 9,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 57,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDU5",
-                "type": "STANDARD",
-                "rowNumber": "5",
-                "seatNumber": 10,
-                "state": "BLOCKED_3D",
-                "styles": {
-                  "transformX": 60,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              }
-            ]
-          },
-          {
-            "rowNumber": "6",
-            "styles": {
-              "justifyContent": "normal",
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": "20"
-            },
-            "seats": [
-              {
-                "id": "Z2lkOi8vc2VhdC81NDYw",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 1,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": -8,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDYx",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 2,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": -8,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDYy",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 3,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": -6,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDYz",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 4,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": -6,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDY0",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 5,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": -4,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDY1",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 6,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": -4,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDY2",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 7,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": -2,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDY3",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 8,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": -2,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDY4",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 9,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 0,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDY5",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 10,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 0,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDcw",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 11,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 2,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDcx",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 12,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 2,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 0
-                }
-              },
-              {
-                "id": "Z2lkOi8vc2VhdC81NDcy",
-                "type": "STANDARD",
-                "rowNumber": "6",
-                "seatNumber": 13,
-                "state": "SOLD",
-                "styles": {
-                  "transformX": 2,
-                  "transformY": 0,
-                  "rotate": 0,
-                  "marginLeft": 4
-                }
-              }
-            ]
-          }
-        ]
-      },
-      "priceBundle": {
-        "minPrices": {
-          "price": 200,
-          "priceInBonuses": 5100
-        },
-        "items": [
-          {
-            "price": 200,
-            "priceInBonuses": 5100,
-            "seatType": "STANDARD",
-            "canBePaidByBonuses": true
-          }
-        ]
-      },
-      "id": "Z2lkOi8vc2Vzc2lvbi8yNzQwMjcy",
-      "rentalTechnology": {
-        "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS81",
-        "name": "Cinetech+"
-      },
-      "cinemaHallId": "Z2lkOi8vY2luZW1haGFsbC81OQ=="
-    }
-  ]
+  }
 }
