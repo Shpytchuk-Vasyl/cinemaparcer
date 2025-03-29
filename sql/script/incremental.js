@@ -1,13 +1,17 @@
 const fs = require("fs");
 const path = require("path");
 const { promisify } = require("util");
+const mkdir = promisify(fs.mkdir);
+const copyFile = promisify(fs.copyFile);
+const unlink = promisify(fs.unlink);
+const writeFile = promisify(fs.writeFile);
 const {
   generateLoadSessionsScript,
   parseDataFolder,
   readDirRecursive,
 } = require("./first-load");
 
-const dataDir = path.resolve(__dirname, "../data");
+const dataDir = path.resolve(__dirname, "../../dist/data");
 const rootDataDir = path.resolve(__dirname, "../../data"); // Шлях до кореневої папки data
 
 /**
@@ -15,10 +19,6 @@ const rootDataDir = path.resolve(__dirname, "../../data"); // Шлях до ко
  * @param {Array<string>} processedFiles - масив шляхів до оброблених файлів
  */
 async function moveFilesToRootData(processedFiles) {
-  const mkdir = promisify(fs.mkdir);
-  const copyFile = promisify(fs.copyFile);
-  const unlink = promisify(fs.unlink);
-
   try {
     // Переконаємося, що коренева папка data існує
     if (!fs.existsSync(rootDataDir)) {
@@ -84,3 +84,5 @@ async function main() {
     process.exit(1);
   }
 }
+
+main();

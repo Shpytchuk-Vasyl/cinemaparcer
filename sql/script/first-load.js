@@ -128,7 +128,16 @@ function generateLoadSessionsScript(sessions) {
 
   for (const session of sessions) {
     const startDateTime = new Date(session.start).toISOString();
-
+    const statement = session.hall.seats
+      .map((row, row_number) =>
+        row
+          .filter((seat) => seat.status == "SOLD")
+          .map(
+            (seat, seat_number) =>
+              `(${row_number}, ${seat_number}, inserted_session_id, ${seat.price})`
+          )
+      )
+      .filter((row) => row.length > 0);
     sql += `DO $$
 DECLARE
     inserted_session_id INT;
@@ -141,23 +150,19 @@ BEGIN
     }, ${session.tickets_sold})
     RETURNING id INTO inserted_session_id;
     
-    -- використовуємо отриманий ID для вставки квитків
-    INSERT INTO ticket (row_number, seat_number, session_id, price, status) VALUES 
-    ${session.hall.seats
-      .map((row, row_number) =>
-        row.map(
-          (seat, seat_number) =>
-            `(${row_number}, ${seat_number}, inserted_session_id, ${seat.price}, ${seat.status})`
-        )
-      )
-      .join(",\n")};
+    ${
+      statement.length > 0
+        ? `INSERT INTO ticket (row_number, seat_number, session_id, price) VALUES 
+    ${statement.join(",\n")};`
+        : ""
+    }
 END
 $$;\n`;
   }
   sql += "\n";
 
   // Закриваємо транзакцію
-  sql += "\nCOMMIT;\n";
+  // sql += "\nCOMMIT;\n";
 
   return sql;
 }
@@ -181,6 +186,8 @@ const generateLoadHallSeatsScript = (sessions) => {
     }
   }
 
+  let status = {};
+
   for (const cinemaId in cinemaHalls) {
     sql += `INSERT INTO cinema_hall (cinema_id, hall_number) VALUES ${Object.keys(
       cinemaHalls[cinemaId]
@@ -192,15 +199,16 @@ const generateLoadHallSeatsScript = (sessions) => {
       sql += `INSERT INTO cinema_seat (cinema_id, hall_number, row_number, seat_number, type) VALUES ${cinemaHalls[
         cinemaId
       ][hallId].seats.map((rows, row_number) =>
-        rows.map(
-          (seat, seat_number) =>
-            `('${cinemaId}', ${Number(hallId)}, ${Number(row_number)}, ${Number(
-              seat_number
-            )}, '${seat.seat_type}')`
-        )
+        rows.map((seat, seat_number) => {
+          return `('${cinemaId}', ${Number(hallId)}, ${Number(
+            row_number
+          )}, ${Number(seat_number)}, '${seat.seat_type}')`;
+        })
       )};\n`;
     }
   }
+
+  console.log(status);
 
   sql += "\nCOMMIT;\n";
   return sql;
@@ -228,12 +236,14 @@ async function main() {
   }
 }
 
-// Запускаємо скрипт
-main();
 
 module.exports = {
   readDirRecursive,
   readAllJsonFiles,
   generateLoadSessionsScript,
   generateLoadHallSeatsScript,
+  parseDataFolder,
 };
+
+// Запускаємо скрипт тільки першого разу
+// main();

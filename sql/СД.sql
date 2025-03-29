@@ -47,7 +47,7 @@ CREATE TABLE cinema_hall (
     CONSTRAINT fk_cinema FOREIGN KEY (cinema_id) REFERENCES cinema(id) ON DELETE CASCADE
 );
 
-CREATE DOMAIN seat_type AS CHAR(8) CHECK (VALUE IN ('STANDART', 'VIP'));
+CREATE DOMAIN seat_type AS CHAR(15) CHECK (VALUE IN ('STANDARD', 'VIP', 'WITH_DISABILITIES'));
 
 -- Таблиця для місць у кінотеатрі
 CREATE TABLE cinema_seat (
@@ -56,7 +56,7 @@ CREATE TABLE cinema_seat (
     row_number SMALLINT NOT NULL DEFAULT 1, 
     seat_number SMALLINT NOT NULL DEFAULT 1, 
     styles VARCHAR(100) DEFAULT '',  
-    type seat_type NOT NULL DEFAULT 'STANDART',    
+    type seat_type NOT NULL DEFAULT 'STANDARD',    
     PRIMARY KEY (cinema_id, hall_number, row_number, seat_number), 
     CONSTRAINT fk_cinema_hall FOREIGN KEY (cinema_id, hall_number) REFERENCES cinema_hall(cinema_id, hall_number) ON DELETE CASCADE 
 );
@@ -111,7 +111,8 @@ CREATE TABLE session (
     tickets_sold INT NOT NULL, 
 
     CONSTRAINT fk_cinema FOREIGN KEY (cinema_id) REFERENCES cinema(id) ON DELETE SET NULL,
-    CONSTRAINT fk_movie FOREIGN KEY (movie_id) REFERENCES movie(slug) ON DELETE SET NULL
+    CONSTRAINT fk_movie FOREIGN KEY (movie_id) REFERENCES movie(slug) ON DELETE SET NULL,
+    CONSTRAINT fk_hall FOREIGN KEY (hall_id) REFERENCES cinema_hall(hall_number) ON DELETE SET NULL
 );
 
 -- Створення таблиці для клієнтів
@@ -121,8 +122,8 @@ CREATE TABLE customer (
     name VARCHAR(30) NOT NULL        
 );
 
--- Створення домену для статусу квитка
-CREATE DOMAIN ticket_status_enum AS VARCHAR(10) CHECK (VALUE IN ('ACTIVE', 'USED'));
+
+CREATE DOMAIN ticket_status_enum AS VARCHAR(26) CHECK (VALUE IN ('ACTIVE', 'SOLD', 'BLOCKED_3D', 'BLOCKED', 'BOOKED', 'TEMPORARY_BLOCKED_FOR_SALE'));
 
 -- Таблиця для всіх квитків (історія всіх квитків)
 CREATE TABLE ticket (
@@ -153,6 +154,9 @@ ALTER TABLE rental_ticket
 
 ALTER TABLE rental_ticket
     ADD CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES customer(id) ON DELETE SET NULL;
+
+ALTER TABLE ticket
+    DROP COLUMN status;
 
 -- Додавання індексу для пошуку за session_id
 CREATE INDEX idx_rental_ticket_session ON rental_ticket(session_id);
