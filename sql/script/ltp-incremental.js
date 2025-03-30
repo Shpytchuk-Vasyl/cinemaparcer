@@ -9,7 +9,7 @@ const {
   generateLoadSessionsScript,
   parseDataFolder,
   readDirRecursive,
-} = require("./first-load");
+} = require("./ltp-first-load");
 
 const dataDir = path.resolve(__dirname, "../../dist/data");
 const rootDataDir = path.resolve(__dirname, "../../data"); // Шлях до кореневої папки data

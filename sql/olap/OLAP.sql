@@ -79,14 +79,14 @@ CREATE TABLE sale (
     cinema_hall_id INT,           
     movie_id INT,    
     day_id DATE,               
-    promotion_id INT DEFAULT NULL,
+    promotion_id INT DEFAULT 1,
 
     total_revenue NUMERIC(10,2) NOT NULL, 
     tickets_sold INT NOT NULL,
     fullness_of_the_hall NUMERIC(10,2) NOT NULL, -- напів адитивна метрика: треба шукати середнє значення
     day_after_start_rental_date SMALLINT DEFAULT NULL, -- не адитивна метрика
 
-    session_start_time TIME NOT NULL,
+    session_start_time TIME WITH TIME ZONE NOT NULL,
 
     CONSTRAINT fk_day FOREIGN KEY (day_id) REFERENCES day(day) ON DELETE SET NULL,
     CONSTRAINT fk_promotion FOREIGN KEY (promotion_id) REFERENCES promotion_details(id) ON DELETE SET NULL,
@@ -106,7 +106,7 @@ CREATE TABLE monthly_sales (
 
     cinema_hall_id INT NOT NULL,
 
-    total_revenue NUMERIC(12,2) NOT NULL,   -- Загальний дохід за місяць
+    total_revenue NUMERIC(10,2) NOT NULL,   -- Загальний дохід за місяць
     total_tickets_sold INT NOT NULL,        -- Кількість проданих квитків
     avg_fullness NUMERIC(5,2) NOT NULL,     -- Середня заповненість залів
     avg_revenue_per_ticket NUMERIC(10,2) NOT NULL, -- Середній дохід з квитка

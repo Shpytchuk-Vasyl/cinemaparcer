@@ -52,6 +52,46 @@ function getAllSeatsForHall(cinemaHall, priceBundle, session_id) {
   return allSeats;
 }
 
+function tryCalculateDiscount(data, jsonFilesData = []) {
+  const currentPrice =
+    data.response.movieBySlug.offlineRental.sessions[0].priceBundle.minPrices
+      .price;
+
+  const set = new Set(
+    jsonFilesData
+      .filter(
+        (file) =>
+          file.response.movieBySlug.offlineRental.sessions[0] &&
+          file.response.movieBySlug.offlineRental.sessions[0].cinemaHall.id ===
+            data.response.movieBySlug.offlineRental.sessions[0].cinemaHall.id &&
+          file.slug === data.slug &&
+          file.cinemaId === data.cinemaId &&
+          file.response.movieBySlug.offlineRental.sessions[0].rentalTechnology
+            .id ===
+            data.response.movieBySlug.offlineRental.sessions[0].rentalTechnology
+              .id &&
+          !file.response.movieBySlug.offlineRental.labels.some(
+            (label) => label.name === "Діють знижки"
+          ) &&
+          file.response.movieBySlug.offlineRental.sessions[0].priceBundle
+            .minPrices.price > currentPrice
+      )
+      .map(
+        (file) =>
+          file.response.movieBySlug.offlineRental.sessions[0].priceBundle
+            .minPrices.price
+      )
+  );
+
+  const minPrice = Math.min(...set);
+
+  if (set.size > 0) {
+    let percent = (1 - currentPrice / minPrice).toFixed(1) * 100;
+    return percent;
+  }
+  return null;
+}
+
 /**
  * Парсинг даних кінотеатрів
  * @returns {Promise<void>}
@@ -83,6 +123,16 @@ async function parseDataFolder(dataDir) {
               .flatMap((row) => row.filter((seat) => seat.status == "SOLD"))
               .reduce((acc, seat) => acc + seat.price, 0);
 
+            const has_discount_label =
+              data.response.movieBySlug.offlineRental.labels.some(
+                (label) => label.name == "Діють знижки"
+              );
+
+            let percent = null;
+            if (has_discount_label) {
+              percent = tryCalculateDiscount(data, jsonFilesData);
+            }
+
             sessions.push({
               cinemaId: data.cinemaId.endsWith("=")
                 ? data.cinemaId
@@ -105,10 +155,14 @@ async function parseDataFolder(dataDir) {
                     .doorNumberEntranceToHall,
                 seats: tikets,
               },
+              discount: {
+                has_discount_label,
+                percent,
+              },
             });
           }
         } catch (err) {
-          console.error(`Помилка при обробці файлу ${jsonFile}:`, err.message);
+          console.error(`Помилка при обробці файлу`, err.message);
         }
       }
     }
@@ -127,7 +181,12 @@ function generateLoadSessionsScript(sessions) {
   let sql = "BEGIN;\n\n";
 
   for (const session of sessions) {
-    const startDateTime = new Date(session.start).toISOString();
+    const sessionStart = new Date(session.start);
+    const kyivTime = new Date(
+      sessionStart.toLocaleString("en-US", { timeZone: "Europe/Kyiv" })
+    );
+
+    const startDateTime = kyivTime.toISOString().split(".")[0];
     const statement = session.hall.seats
       .map((row, row_number) =>
         row
@@ -156,6 +215,12 @@ BEGIN
     ${statement.join(",\n")};`
         : ""
     }
+
+    IF ${session.discount.has_discount_label} THEN
+        INSERT INTO discount (percent, session_id) VALUES (${
+          session.discount.percent
+        }, inserted_session_id);
+    END IF;
 END
 $$;\n`;
   }
@@ -180,6 +245,12 @@ const generateLoadHallSeatsScript = (sessions) => {
         },
       };
     } else {
+      if (
+        cinemaHalls[session.cinemaId][session.hall_id]?.seats?.length >
+        session?.hall?.seats?.length
+      ) {
+        continue;
+      }
       cinemaHalls[session.cinemaId][session.hall_id] = {
         seats: session.hall.seats,
       };
@@ -235,7 +306,6 @@ async function main() {
     process.exit(1);
   }
 }
-
 
 module.exports = {
   readDirRecursive,

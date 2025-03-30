@@ -104,11 +104,11 @@ CREATE TABLE session (
     cinema_id VARCHAR(30),           
     hall_id SMALLINT,         
     movie_id VARCHAR(200),                  
-    start TIMESTAMP NOT NULL,                       
+    start TIMESTAMP WITH TIME ZONE NOT NULL,                       
     dimension_type dimension_type_enum NOT NULL,     
 
     total_revenue NUMERIC(10,2) NOT NULL, 
-    tickets_sold INT NOT NULL, 
+    tickets_sold INT NOT NULL,
 
     CONSTRAINT fk_cinema FOREIGN KEY (cinema_id) REFERENCES cinema(id) ON DELETE SET NULL,
     CONSTRAINT fk_movie FOREIGN KEY (movie_id) REFERENCES movie(slug) ON DELETE SET NULL,
@@ -189,4 +189,12 @@ CREATE TABLE movie_genre (
     PRIMARY KEY (movie_id, genre_id),
     CONSTRAINT fk_movie FOREIGN KEY (movie_id) REFERENCES movie(slug) ON DELETE CASCADE,
     CONSTRAINT fk_genre FOREIGN KEY (genre_id) REFERENCES genre(slug) ON DELETE CASCADE
+);
+
+
+-- таблиця для знижок
+CREATE TABLE discount (
+    percent SMALLINT DEFAULT NULL CHECK (percent BETWEEN 0 AND 100 OR percent IS NULL),
+    session_id INT NOT NULL REFERENCES session(id) ON DELETE CASCADE,
+    PRIMARY KEY (session_id)
 );
