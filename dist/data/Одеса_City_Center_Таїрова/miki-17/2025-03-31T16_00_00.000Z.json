@@ -1,0 +1,380 @@
+{
+  "cinemaId": "Z2lkOi8vY2luZW1hLzg=",
+  "slug": "miki-17",
+  "response": {
+    "movieBySlug": {
+      "offlineRental": {
+        "end": "2025-04-09T00:00:00.000Z",
+        "start": "2025-03-20T00:00:00.000Z",
+        "status": "ACTIVE",
+        "labels": [
+          {
+            "id": "Z2lkOi8vb2ZmbGluZWxhYmVsLzEwMw==",
+            "name": "Доступне кіно",
+            "group": null,
+            "sortPriority": 70
+          },
+          {
+            "id": "Z2lkOi8vb2ZmbGluZWxhYmVsLzEyMQ==",
+            "name": "Діють знижки",
+            "group": "DISCOUNT",
+            "sortPriority": 59
+          }
+        ],
+        "calendar": [
+          "2025-03-31T00:00:00.000Z",
+          "2025-04-01T00:00:00.000Z",
+          "2025-04-02T00:00:00.000Z"
+        ],
+        "rentalTechnologies": [
+          {
+            "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS8x",
+            "name": "RE'LUX",
+            "slug": "relux"
+          },
+          {
+            "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS81",
+            "name": "Cinetech+",
+            "slug": "сinetech"
+          }
+        ],
+        "sessionsNumber": 5,
+        "sessions": [
+          {
+            "canPayWithBonuses": false,
+            "dimensionType": "2D",
+            "durationInSec": 8400,
+            "startSessionAt": "2025-03-31T16:00:00.000Z",
+            "endSessionAt": "2025-03-31T18:20:00.000Z",
+            "countFreeSeats": 34,
+            "labels": [],
+            "cinemaHall": {
+              "id": "Z2lkOi8vY2luZW1haGFsbC8xMDE=",
+              "activeStatus": "ACTIVE",
+              "doorNumberEntranceToHall": 1,
+              "isAlphabeticalRowsEnumeration": true,
+              "rows": [
+                {
+                  "rowNumber": "A",
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzg5Nw==",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 1,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzg5Ng==",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 2,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzg5NQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 3,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzg5NA==",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 4,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzg5Mw==",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 5,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzg5Mg==",
+                      "type": "STANDARD",
+                      "rowNumber": "A",
+                      "seatNumber": 6,
+                      "state": "ACTIVE"
+                    }
+                  ]
+                },
+                {
+                  "rowNumber": "B",
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwMw==",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 1,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwMg==",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 2,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwMQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 3,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwMA==",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 4,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzg5OQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 5,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzg5OA==",
+                      "type": "STANDARD",
+                      "rowNumber": "B",
+                      "seatNumber": 6,
+                      "state": "ACTIVE"
+                    }
+                  ]
+                },
+                {
+                  "rowNumber": "C",
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwOQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 1,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwOA==",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 2,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwNw==",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 3,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwNg==",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 4,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwNQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 5,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkwNA==",
+                      "type": "STANDARD",
+                      "rowNumber": "C",
+                      "seatNumber": 6,
+                      "state": "ACTIVE"
+                    }
+                  ]
+                },
+                {
+                  "rowNumber": "D",
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxNQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 1,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxNA==",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 2,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxMw==",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 3,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxMg==",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 4,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxMQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 5,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxMA==",
+                      "type": "STANDARD",
+                      "rowNumber": "D",
+                      "seatNumber": 6,
+                      "state": "ACTIVE"
+                    }
+                  ]
+                },
+                {
+                  "rowNumber": "E",
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyMQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "E",
+                      "seatNumber": 1,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyMA==",
+                      "type": "STANDARD",
+                      "rowNumber": "E",
+                      "seatNumber": 2,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxOQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "E",
+                      "seatNumber": 3,
+                      "state": "SOLD"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxOA==",
+                      "type": "STANDARD",
+                      "rowNumber": "E",
+                      "seatNumber": 4,
+                      "state": "SOLD"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxNw==",
+                      "type": "STANDARD",
+                      "rowNumber": "E",
+                      "seatNumber": 5,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkxNg==",
+                      "type": "STANDARD",
+                      "rowNumber": "E",
+                      "seatNumber": 6,
+                      "state": "ACTIVE"
+                    }
+                  ]
+                },
+                {
+                  "rowNumber": "F",
+                  "seats": [
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyOQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "F",
+                      "seatNumber": 1,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyOA==",
+                      "type": "STANDARD",
+                      "rowNumber": "F",
+                      "seatNumber": 2,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyNw==",
+                      "type": "STANDARD",
+                      "rowNumber": "F",
+                      "seatNumber": 3,
+                      "state": "SOLD"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyNg==",
+                      "type": "STANDARD",
+                      "rowNumber": "F",
+                      "seatNumber": 4,
+                      "state": "SOLD"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyNQ==",
+                      "type": "STANDARD",
+                      "rowNumber": "F",
+                      "seatNumber": 5,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyNA==",
+                      "type": "STANDARD",
+                      "rowNumber": "F",
+                      "seatNumber": 6,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyMw==",
+                      "type": "STANDARD",
+                      "rowNumber": "F",
+                      "seatNumber": 7,
+                      "state": "ACTIVE"
+                    },
+                    {
+                      "id": "Z2lkOi8vc2VhdC8xMzkyMg==",
+                      "type": "STANDARD",
+                      "rowNumber": "F",
+                      "seatNumber": 8,
+                      "state": "ACTIVE"
+                    }
+                  ]
+                }
+              ]
+            },
+            "priceBundle": {
+              "minPrices": {
+                "price": 450,
+                "priceInBonuses": 10000
+              },
+              "items": [
+                {
+                  "price": 450,
+                  "priceInBonuses": 10000,
+                  "seatType": "STANDARD",
+                  "canBePaidByBonuses": true
+                }
+              ]
+            },
+            "id": "Z2lkOi8vc2Vzc2lvbi8yNzQ4Mzg0",
+            "rentalTechnology": {
+              "id": "Z2lkOi8vcmVudGFsdGVjaG5vbG9neS8x",
+              "name": "RE'LUX"
+            },
+            "cinemaHallId": "Z2lkOi8vY2luZW1haGFsbC8xMDE="
+          }
+        ]
+      }
+    }
+  }
+}
