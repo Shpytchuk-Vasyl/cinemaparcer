@@ -276,9 +276,12 @@ LEFT JOIN promotion_details
         END
     )
 WHERE day.day < CURRENT_DATE::DATE;
+-- LIMIT 1000 SKIP 0;
+
 -- WHERE day.day BETWEEN 
 --     (SELECT sale.day_id FROM sale ORDER BY sale.day_id ASC LIMIT 1)
---     AND (CURRENT_DATE::DATE - INTERVAL '1 day');
+--     AND (CURRENT_DATE::DATE - INTERVAL '1 day')
+-- -- LIMIT 1000 SKIP 0;
 
     
 
