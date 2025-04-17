@@ -1,0 +1,31 @@
+{
+  "cinemaId": "Z2lkOi8vY2luZW1hLzI=",
+  "slug": "pokaz-iz-lekcieu-kysneva-stantsiia",
+  "response": {
+    "movieBySlug": {
+      "offlineRental": {
+        "end": "2025-04-17T00:00:00.000Z",
+        "start": "2025-04-17T00:00:00.000Z",
+        "status": "ACTIVE",
+        "labels": [
+          {
+            "id": "Z2lkOi8vb2ZmbGluZWxhYmVsLzEwMw==",
+            "name": "Доступне кіно",
+            "group": null,
+            "sortPriority": 70
+          },
+          {
+            "id": "Z2lkOi8vb2ZmbGluZWxhYmVsLzEyMQ==",
+            "name": "Діють знижки",
+            "group": "DISCOUNT",
+            "sortPriority": 59
+          }
+        ],
+        "calendar": [],
+        "rentalTechnologies": [],
+        "sessionsNumber": 0,
+        "sessions": []
+      }
+    }
+  }
+}
