@@ -182,11 +182,8 @@ function generateLoadSessionsScript(sessions) {
 
   for (const session of sessions) {
     const sessionStart = new Date(session.start);
-    const kyivTime = new Date(
-      sessionStart.toLocaleString("en-US", { timeZone: "Europe/Kyiv" })
-    );
 
-    const startDateTime = kyivTime.toISOString().split(".")[0];
+    const startDateTime = sessionStart.toISOString().split(".")[0];
     const statement = session.hall.seats
       .map((row, row_number) =>
         row
@@ -316,4 +313,4 @@ module.exports = {
 };
 
 // Запускаємо скрипт тільки першого разу
-// main();
+main();

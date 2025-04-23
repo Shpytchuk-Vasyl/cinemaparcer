@@ -7,7 +7,7 @@ CREATE EXTENSION IF NOT EXISTS postgres_fdw;
 -- Створення зовнішнього сервера
 CREATE SERVER planeta_kino_server
 FOREIGN DATA WRAPPER postgres_fdw
-OPTIONS (host 'localhost', dbname 'planeta_kino', port '5432');
+OPTIONS (host 'localhost', dbname 'OLTP_planeta_kino', port '5432');
 
 -- Створення користувача для підключення
 CREATE USER MAPPING FOR postgres
@@ -79,8 +79,29 @@ COMMIT;
 
 
 
--- 2. Внесення дат
+-- 2. Внесення дат та часу
 -- Використати зовнішій скрипт для внесення дат
+
+BEGIN;
+
+INSERT INTO dim_start_time (start_time, hour, minute, time_of_day)
+SELECT 
+    DISTINCT start::time as start_time,
+    EXTRACT(HOUR FROM start::time) as hour,
+    EXTRACT(MINUTE FROM start::time) as minute,
+    CASE 
+        WHEN EXTRACT(HOUR FROM start::time) BETWEEN 5 AND 11 THEN 'Ранок'
+        WHEN EXTRACT(HOUR FROM start::time) BETWEEN 12 AND 16 THEN 'День'
+        WHEN EXTRACT(HOUR FROM start::time) BETWEEN 17 AND 22 THEN 'Вечір'
+        ELSE 'Ніч'
+    END AS time_of_day
+FROM pk_session
+ORDER BY start_time ASC;
+
+COMMIT;
+
+
+
 
 
 
@@ -93,17 +114,17 @@ COMMIT;
 -- 3. Внесення знижок
 BEGIN;
 
-    INSERT INTO promotion_details(has_discount, discount_percentage, has_special_events)
+    INSERT INTO dim_promotion_details(has_discount, discount_percentage, has_special_events)
     VALUES (false, null, false),
            (true, null, false),
            (false, null, true),
            (true, null, true);
 
-    INSERT INTO promotion_details(has_discount, discount_percentage, has_special_events)
+    INSERT INTO dim_promotion_details(has_discount, discount_percentage, has_special_events)
     SELECT true, i, true
     FROM generate_series(0, 100) i;
 
-    INSERT INTO promotion_details(has_discount, discount_percentage, has_special_events)
+    INSERT INTO dim_promotion_details(has_discount, discount_percentage, has_special_events)
     SELECT true, i, false
     FROM generate_series(0, 100) i;
 
@@ -118,7 +139,7 @@ COMMIT;
 -- 4. Внесення кінотеатрів
 BEGIN;
 
-INSERT INTO cinema_hall (hall_name, cinema_name, cinema_city)
+INSERT INTO dim_cinema (hall_name, cinema_name, cinema_city)
 SELECT ('№' || hall_number || ' ' || name) as hall_name, name as cinema_name, split_part(address, ',', 1) as cinema_city
 FROM pk_cinema
 JOIN pk_cinema_hall ON pk_cinema.id = pk_cinema_hall.cinema_id;
@@ -139,7 +160,7 @@ COMMIT;
 
 BEGIN;
 
-INSERT INTO movie (name, age_restrictions, ltp_id, start_rental_date)
+INSERT INTO dim_movie (name, age_restrictions, ltp_id, start_rental_date)
 SELECT 
     name, 
     age_restrictions, 
@@ -166,34 +187,62 @@ COMMIT;
 -- 6. Внесення жанрів і категорій
 
 BEGIN;
-INSERT INTO genre (movie_id, name, coefficient)
+INSERT INTO dim_movie_genre (movie_id, name, coefficient)
+WITH genre_counts AS (
+    SELECT 
+        dim_movie.id AS movie_id,
+        pk_genre.name AS name,
+        pk_genre.slug AS genre_slug,
+        ROW_NUMBER() OVER (PARTITION BY dim_movie.id ORDER BY pk_genre.slug) AS row_num,
+        COUNT(*) OVER (PARTITION BY dim_movie.id) AS total_genres
+    FROM dim_movie
+    JOIN pk_movie_genre ON dim_movie.ltp_id = pk_movie_genre.movie_id
+    JOIN pk_genre ON pk_movie_genre.genre_id = pk_genre.slug
+)
 SELECT 
-    movie.id AS movie_id, 
-    pk_genre.name AS name,
-    1.0 / (
-        SELECT 
-            COUNT(*)
-        FROM pk_movie_genre
-        WHERE pk_movie_genre.movie_id = movie.ltp_id
-    ) AS coefficient
-FROM movie
-JOIN pk_movie_genre ON movie.ltp_id = pk_movie_genre.movie_id
-JOIN pk_genre ON pk_movie_genre.genre_id = pk_genre.slug;
+    movie_id,
+    name,
+    (CASE 
+        WHEN total_genres = 1 THEN 1.0
+        WHEN row_num = total_genres THEN 
+            (1.0 - (
+                SELECT SUM((1.0 / total_genres)::NUMERIC(10,2)) 
+                FROM genre_counts gc2 
+                WHERE gc2.movie_id = gc1.movie_id AND gc2.row_num < gc1.row_num
+            ))
+        ELSE 
+            (1.0 / total_genres)
+    END)::NUMERIC(10,2) AS coefficient
+FROM genre_counts gc1;
 -- WHERE movie.ltp_id = 'the-batman-2022' -- для майбутніх жанрів
 
-INSERT INTO category (movie_id, name, coefficient)
+INSERT INTO dim_movie_category (movie_id, name, coefficient)
+WITH category_counts AS (
+    SELECT 
+        dim_movie.id AS movie_id,
+        pk_category.name AS name,
+        pk_category.slug AS category_slug,
+        ROW_NUMBER() OVER (PARTITION BY dim_movie.id ORDER BY pk_category.slug) AS row_num,
+        COUNT(*) OVER (PARTITION BY dim_movie.id) AS total_categories
+    FROM dim_movie
+    JOIN pk_movie_category ON dim_movie.ltp_id = pk_movie_category.movie_id
+    JOIN pk_category ON pk_movie_category.category_id = pk_category.slug
+)
 SELECT 
-    movie.id AS movie_id,
-    pk_category.name AS name,
-    (
-        SELECT 
-            COUNT(*)
-        FROM pk_movie_category
-        WHERE pk_movie_category.movie_id = movie.ltp_id
-    ) AS coefficient
-FROM movie
-JOIN pk_movie_category ON movie.ltp_id = pk_movie_category.movie_id
-JOIN pk_category ON pk_movie_category.category_id = pk_category.slug;
+    movie_id,
+    name,
+    (CASE    
+        WHEN total_categories = 1 THEN 1.0
+        WHEN row_num = total_categories THEN 
+            (1.0 - (
+                SELECT SUM((1.0 / total_categories)::NUMERIC(10,2)) 
+                FROM category_counts cc2 
+                WHERE cc2.movie_id = cc1.movie_id AND cc2.row_num < cc1.row_num
+            ))
+        ELSE 
+            (1.0 / total_categories)::NUMERIC(10,2)
+    END)::NUMERIC(10,2) AS coefficient
+FROM category_counts cc1;
 -- WHERE movie.ltp_id = 'the-batman-2022' -- для майбутніх категорій
 
 
@@ -226,15 +275,15 @@ GROUP BY movie_id, cinema_id;
 
 
 
-INSERT INTO sale (cinema_hall_id, movie_id, day_id, promotion_id, total_revenue, tickets_sold, session_start_time, fullness_of_the_hall, day_after_start_rental_date)
+INSERT INTO fact_sale (dim_cinema_id, dim_movie_id, dim_day_id, dim_promotion_details_id, total_revenue, tickets_sold, dim_start_time_id, fullness_of_the_hall, day_after_start_rental_date)
 SELECT 
-    cinema_hall.id as cinema_hall_id,
-    movie.id as movie_id,
-    day.day as day_id,
-    promotion_details.id as promotion_id,
+    dim_cinema.id as dim_cinema_id,
+    dim_movie.id as movie_id,
+    pk_session.start::DATE as dim_day_id,
+    dim_promotion_details.id as dim_promotion_details_id,
     pk_session.total_revenue as total_revenue,
     pk_session.tickets_sold as tickets_sold,
-    pk_session.start::TIME WITH TIME ZONE as session_start_time,
+    pk_session.start::TIME as dim_start_time_id,
     (
         SELECT 
           pk_session.tickets_sold::NUMERIC(10,2) / total_seats::NUMERIC(10,2)
@@ -250,32 +299,31 @@ SELECT
         first_session_dates.cinema_id = pk_session.cinema_id
     )  as day_after_start_rental_date
 FROM pk_session
-LEFT JOIN movie ON pk_session.movie_id = movie.ltp_id
+LEFT JOIN dim_movie ON pk_session.movie_id = dim_movie.ltp_id
 LEFT JOIN pk_cinema_hall ON pk_session.hall_id = pk_cinema_hall.hall_number AND pk_session.cinema_id = pk_cinema_hall.cinema_id
 LEFT JOIN pk_cinema ON pk_session.cinema_id = pk_cinema.id
-LEFT JOIN cinema_hall ON ('№' || pk_cinema_hall.hall_number || ' ' || pk_cinema.name) = cinema_hall.hall_name
-LEFT JOIN day ON pk_session.start::DATE = day.day
+LEFT JOIN dim_cinema ON ('№' || pk_cinema_hall.hall_number || ' ' || pk_cinema.name) = dim_cinema.hall_name
 LEFT JOIN pk_discount ON pk_session.id = pk_discount.session_id
-LEFT JOIN promotion_details 
+LEFT JOIN dim_promotion_details 
     ON (
         -- Перевірка на special events
-        (pk_session.movie_id LIKE 'pre-premiere-%' OR pk_session.movie_id LIKE 'special-show-%') = promotion_details.has_special_events
+        (pk_session.movie_id LIKE 'pre-premiere-%' OR pk_session.movie_id LIKE 'special-show-%') = dim_promotion_details.has_special_events
     )
     AND (
         -- Перевірка на знижки
         CASE
             WHEN pk_discount.percent IS NOT NULL THEN 
-                pk_discount.percent = promotion_details.discount_percentage 
-                AND promotion_details.has_discount = true
+                pk_discount.percent = dim_promotion_details.discount_percentage 
+                AND dim_promotion_details.has_discount = true
             WHEN pk_discount.percent IS NULL AND pk_discount.session_id IS NOT NULL THEN
-                promotion_details.has_discount = true 
-                AND promotion_details.discount_percentage IS NULL
+                dim_promotion_details.has_discount = true 
+                AND dim_promotion_details.discount_percentage IS NULL
             ELSE
-                promotion_details.has_discount = false 
-                AND promotion_details.discount_percentage IS NULL
+                dim_promotion_details.has_discount = false 
+                AND dim_promotion_details.discount_percentage IS NULL
         END
     )
-WHERE day.day < CURRENT_DATE::DATE;
+WHERE pk_session.start::DATE < CURRENT_DATE::DATE;
 -- LIMIT 1000 SKIP 0;
 
 -- WHERE day.day BETWEEN 
@@ -299,17 +347,18 @@ COMMIT;
 
 BEGIN;
 
-INSERT INTO monthly_sales (month, cinema_hall_id, total_revenue, total_tickets_sold, avg_fullness, avg_revenue_per_ticket)
+INSERT INTO fact_monthly_sales (dim_month_id, dim_cinema_id, total_revenue, total_tickets_sold, avg_fullness, avg_revenue_per_ticket)
     SELECT 
-        day.month as month,
-        cinema_hall_id,
+        dim_month.id as dim_month_id,
+        dim_cinema_id,
         SUM(sale.total_revenue) as total_revenue,
         SUM(sale.tickets_sold)::INT as total_tickets_sold,
         AVG(sale.fullness_of_the_hall) as avg_fullness,
         SUM(sale.total_revenue)::NUMERIC(10,2) / SUM(sale.tickets_sold)::NUMERIC(10,2) as avg_revenue_per_ticket
-    FROM sale 
-    JOIN day ON sale.day_id = day.day
-    GROUP BY cinema_hall_id, day.month;
+    FROM fact_sale sale 
+    JOIN dim_day ON sale.dim_day_id = dim_day.day
+    JOIN dim_month ON dim_day.month = dim_month.month
+    GROUP BY dim_cinema_id, dim_month.id;
 
 COMMIT;
 

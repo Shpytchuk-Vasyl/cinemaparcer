@@ -11,7 +11,7 @@ CHECK (VALUE >= 0);
 CREATE TABLE movie (
     name VARCHAR(200) NOT NULL,
     original_name VARCHAR(200) NOT NULL,
-    slug VARCHAR(200) PRIMARY KEY CHECK (slug ~ '^[a-z0-9-]+$'),
+    slug VARCHAR(200) PRIMARY KEY,
     age_restrictions age_restriction_type NOT NULL DEFAULT 'A0',
     short_description VARCHAR(500) NOT NULL DEFAULT 'Опис відсутній.',
     year SMALLINT NOT NULL DEFAULT DATE_PART('year', CURRENT_DATE)::SMALLINT 
@@ -34,20 +34,20 @@ $$ LANGUAGE plpgsql IMMUTABLE PARALLEL SAFE;
 
 -- Таблиця для кінотеатрів
 CREATE TABLE cinema (
-    id VARCHAR(30) PRIMARY KEY DEFAULT gen_random_uuid(),  
+    id VARCHAR(30) PRIMARY KEY,  
     name VARCHAR(200) NOT NULL,                     
 	address VARCHAR(300) NOT NULL                   
 );
 
 -- Таблиця для залів кінотеатру
 CREATE TABLE cinema_hall (
-    cinema_id VARCHAR(30),               
+    cinema_id VARCHAR(30) NOT NULL,               
     hall_number SMALLINT NOT NULL DEFAULT 1, 
     PRIMARY KEY (cinema_id, hall_number),
     CONSTRAINT fk_cinema FOREIGN KEY (cinema_id) REFERENCES cinema(id) ON DELETE CASCADE
 );
 
-CREATE DOMAIN seat_type AS CHAR(15) CHECK (VALUE IN ('STANDARD', 'VIP', 'WITH_DISABILITIES'));
+CREATE DOMAIN seat_type AS VARCHAR(20);
 
 -- Таблиця для місць у кінотеатрі
 CREATE TABLE cinema_seat (
@@ -60,6 +60,7 @@ CREATE TABLE cinema_seat (
     PRIMARY KEY (cinema_id, hall_number, row_number, seat_number), 
     CONSTRAINT fk_cinema_hall FOREIGN KEY (cinema_id, hall_number) REFERENCES cinema_hall(cinema_id, hall_number) ON DELETE CASCADE 
 );
+
 
 
 -- В'ю для об'єднання таблиць cinema_hall та cinema_seat
@@ -104,7 +105,7 @@ CREATE TABLE session (
     cinema_id VARCHAR(30),           
     hall_id SMALLINT,         
     movie_id VARCHAR(200),                  
-    start TIMESTAMP WITH TIME ZONE NOT NULL,                       
+    start TIMESTAMP WITHOUT TIME ZONE NOT NULL,                       
     dimension_type dimension_type_enum NOT NULL,     
 
     total_revenue NUMERIC(10,2) NOT NULL, 
@@ -112,7 +113,7 @@ CREATE TABLE session (
 
     CONSTRAINT fk_cinema FOREIGN KEY (cinema_id) REFERENCES cinema(id) ON DELETE SET NULL,
     CONSTRAINT fk_movie FOREIGN KEY (movie_id) REFERENCES movie(slug) ON DELETE SET NULL,
-    CONSTRAINT fk_hall FOREIGN KEY (hall_id) REFERENCES cinema_hall(hall_number) ON DELETE SET NULL
+    CONSTRAINT fk_hall FOREIGN KEY (cinema_id, hall_id) REFERENCES cinema_hall(cinema_id, hall_number) ON DELETE SET NULL
 );
 
 -- Створення таблиці для клієнтів
@@ -173,7 +174,7 @@ CREATE TABLE genre (
     name VARCHAR(50) NOT NULL
 );
 
--- Проміжна таблиця для зв’язку фільмів і категорій
+-- Проміжна таблиця для зв'язку фільмів і категорій
 CREATE TABLE movie_category (
     movie_id VARCHAR(200) NOT NULL,
     category_id VARCHAR(50) NOT NULL,
@@ -182,7 +183,7 @@ CREATE TABLE movie_category (
     CONSTRAINT fk_category FOREIGN KEY (category_id) REFERENCES category(slug) ON DELETE CASCADE
 );
 
--- Проміжна таблиця для зв’язку фільмів і жанрів
+-- Проміжна таблиця для зв'язку фільмів і жанрів
 CREATE TABLE movie_genre (
     movie_id VARCHAR(200) NOT NULL,
     genre_id VARCHAR(50) NOT NULL,
