@@ -85,17 +85,23 @@ COMMIT;
 BEGIN;
 
 INSERT INTO dim_start_time (start_time, hour, minute, time_of_day)
+WITH unique_start_times AS (
+    SELECT start::time as start_time
+    FROM pk_session
+    EXCEPT
+    SELECT start_time FROM dim_start_time
+)
 SELECT 
-    DISTINCT start::time as start_time,
-    EXTRACT(HOUR FROM start::time) as hour,
-    EXTRACT(MINUTE FROM start::time) as minute,
+    start_time,
+    EXTRACT(HOUR FROM start_time::time) as hour,
+    EXTRACT(MINUTE FROM start_time::time) as minute,
     CASE 
-        WHEN EXTRACT(HOUR FROM start::time) BETWEEN 5 AND 11 THEN 'Ранок'
-        WHEN EXTRACT(HOUR FROM start::time) BETWEEN 12 AND 16 THEN 'День'
-        WHEN EXTRACT(HOUR FROM start::time) BETWEEN 17 AND 22 THEN 'Вечір'
+        WHEN EXTRACT(HOUR FROM start_time::time) BETWEEN 5 AND 11 THEN 'Ранок'
+        WHEN EXTRACT(HOUR FROM start_time::time) BETWEEN 12 AND 16 THEN 'День'
+        WHEN EXTRACT(HOUR FROM start_time::time) BETWEEN 17 AND 22 THEN 'Вечір'
         ELSE 'Ніч'
     END AS time_of_day
-FROM pk_session
+FROM unique_start_times
 ORDER BY start_time ASC;
 
 COMMIT;
@@ -161,6 +167,9 @@ COMMIT;
 BEGIN;
 
 INSERT INTO dim_movie (name, age_restrictions, ltp_id, start_rental_date)
+WITH unique_movies AS (
+    SELECT slug as _id FROM pk_movie EXCEPT SELECT dim_movie.ltp_id as _id FROM dim_movie
+)
 SELECT 
     name, 
     age_restrictions, 
@@ -172,7 +181,8 @@ SELECT
         ORDER BY start ASC
         LIMIT 1 
     ) as start_rental_date
-FROM pk_movie;
+FROM pk_movie
+JOIN unique_movies ON pk_movie.slug = unique_movies._id;
 -- WHERE slug = 'the-batman-2022' -- для майбутніх фільмів
 
 COMMIT;
@@ -273,9 +283,7 @@ SELECT
 FROM pk_session 
 GROUP BY movie_id, cinema_id;
 
-
-
-INSERT INTO fact_sale (dim_cinema_id, dim_movie_id, dim_day_id, dim_promotion_details_id, total_revenue, tickets_sold, dim_start_time_id, fullness_of_the_hall, day_after_start_rental_date)
+-- INSERT INTO fact_sale (dim_cinema_id, dim_movie_id, dim_day_id, dim_promotion_details_id, total_revenue, tickets_sold, dim_start_time_id, fullness_of_the_hall, day_after_start_rental_date)
 SELECT 
     dim_cinema.id as dim_cinema_id,
     dim_movie.id as movie_id,
@@ -323,13 +331,13 @@ LEFT JOIN dim_promotion_details
                 AND dim_promotion_details.discount_percentage IS NULL
         END
     )
-WHERE pk_session.start::DATE < CURRENT_DATE::DATE;
+-- WHERE pk_session.start::DATE < CURRENT_DATE::DATE;
 -- LIMIT 1000 SKIP 0;
 
--- WHERE day.day BETWEEN 
---     (SELECT sale.day_id FROM sale ORDER BY sale.day_id ASC LIMIT 1)
---     AND (CURRENT_DATE::DATE - INTERVAL '1 day')
--- -- LIMIT 1000 SKIP 0;
+WHERE pk_session.start::DATE BETWEEN 
+    (SELECT sale.dim_day_id FROM fact_sale sale ORDER BY sale.dim_day_id DESC LIMIT 1) + INTERVAL '1 day'
+    AND (CURRENT_DATE::DATE - INTERVAL '1 day')
+ORDER BY pk_session.start::DATE ASC;
 
     
 

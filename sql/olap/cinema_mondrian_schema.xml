@@ -1,0 +1,140 @@
+<Schema name="Cinema_OLAP">
+  <Cube name="Cinema_Sales" visible="true" defaultMeasure="Total_Revenue" cache="false" enabled="true">
+    <Table name="fact_sale" schema="public">
+    </Table>
+    <Dimension type="TimeDimension" visible="true" foreignKey="dim_day_id" highCardinality="false" name="Time">
+      <Hierarchy visible="true" hasAll="true" allMemberName="All Times" primaryKey="day">
+        <Table name="dim_day" schema="public">
+        </Table>
+        <Level name="Month" visible="true" column="month" type="String" internalType="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+        </Level>
+        <Level name="Day" visible="true" table="dim_day" column="day" parentColumn="month" type="Date" uniqueMembers="true" levelType="TimeDays" hideMemberIf="Never">
+          <Property name="Is Holliday" column="is_holiday" type="Boolean">
+          </Property>
+        </Level>
+      </Hierarchy>
+      <Hierarchy name="Week" visible="true" hasAll="true" allMemberName="All Times" primaryKey="day">
+        <Table name="dim_day" schema="public">
+        </Table>
+        <Level name="Day" visible="true" table="dim_day" column="day" parentColumn="day_of_week" type="Date" uniqueMembers="true" levelType="TimeDays" hideMemberIf="Never">
+          <Property name="Is Holliday" column="is_holiday" type="Boolean">
+          </Property>
+        </Level>
+        <Level name="Day of Week" visible="true" table="dim_day" column="day_of_week" type="String" internalType="String" uniqueMembers="false" levelType="TimeDays" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="TimeDimension" visible="true" foreignKey="dim_start_time_id" highCardinality="false" name="Time of Day">
+      <Hierarchy visible="true" hasAll="true" allMemberName="All Times of Day" primaryKey="start_time">
+        <Table name="dim_start_time" schema="public">
+        </Table>
+        <Level name="Day Period" visible="true" table="dim_start_time" column="time_of_day" type="String" internalType="String" uniqueMembers="false" levelType="TimeDays" hideMemberIf="Never">
+        </Level>
+        <Level name="Hour" visible="true" table="dim_start_time" column="hour" parentColumn="time_of_day" type="String" internalType="String" uniqueMembers="true" levelType="TimeHours" hideMemberIf="Never">
+        </Level>
+        <Level name="Minute" visible="true" table="dim_start_time" column="minute" parentColumn="hour" type="String" internalType="String" uniqueMembers="true" levelType="TimeMinutes" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="dim_movie_id" highCardinality="false" name="Movie">
+      <Hierarchy name="ByGenre" visible="true" hasAll="true" allMemberName="All Movies" primaryKey="id" primaryKeyTable="dim_movie">
+        <Join leftKey="id" rightKey="movie_id">
+          <Table name="dim_movie" schema="public">
+          </Table>
+          <Table name="dim_movie_genre" schema="public">
+          </Table>
+        </Join>
+        <Level name="Genre" visible="true" table="dim_movie_genre" column="name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+          <Property name="Coefficient" column="coefficient" type="Numeric">
+          </Property>
+        </Level>
+        <Level name="Movie" visible="true" table="dim_movie" column="name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+      <Hierarchy name="ByCategory" visible="true" hasAll="true" allMemberName="All Movies" primaryKey="id" primaryKeyTable="dim_movie">
+        <Join leftKey="id" rightKey="movie_id">
+          <Table name="dim_movie" schema="public">
+          </Table>
+          <Table name="dim_movie_category" schema="public">
+          </Table>
+        </Join>
+        <Level name="Category" visible="true" table="dim_movie_category" column="name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+          <Property name="Coefficient" column="coefficient" type="Numeric">
+          </Property>
+        </Level>
+        <Level name="Movie" visible="true" table="dim_movie" column="name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+      <Hierarchy name="ByAgeRestriction" visible="true" hasAll="true" allMemberName="All Movies" primaryKey="id">
+        <Table name="dim_movie" schema="public">
+        </Table>
+        <Level name="Age Restriction" visible="true" table="dim_movie" column="age_restrictions" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Movie" visible="true" table="dim_movie" column="name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="dim_cinema_id" highCardinality="false" name="Cinema">
+      <Hierarchy visible="true" hasAll="true" allMemberName="All Cinemas" primaryKey="id">
+        <Table name="dim_cinema" schema="public">
+        </Table>
+        <Level name="City" visible="true" column="cinema_city" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Cinema" visible="true" column="cinema_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Hall" visible="true" column="hall_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="dim_promotion_details_id" highCardinality="false" name="Promotion">
+      <Hierarchy visible="true" hasAll="true" allMemberName="All Promotions" primaryKey="id">
+        <Table name="dim_promotion_details" schema="public">
+        </Table>
+        <Level name="Has Discount" visible="true" table="dim_promotion_details" column="has_discount" ordinalColumn="has_discount" type="Boolean" internalType="int" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+          <Property name="discount_percentage" column="discount_percentage" type="Numeric">
+          </Property>
+        </Level>
+        <Level name="Has Special Events" visible="true" column="has_special_events" type="Boolean" internalType="int" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Total Revenue" column="total_revenue" datatype="Numeric" formatString="#,###.00" aggregator="sum">
+    </Measure>
+    <Measure name="Tickets Sold" column="tickets_sold" datatype="Integer" formatString="#,###" aggregator="sum">
+    </Measure>
+    <Measure name="Avg Fullness" column="fullness_of_the_hall" datatype="Numeric" formatString="0.00%" aggregator="avg">
+    </Measure>
+    <Measure name="Days After Start Rental" column="day_after_start_rental_date" datatype="Integer" formatString="#,###" aggregator="avg">
+    </Measure>
+  </Cube>
+  <Cube name="Monthly_Sales" visible="true" defaultMeasure="Total_Revenue" cache="false" enabled="true">
+    <Table name="fact_monthly_sales" schema="public">
+    </Table>
+    <Dimension visible="true" foreignKey="dim_month_id" highCardinality="false" name="Month">
+      <Hierarchy visible="true" hasAll="true" allMemberName="All Months" primaryKey="id">
+        <Table name="dim_month" schema="public">
+        </Table>
+        <Level name="Month" visible="true" column="month" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension visible="true" foreignKey="dim_cinema_id" highCardinality="false" name="Cinema">
+      <Hierarchy visible="true" hasAll="true" allMemberName="All Cinemas" primaryKey="id">
+        <Table name="dim_cinema" schema="public">
+        </Table>
+        <Level name="City" visible="true" column="cinema_city" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Cinema" visible="true" column="cinema_name" parentColumn="cinema_city" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Total Revenue" column="total_revenue" formatString="#,###.00" aggregator="sum">
+    </Measure>
+    <Measure name="Tickets Sold" column="total_tickets_sold" formatString="#,###" aggregator="sum">
+    </Measure>
+    <Measure name="Avg Fullness" column="avg_fullness" formatString="0.00%" aggregator="avg">
+    </Measure>
+    <Measure name="Avg Revenue Per Ticket" column="avg_revenue_per_ticket" formatString="#,###.00" aggregator="avg">
+    </Measure>
+  </Cube>
+</Schema>

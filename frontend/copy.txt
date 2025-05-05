@@ -1,0 +1,26 @@
+<div className="flex flex-wrap items-center lg:justify-end">
+  <div>
+    <div className="mt-1 lg:mt-2 flex text-sm12 lg:text-base leading-[20px] lg:leading-[24px] items-center text-primary-white70 flex-wrap lg:justify-end">
+      <div className="flex items-center">
+        <div className="flex items-center">
+          <div data-component-name="AppIcon">{/**/}</div>{" "}
+          <span className="font-bold">Укр. субтитри</span>{" "}
+          <span className="mx-2">•</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div className="mt-1 lg:mt-2 flex text-sm12 lg:text-base leading-[20px] lg:leading-[24px] items-center text-primary-white70 flex-wrap lg:justify-end">
+      <div className="flex items-center">
+        <div className="flex items-center">
+          <div data-component-name="AppIcon">{/**/}</div>{" "}
+          <span className="font-bold">Англійські субтитри</span>{" "}
+          <span className="mx-2" style={{ display: "none" }}>
+            •
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+// Average fullness with coefficient determined inside (simplified)
+Заповненість за жанром = 
+CALCULATE(
+    AVERAGEX(
+        'public fact_sale',
+        'public fact_sale'[Заповненість] * 
+        LOOKUPVALUE(
+            'public dim_movie_genre'[coefficient],
+            'public dim_movie_genre'[movie_id], RELATED('public dim_movie'[id]),
+            'public dim_movie_genre'[name], SELECTEDVALUE('public dim_movie_genre'[name])
+        )
+    )
+)
+
+// Weighted average for SQL equivalent, with date filter
+Відсоток глядачів = 
+CALCULATE(
+    AVERAGEX(
+        'public fact_sale',
+        'public fact_sale'[Заповненість] * 
+        LOOKUPVALUE(
+            'public dim_movie_genre'[coefficient],
+            'public dim_movie_genre'[movie_id], RELATED('public dim_movie'[id]),
+            'public dim_movie_genre'[name], SELECTEDVALUE('public dim_movie_genre'[name])
+        )
+    ),
+    'public fact_sale'[dim_day_id] >= DATE(2020, 1, 1) && 
+    'public fact_sale'[dim_day_id] <= DATE(2025, 8, 1)
+)

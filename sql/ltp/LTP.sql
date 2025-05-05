@@ -199,3 +199,4 @@ CREATE TABLE discount (
     session_id INT NOT NULL REFERENCES session(id) ON DELETE CASCADE,
     PRIMARY KEY (session_id)
 );
+

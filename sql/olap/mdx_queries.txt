@@ -1,0 +1,46 @@
+-- 1. Дохід кінотеатрів по місяцях: рядки - кінотеатри, колонки - місяці
+SELECT
+NON EMPTY {
+[Month].[Березень 2025],
+[Month].[Квітень 2025],
+[Month].[All Months]
+} ON COLUMNS,
+NON EMPTY {
+-- [Cinema].Members, не працює не знаю чому
+[Cinema].[All Cinemas]
+} ON ROWS
+FROM [Monthly_Sales]
+WHERE [Measures].[Total Revenue]
+
+
+
+
+
+
+-- 2. Топ 5 жанрів за минулий місяць (березень 2025)
+WITH
+MEMBER [Measures].[Weighted Tickets] AS
+'[Measures].[Tickets Sold] * [Movie.ByGenre].[Genre].CurrentMember.Properties("Coefficient")'
+MEMBER [Measures].[Genre Percentage] AS
+'[Measures].[Weighted Tickets] / Sum([Movie.ByGenre].[Genre].Members, [Measures].[Weighted Tickets]) _ 100',
+FORMAT_STRING = '#,##0.00%'
+SELECT
+{[Measures].[Genre Percentage]} ON COLUMNS,
+TopCount(
+[Movie.ByGenre].[Genre].Members,
+5,
+[Measures].[Weighted Tickets]
+) ON ROWS
+FROM [Cinema_Sales]
+WHERE [Time].[Month].[Березень 2025]
+
+
+
+
+-- 3. Відвідуваність кінотеатрів у певний період дня
+SELECT
+{ 
+    [Cinema].[City].Members, 
+    [Cinema].[All Cinemas] } ON COLUMNS,
+{[Time of Day].[Day Period].Members * [Time].[Day].Properties("Is Holliday")} ON ROWS
+FROM [Cinema_Sales]
